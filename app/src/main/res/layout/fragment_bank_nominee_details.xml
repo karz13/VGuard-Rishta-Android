@@ -1,0 +1,627 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llUserHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_16"
+            android:gravity="center"
+            android:padding="@dimen/dp_4">
+
+            <ImageView
+                android:id="@+id/ivUserImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/user_image"
+                android:src="@drawable/group_528" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    style="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:gravity="center|start"
+                    android:text="@string/new_user"
+                    android:textColor="@color/custom_black"
+                    android:textSize="@dimen/sp_16"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvRishtaId"
+                    style="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nunito"
+                    android:gravity="center|start"
+                    android:text="@string/rishta_id"
+                    android:textColor="@color/custom_black"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/tvMobileNumber"
+                    style="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/nunito"
+                    android:gravity="center|start"
+                    android:text="@string/mobile_no"
+                    android:textColor="@color/custom_black"
+                    android:textSize="@dimen/sp_16" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/dp_24">
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:fontFamily="@font/nunito"
+                android:text="@string/lbl_bank_details"
+                android:textColor="@color/text"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46"
+                android:background="@drawable/base">
+
+                <EditText
+                    android:id="@+id/etAccountNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:fontFamily="@font/nunito"
+                    android:hint="@string/lbl_account_number"
+                    android:inputType="number"
+                    android:padding="@dimen/dp_6"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp_16"
+                    tools:ignore="Autofill,LabelFor,TextFields" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@drawable/base">
+
+                <EditText
+                    android:id="@+id/etAccountHolderName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:digits="@string/alpha"
+                    android:fontFamily="@font/nunito"
+                    android:hint="@string/lbl_account_holder_name"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/dp_6"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp_16"
+                    tools:ignore="Autofill,LabelFor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_8"
+                android:fontFamily="@font/nunito"
+                android:gravity="center"
+                android:text="@string/select_account_type"
+                android:textSize="@dimen/sp_14" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46">
+
+                <Spinner
+                    android:id="@+id/spAccountType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/base"
+                    android:entries="@array/account_type"
+                    android:paddingStart="@dimen/dp_8"
+                    android:paddingEnd="@dimen/dp_8" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end"
+                    android:layout_marginEnd="@dimen/dp_12"
+                    android:contentDescription="@string/arrow_down"
+                    app:srcCompat="@drawable/arrow_1" />
+
+            </FrameLayout>
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_8"
+                android:fontFamily="@font/nunito"
+                android:gravity="center"
+                android:text="@string/bank_name"
+                android:textSize="@dimen/sp_14" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46">
+
+                <Spinner
+                    android:id="@+id/spBanks"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/base"
+                    android:clickable="false"
+                    android:paddingStart="@dimen/dp_8"
+                    android:paddingEnd="@dimen/dp_8" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end"
+                    android:layout_marginEnd="@dimen/dp_12"
+                    android:contentDescription="@string/arrow_down"
+                    app:srcCompat="@drawable/arrow_1" />
+
+            </FrameLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@drawable/base">
+
+                <EditText
+                    android:id="@+id/etIfscCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:fontFamily="@font/nunito"
+                    android:hint="@string/lbl_ifsc_code"
+                    android:inputType="text"
+                    android:padding="@dimen/dp_6"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp_16"
+                    tools:ignore="Autofill,LabelFor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/llCheckPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@drawable/base"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvChequePhoto"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:fontFamily="@font/nunito"
+                    android:gravity="center|start"
+                    android:hint="@string/lbl_upload_cancelled_cheque"
+                    android:paddingStart="@dimen/dp_8"
+                    android:paddingTop="@dimen/dp_4"
+                    android:paddingEnd="@dimen/dp_4"
+                    android:paddingBottom="@dimen/dp_4"
+                    android:singleLine="true"
+                    android:textColor="@color/secondary_text" />
+
+                <ImageView
+                    android:id="@+id/ivChequePhoto"
+                    android:layout_width="@dimen/dp_36"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/dp_8"
+                    android:contentDescription="@string/select_or_capture_chequebook"
+                    android:padding="@dimen/dp_6"
+                    android:src="@drawable/photo_camera" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:fontFamily="@font/nunito"
+                android:text="@string/lbl_nominee_details"
+                android:textColor="@color/text"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46"
+                android:background="@drawable/base">
+
+                <EditText
+                    android:id="@+id/etNameOfNominee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:digits="@string/alpha"
+                    android:fontFamily="@font/nunito"
+                    android:hint="@string/lbl_name_of_nominee"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/dp_6"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp_16"
+                    tools:ignore="Autofill,LabelFor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/llNomDob"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@drawable/base"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvNomineeDob"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:fontFamily="@font/nunito"
+                    android:gravity="center|start"
+                    android:hint="@string/lbl_date_of_birth_mandatory"
+                    android:paddingStart="@dimen/dp_8"
+                    android:paddingTop="@dimen/dp_4"
+                    android:paddingEnd="@dimen/dp_4"
+                    android:paddingBottom="@dimen/dp_4"
+                    android:singleLine="true"
+                    android:textColor="@color/secondary_text" />
+
+                <ImageView
+                    android:id="@+id/ivDob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/dp_8"
+                    android:contentDescription="@string/calendar_icon"
+                    android:src="@drawable/calendar" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@drawable/base">
+
+                <EditText
+                    android:id="@+id/etNomineeMobileNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:fontFamily="@font/nunito"
+                    android:hint="@string/lbl_mobile_number"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:padding="@dimen/dp_6"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp_16"
+                    tools:ignore="Autofill,LabelFor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@drawable/base">
+
+                <EditText
+                    android:id="@+id/etNomineeEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:fontFamily="@font/nunito"
+                    android:hint="@string/lbl_email"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/dp_6"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp_16"
+                    tools:ignore="Autofill,LabelFor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@drawable/base">
+
+                <EditText
+                    android:id="@+id/etNomineeAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:fontFamily="@font/nunito"
+                    android:hint="@string/lbl_address"
+                    android:inputType="textPostalAddress"
+                    android:padding="@dimen/dp_6"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp_16"
+                    tools:ignore="Autofill,LabelFor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@drawable/base">
+
+                <EditText
+                    android:id="@+id/tvNomineeRelation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:fontFamily="@font/nunito"
+                    android:hint="@string/lbl_relationship_with_you"
+                    android:inputType="text"
+                    android:padding="@dimen/dp_6"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp_16"
+                    tools:ignore="Autofill,LabelFor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/cbTermsAndConditions"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/dp_4"
+                android:layout_marginTop="@dimen/dp_8"
+                android:button="@drawable/custom_radio_button"
+                android:fontFamily="@font/nunito"
+                android:padding="@dimen/dp_6"
+                android:text="@string/lbl_terms_and_conditions_ul"
+                android:textColor="@color/text"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llTerms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_8"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_8">
+
+                <ImageButton
+                    android:id="@+id/ibAgree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dp_32"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:contentDescription="@string/agree"
+                    android:src="@drawable/group_969"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/dp_32"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/cancel"
+                    android:src="@drawable/group_968"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTermsDescription"
+                style="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_8"
+
+                android:fontFamily="@font/nunito"
+                android:text="@string/lbl_accept_terms"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_8"
+            android:layout_marginHorizontal="@dimen/dp_16"
+            android:background="@drawable/rectangle_1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnPreview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/dp_32"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:background="@drawable/transparent_ripple"
+                android:drawableEnd="@drawable/arrow"
+                android:drawablePadding="-24dp"
+                android:elevation="@dimen/dp_10"
+                android:fontFamily="@font/nunito_extrabold"
+                android:gravity="center"
+                android:padding="@dimen/dp_8"
+                android:text="@string/preview"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold"
+                android:translationZ="@dimen/dp_6" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_32"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/need_help"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="@string/evolve_help_center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_24"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:padding="@dimen/dp_4"
+                    android:src="@drawable/ic_phone_call_2" />
+
+                <TextView
+                    android:id="@+id/tvContactNo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/help_number"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:padding="@dimen/dp_4"
+                    android:src="@drawable/ic_email" />
+
+                <TextView
+                    android:id="@+id/tvSupportMail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/ccare_vguards_com"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="@dimen/dp_32"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:padding="@dimen/dp_4"
+                    android:src="@drawable/ic_whatsapp" />
+
+                <TextView
+                    android:id="@+id/tvWhatsappNo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:text="@string/help_number_whatsapp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

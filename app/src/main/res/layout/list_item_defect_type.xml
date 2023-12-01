@@ -1,0 +1,31 @@
+<com.tfl.vguardrishta.utils.widget.CheckableLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/clLayout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:minHeight="?android:listPreferredItemHeight"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_defect_type"
+        android:duplicateParentState="true"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:text=""
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:src="?android:listChoiceIndicatorSingle"
+        android:duplicateParentState="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@color/colorAccent"
+        android:visibility="gone"
+        android:layout_marginStart="@dimen/activity_horizontal_margin" />
+
+</com.tfl.vguardrishta.utils.widget.CheckableLinearLayout>

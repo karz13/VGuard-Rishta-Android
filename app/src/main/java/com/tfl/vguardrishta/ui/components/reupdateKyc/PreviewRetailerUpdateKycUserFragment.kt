@@ -1,0 +1,198 @@
+package com.tfl.vguardrishta.ui.components.reupdateKyc
+
+import android.net.Uri
+import android.os.Build
+import android.view.View
+import android.widget.ImageView
+import android.widget.LinearLayout
+import com.bumptech.glide.Glide
+import com.tfl.vguardrishta.App
+import com.tfl.vguardrishta.R
+import com.tfl.vguardrishta.extensions.launchActivity
+import com.tfl.vguardrishta.extensions.toast
+import com.tfl.vguardrishta.ui.base.BaseFragment
+import com.tfl.vguardrishta.ui.components.logIn.LogInActivity
+import com.tfl.vguardrishta.utils.*
+import kotlinx.android.synthetic.main.fragment_preview__ret_update_kyc_user.*
+import java.io.File
+import javax.inject.Inject
+
+class PreviewRetailerUpdateKycUserFragment :
+    BaseFragment<ReUpdateKycContract.View, ReUpdateKycContract.Presenter>(),
+    ReUpdateKycContract.View,
+    View.OnClickListener, ActivityFinishListener {
+
+    @Inject
+    lateinit var newUserRegPresenter: ReUpdateKycPresenter
+
+    private lateinit var progress: Progress
+
+    override fun initPresenter(): ReUpdateKycContract.Presenter {
+        return newUserRegPresenter
+    }
+
+    override fun injectDependencies() {
+        (activity?.application as App).applicationComponent.inject(this)
+    }
+
+    override fun getLayoutResId(): Int {
+        return R.layout.fragment_preview__ret_update_kyc_user
+    }
+
+    override fun initUI() {
+        progress = Progress(context, R.string.please_wait)
+        setInputs()
+        btnEdit.setOnClickListener(this)
+        btnSubmit.setOnClickListener(this)
+    }
+
+    override fun hideKeyBoard() {
+
+    }
+
+    private fun setInputs() {
+        val rishtaUser = CacheUtils.getRishtaUser()
+        etName.setText(rishtaUser.name)
+        etContactNumber.setText(rishtaUser.contactNo)
+        etPermanentAddress.setText(rishtaUser.permanentAddress)
+        etStreetLocality.setText(rishtaUser.streetAndLocality)
+        etLandmark.setText(rishtaUser.landmark)
+        if (rishtaUser.otherCity.isNullOrEmpty()) {
+            etCity.setText(rishtaUser.city)
+        } else {
+            etCity.setText(rishtaUser.otherCity)
+        }
+
+        etDistrict.setText(rishtaUser.dist)
+        etState.setText(rishtaUser.state)
+        etPinCode.setText(rishtaUser.pinCode)
+
+        if (rishtaUser.addDiff == 1) {
+            llCurrentAdd.visibility = View.VISIBLE
+        } else {
+            llCurrentAdd.visibility = View.GONE
+        }
+
+        etCurrentAddress.setText(rishtaUser.currentAddress)
+        etCurrentStreetLocality.setText(rishtaUser.currStreetAndLocality)
+        etCurrentLandmark.setText(rishtaUser.currLandmark)
+
+        if (rishtaUser.otherCurrCity.isNullOrEmpty()) {
+            etCurrCity.setText(rishtaUser.currCity)
+        } else {
+            etCurrCity.setText(rishtaUser.otherCurrCity)
+        }
+
+        etCurrDistrict.setText(rishtaUser.currDist)
+        etCurrState.setText(rishtaUser.currState)
+        etCurrentPinCode.setText(rishtaUser.currPinCode)
+
+        val idProofFront = CacheUtils.getFileUploader().getIdProofFileFront()
+        val idFrontUrl = AppUtils.getIdCardUrl() + rishtaUser.kycDetails.aadharOrVoterOrDLFront
+        setImageForProofs(idProofFront, idFrontUrl, ivIdFront, llIdFront)
+
+        val idProofBack = CacheUtils.getFileUploader().getIdProofBackFile()
+        val idBackUrl = AppUtils.getIdCardUrl() + rishtaUser.kycDetails.aadharOrVoterOrDlBack
+        setImageForProofs(idProofBack, idBackUrl, ivIdBack, llIdBack)
+
+        //Pan Section
+        val panFront = CacheUtils.getFileUploader().getPanCardFrontFile()
+        val panFrontUrl = AppUtils.getPanCardUrl() + rishtaUser.kycDetails.panCardFront
+        setImageForProofs(panFront, panFrontUrl, ivPANFront, llPanFront)
+
+        val haveGst = rishtaUser.gstYesNo
+        if (haveGst.isNullOrEmpty() || haveGst.equals("No", true)) {
+            llGSTPic.visibility = View.GONE
+            tiGstNo.visibility = View.INVISIBLE
+        } else {
+            llGSTPic.visibility = View.VISIBLE
+            tiGstNo.visibility = View.VISIBLE
+            val gstFile = CacheUtils.getFileUploader().getGstFile()
+            val gstURL = AppUtils.getGSTUrl() + rishtaUser.gstPic
+            setImageForProofs(gstFile, gstURL, ivGstPic, llGSTPic)
+            etGSTNo.setText(rishtaUser.gstNo)
+        }
+
+
+
+        etIdNoManualEntered.setText(rishtaUser.kycDetails.aadharOrVoterOrDlNo)
+        etPanManualEntered.setText(rishtaUser.kycDetails.panCardNo)
+    }
+
+    private fun setImageForProofs(
+        file: File?,
+        proofUrl: String,
+        imageView: ImageView,
+        linearLayout: LinearLayout
+    ) {
+        if (file != null) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                imageView.setImageURI(Uri.parse(file.toString()));
+            } else {
+                imageView.setImageURI(Uri.fromFile(file));
+            }
+        } else {
+            Glide.with(this).load(proofUrl)
+                .placeholder(R.drawable.no_image).into(imageView)
+        }
+
+        imageView.setOnClickListener {
+            if (file != null) {
+                FileUtils.zoomFileImage(activity!!, file)
+            } else
+                FileUtils.zoomImage(activity!!, proofUrl!!)
+        }
+
+        linearLayout.setOnClickListener {
+            if (file != null) {
+                FileUtils.zoomFileImage(activity!!, file)
+            } else
+                FileUtils.zoomImage(activity!!, proofUrl!!)
+        }
+    }
+
+
+    override fun showProgress() {
+        progress.show()
+    }
+
+    override fun stopProgress() {
+        progress.dismiss()
+    }
+
+    override fun showToast(toast: String) {
+        activity?.toast(toast)
+    }
+
+    override fun showError() {
+        activity?.toast(resources.getString(R.string.something_wrong))
+    }
+
+    override fun onClick(v: View?) {
+        when (v?.id) {
+            R.id.btnEdit -> {
+                activity?.supportFragmentManager?.popBackStack()
+            }
+
+            R.id.btnSubmit -> {
+                newUserRegPresenter.registerUser()
+            }
+        }
+    }
+
+    override fun showMsgDialog(message: String) {
+        AppUtils.showErrorDialogWithFinish(layoutInflater, context!!, message, this)
+    }
+
+    override fun navigateToLogin() {
+        PrefUtil(context!!).setIsLoggedIn(false)
+        CacheUtils.clearUserDetails()
+        activity?.finish()
+        activity?.finishAffinity()
+        activity?.launchActivity<LogInActivity> { }
+    }
+
+    override fun finishView() {
+        navigateToLogin()
+    }
+}

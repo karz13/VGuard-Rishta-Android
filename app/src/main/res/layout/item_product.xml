@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="@dimen/dp_16"
+    android:background="@color/white"
+    android:elevation="8dp"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivProductImg"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_150"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/tvProdDesc"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_8"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            tools:text="Sony Tv 40 Inches Bravia LED 5875" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|bottom"
+            android:background="@color/primary_light"
+            android:gravity="center_vertical|bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvProdPoints"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:padding="@dimen/dp_2"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="bold"
+                tools:text="40000 Points" />
+
+            <TextView
+                android:id="@+id/tvProdCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/dp_4"
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/dp_2"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="bold"
+                tools:text="HGLSLS" />
+
+
+            <CheckBox
+                android:id="@+id/cbSelected"
+                android:layout_width="@dimen/dp_38"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_height="@dimen/dp_38"
+                android:layout_gravity="center_vertical"
+                android:button="@drawable/custom_radio_button"
+                android:gravity="center" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

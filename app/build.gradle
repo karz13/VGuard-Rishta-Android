@@ -1,0 +1,156 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+
+}
+
+repositories {
+    maven { url 'https://maven.google.com' }
+    jcenter()
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply from: 'configuration.gradle'
+apply plugin: 'com.google.gms.google-services' // Google Services Gradle plugin
+apply plugin: 'com.google.firebase.crashlytics'
+
+
+android {
+    signingConfigs {
+        release {
+            storeFile file('D:\\VGUARD\\keys\\v_guard.jks')
+            storePassword 'zaq1xsw2'
+            keyPassword 'zaq1xsw2'
+            keyAlias 'vguard'
+        }
+    }
+    compileSdkVersion 31
+
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
+    buildFeatures {
+        dataBinding true
+    }
+    defaultConfig {
+        applicationId "com.tfl.vguardrishta"
+        minSdkVersion 23
+        targetSdkVersion 31
+        versionCode project.ext.versionCode
+        versionName project.ext.versionName
+        testInstrumentationRunner "android.support.ImageSendUtil.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                //includeCompileClasspath = true
+            }
+        }
+
+        manifestPlaceholders = [
+                onesignal_app_id               : '4e1acde8-a728-46de-99ce-3c9eb0ccb6d5',
+                onesignal_google_project_number: 'REMOTE'
+        ]
+
+    }
+    buildTypes {
+
+        debug {
+            minifyEnabled false
+        }
+
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            def versionName = variant.versionName
+            def versionCode = variant.versionCode
+            def variantName = variant.name
+            outputFileName = variantName + '_' + versionName + '_' + versionCode + '.apk'
+        }
+    }
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+    dexOptions {
+        jumboMode true
+        javaMaxHeapSize "4g"
+    }
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/services/javax.annotation.processing.Processor']
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //Android SDK libraries & Kotlin
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.2.0-alpha02'
+    implementation libraries.kotlinStdLib
+    //Lifecycle Components
+    implementation 'androidx.lifecycle:lifecycle-runtime:2.2.0-rc02'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0-rc02'
+    implementation 'com.google.firebase:firebase-messaging-ktx:23.3.1'
+    implementation 'androidx.test.ext:junit-ktx:1.1.5'
+    androidTestImplementation 'junit:junit:4.12'
+    kapt 'androidx.lifecycle:lifecycle-compiler:2.2.0-rc02'
+    //Retrofit
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.6.0'
+    //view pager indicator
+    implementation 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+    implementation 'com.burgstaller:okhttp-digest:1.13'
+
+    //Dagger
+    implementation 'com.google.dagger:dagger:2.23.1'
+    implementation 'com.google.dagger:dagger-android:2.21'
+    implementation 'com.google.dagger:dagger-android-support:2.21'
+    kapt 'com.google.dagger:dagger-compiler:2.23.1'
+    kapt 'com.google.dagger:dagger-android-processor:2.20'
+    //RxJava
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.9'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxkotlin:2.3.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    //implementation 'androidx.work:work-runtime-ktx:2.7.1'
+    implementation 'io.paperdb:paperdb:2.6'
+    implementation("com.github.bumptech.glide:glide:4.9.0") {
+        exclude group: "com.android.support"
+    }
+    implementation 'com.github.boxme:squarecamera:1.1.0'
+
+    implementation project(':barcode-reader')
+
+
+
+    implementation 'com.google.android.gms:play-services-analytics:18.0.2'
+
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:26.8.0')
+
+    // Declare the dependencies for the Crashlytics and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-crashlytics'
+
+    implementation 'com.google.firebase:firebase-analytics:17.4.1'
+
+
+}

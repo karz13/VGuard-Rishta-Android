@@ -1,0 +1,242 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llStartPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/flLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_46"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/dp_32"
+                android:layout_marginEnd="@dimen/dp_16">
+
+                <Spinner
+                    android:id="@+id/spPreferredLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/base"
+                    android:entries="@array/languages"
+                    android:paddingStart="@dimen/dp_8"
+                    android:paddingEnd="@dimen/dp_8" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|end"
+                    android:layout_marginEnd="@dimen/dp_12"
+                    android:contentDescription="@string/arrow_down"
+                    app:srcCompat="@drawable/arrow_1" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/llLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_16"
+                        android:layout_marginBottom="@dimen/dp_8"
+                        android:contentDescription="@string/powered_by_v_guard"
+                        android:src="@drawable/group_910" />
+
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/app_logo"
+                        android:src="@drawable/group_907" />
+                </LinearLayout>
+
+               <!-- Select User Type-->
+
+                <LinearLayout
+                    android:id="@+id/llUserType"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:layout_below="@+id/llLogo"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                  <!--  Electrician -->
+                    <LinearLayout
+                        android:id="@+id/llInfUserType"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginHorizontal="@dimen/dp_24"
+                        android:background="@drawable/round_rectangle_background"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dp_10">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_38"
+                            android:layout_height="@dimen/dp_38"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_gravity="center_vertical"
+                            android:padding="@dimen/dp_4"
+                            android:src="@drawable/ic_influencer" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_80"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/nunito_extrabold"
+                            android:gravity="center"
+                            android:text="@string/electrician_and_plumber"
+                            android:textColor="@color/black" />
+
+                        <CheckBox
+                            android:id="@+id/cbElectrical"
+                            android:layout_width="@dimen/dp_24"
+                            android:layout_height="@dimen/dp_24"
+                            android:layout_marginVertical="@dimen/dp_8"
+                            android:button="@drawable/custom_radio_button_2"
+                            android:checked="true"
+                            android:layout_gravity="center_vertical" />
+
+                    </LinearLayout>
+
+
+                    <!--  Ac Service Engineer -->
+                    <LinearLayout
+                        android:id="@+id/llAcUserType"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginHorizontal="@dimen/dp_24"
+                        android:background="@drawable/round_rectangle_background"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dp_10">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_50"
+                            android:layout_height="@dimen/dp_50"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_gravity="center_vertical"
+                            android:padding="@dimen/dp_4"
+                            android:src="@drawable/ac_icon" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_80"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/nunito_extrabold"
+                            android:gravity="center"
+                            android:text="@string/ac_service_engineer"
+                            android:textColor="@color/black" />
+
+                        <CheckBox
+                            android:id="@+id/cbAc"
+                            android:layout_width="@dimen/dp_24"
+                            android:layout_height="@dimen/dp_24"
+                            android:layout_marginVertical="@dimen/dp_8"
+                            android:button="@drawable/custom_radio_button_2"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llRetailerUserType"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginHorizontal="@dimen/dp_24"
+                        android:background="@drawable/round_rectangle_background"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_38"
+                            android:layout_height="@dimen/dp_38"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_gravity="center_vertical"
+                            android:padding="@dimen/dp_4"
+                            android:src="@drawable/ic_retailer_1" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp_80"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/nunito_extrabold"
+                            android:gravity="center"
+                            android:text="@string/retailer"
+                            android:textColor="@color/black" />
+
+                        <CheckBox
+                            android:id="@+id/cbRetailer"
+                            android:layout_width="@dimen/dp_24"
+                            android:layout_height="@dimen/dp_24"
+                            android:layout_marginVertical="@dimen/dp_8"
+                            android:button="@drawable/custom_radio_button_2"
+                            android:layout_gravity="center_vertical" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llStartButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_60"
+                    android:layout_below="@id/llUserType"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_32"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btnStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="@dimen/dp_16"
+                        android:background="@drawable/transparent_ripple"
+                        android:drawableEnd="@drawable/arrow"
+                        android:drawablePadding="-24dp"
+                        android:elevation="@dimen/dp_10"
+                        android:fontFamily="@font/nunito_extrabold"
+                        android:gravity="center"
+                        android:padding="@dimen/dp_8"
+                        android:text="@string/start"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_14"
+                        android:textStyle="bold"
+                        android:translationZ="@dimen/dp_6" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

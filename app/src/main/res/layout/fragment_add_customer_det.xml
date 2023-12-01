@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_32"
+                android:layout_marginVertical="@dimen/dp_8"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilContactNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etContactNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:hint="@string/contact_number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnGetCustDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="@dimen/dp_4"
+                    android:background="@drawable/transparent_ripple"
+                    android:elevation="@dimen/dp_10"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_8"
+                    android:text="@string/get_details"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold"
+                    android:translationZ="@dimen/dp_6" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:digits="@string/alpha"
+                        android:fontFamily="@font/nunito"
+                        android:hint="@string/lbl_name_mandatory"
+                        android:inputType="textPersonName"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:fontFamily="@font/nunito"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etAltContactNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:hint="@string/alternate_contact_number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etLandmark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:fontFamily="@font/nunito"
+                        android:hint="@string/lbl_landmark"
+                        android:inputType="textPostalAddress"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!--
+                                <TextView
+                                    style="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="@dimen/dp_8"
+                                    android:fontFamily="@font/nunito"
+                                    android:gravity="center"
+                                    android:text="@string/state"
+                                    android:textSize="@dimen/sp_14" />-->
+
+                <!--  <FrameLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/dp_46">
+
+                      <Spinner
+                          android:id="@+id/spState"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_gravity="center"
+                          android:background="@drawable/base"
+                          android:entries="@array/select_state"
+                          android:paddingStart="@dimen/dp_8"
+                          android:paddingEnd="@dimen/dp_8" />
+
+                      <ImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center|end"
+                          android:layout_marginEnd="@dimen/dp_12"
+                          android:contentDescription="@string/arrow_down"
+                          app:srcCompat="@drawable/arrow_1" />
+
+                  </FrameLayout>-->
+                <!--
+                                <TextView
+                                    style="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="@dimen/dp_8"
+                                    android:fontFamily="@font/nunito"
+                                    android:gravity="center"
+                                    android:text="@string/district"
+                                    android:textSize="@dimen/sp_14" />-->
+
+
+                <!--   <FrameLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="@dimen/dp_46">
+
+                       <Spinner
+                           android:id="@+id/spDist"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_gravity="center"
+                           android:background="@drawable/base"
+                           android:paddingStart="@dimen/dp_8"
+                           android:paddingEnd="@dimen/dp_8" />
+
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_gravity="center|end"
+                           android:layout_marginEnd="@dimen/dp_12"
+                           android:contentDescription="@string/arrow_down"
+                           app:srcCompat="@drawable/arrow_1" />
+
+                   </FrameLayout>-->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base"
+                    android:hint="@string/pincode">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_46">
+
+                        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                            android:id="@+id/etPinCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:completionThreshold="1"
+                            android:gravity="center|start"
+                            android:hint="@string/pincode"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:padding="@dimen/dp_6"
+                            android:singleLine="true"
+                            android:textColor="@color/secondary_text"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/sp_14"
+                            android:theme="@style/Autocomplete" />
+
+                        <ImageView
+                            android:id="@+id/ivPincode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|end"
+                            android:layout_marginEnd="@dimen/dp_12"
+                            android:contentDescription="@string/arrow_down"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/arrow_1" />
+
+                    </FrameLayout>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:fontFamily="@font/nunito"
+                        android:hint="@string/lbl_state"
+                        android:inputType="textPostalAddress"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etDistrict"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:fontFamily="@font/nunito"
+                        android:hint="@string/district"
+                        android:inputType="textPostalAddress"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etCustCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:fontFamily="@font/nunito"
+                        android:hint="@string/lbl_city_mandatory"
+                        android:inputType="textPostalAddress"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:fontFamily="@font/nunito"
+                        android:hint="@string/address_mandatory"
+                        android:inputType="textPostalAddress"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_32"
+                android:layout_marginVertical="@dimen/dp_8"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:visibility="gone">
+
+                    <Spinner
+                        android:id="@+id/spDealerCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/base"
+                        android:entries="@array/select_category"
+                        android:paddingStart="@dimen/dp_8"
+
+                        android:paddingEnd="@dimen/dp_8" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|end"
+                        android:layout_marginEnd="@dimen/dp_12"
+                        android:contentDescription="@string/arrow_down"
+                        app:srcCompat="@drawable/arrow_1" />
+
+                </FrameLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etDealerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:fontFamily="@font/nunito"
+                        android:hint="@string/dealer_name"
+                        android:inputType="textPersonName"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textColor="@color/view_state_color_custom"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etDealerAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:fontFamily="@font/nunito"
+                        android:hint="@string/dealer_address"
+                        android:inputType="textPersonName"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--
+                                <TextView
+                                    style="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="@dimen/dp_8"
+                                    android:fontFamily="@font/nunito"
+                                    android:gravity="center"
+                                    android:text="@string/dealer_state"
+                                    android:textSize="@dimen/sp_14" />-->
+
+                <!--      <FrameLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="@dimen/dp_46">
+
+                          <Spinner
+                              android:id="@+id/spDealerState"
+                              android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:layout_gravity="center"
+                              android:background="@drawable/base"
+                              android:entries="@array/select_state"
+                              android:paddingStart="@dimen/dp_8"
+                              android:paddingEnd="@dimen/dp_8" />
+
+                          <ImageView
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_gravity="center|end"
+                              android:layout_marginEnd="@dimen/dp_12"
+                              android:contentDescription="@string/arrow_down"
+                              app:srcCompat="@drawable/arrow_1" />
+
+                      </FrameLayout>-->
+
+                <!--    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Subhead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:fontFamily="@font/nunito"
+                        android:gravity="center"
+                        android:text="@string/dealer_district"
+                        android:textSize="@dimen/sp_14" />-->
+
+                <!-- <FrameLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/dp_46">
+
+                     <Spinner
+                         android:id="@+id/spDealerDist"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_gravity="center"
+                         android:background="@drawable/base"
+                         android:paddingStart="@dimen/dp_8"
+                         android:paddingEnd="@dimen/dp_8" />
+
+                     <ImageView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center|end"
+                         android:layout_marginEnd="@dimen/dp_12"
+                         android:contentDescription="@string/arrow_down"
+                         app:srcCompat="@drawable/arrow_1" />
+
+                 </FrameLayout>-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base"
+                    android:hint="@string/pincode">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_46">
+
+                        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                            android:id="@+id/etDealerPinCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:completionThreshold="1"
+                            android:gravity="center|start"
+                            android:enabled="false"
+                            android:hint="@string/dealer_pincode"
+                            android:textColor="@color/view_state_color_custom"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:padding="@dimen/dp_6"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/sp_14"
+                            android:theme="@style/Autocomplete" />
+
+                        <ImageView
+                            android:id="@+id/ivDealerPincode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|end"
+                            android:layout_marginEnd="@dimen/dp_12"
+                            android:contentDescription="@string/arrow_down"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/arrow_1" />
+
+                    </FrameLayout>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etDealerState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:fontFamily="@font/nunito"
+                        android:hint="@string/dealer_state"
+                        android:textColor="@color/view_state_color_custom"
+                        android:inputType="textPersonName"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etDealerDistrict"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:textColor="@color/view_state_color_custom"
+                        android:fontFamily="@font/nunito"
+                        android:hint="@string/dealer_district"
+                        android:inputType="textPersonName"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etDealerCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:fontFamily="@font/nunito"
+                        android:hint="@string/dealer_city"
+                        android:textColor="@color/view_state_color_custom"
+                        android:enabled="false"
+                        android:inputType="textPersonName"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etDealerContactNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:fontFamily="@font/nunito"
+                        android:textColor="@color/view_state_color_custom"
+                        android:enabled="false"
+                        android:hint="@string/dealer_contact_no"
+                        android:inputType="numberDecimal"
+                        android:maxLength="10"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_32"
+                    android:layout_marginBottom="@dimen/dp_4"
+                    android:background="@drawable/transparent_ripple"
+                    android:drawableEnd="@drawable/arrow"
+                    android:drawablePadding="-24dp"
+                    android:elevation="@dimen/dp_10"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_8"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold"
+                    android:translationZ="@dimen/dp_6" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

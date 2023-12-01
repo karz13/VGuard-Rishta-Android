@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="@dimen/dp_16">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.tfl.vguardrishta.utils.CircularImageView
+            android:id="@+id/ivProductImg"
+            android:layout_width="@dimen/dp_150"
+            android:layout_height="@dimen/dp_150"
+            android:scaleType="fitCenter" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|bottom"
+            android:gravity="center|bottom"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvProdName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp_4"
+                android:layout_weight="1"
+                android:padding="@dimen/dp_2"
+                android:textSize="@dimen/sp_12"
+                android:textStyle="bold"
+                tools:text="HGLSLS" />
+
+
+            <CheckBox
+                android:id="@+id/cbSelected"
+                android:layout_width="@dimen/dp_38"
+                android:layout_height="@dimen/dp_38"
+                android:layout_gravity="center_vertical"
+                android:button="@drawable/custom_radio_button"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

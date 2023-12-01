@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ভি-গার্ড রিশতা</string>
+
+    - <!--     <string name="ga_tracking_id" translatable="false">UA-40418155-2</string>  -->
+
+    <string name="please_wait">অনুগ্রহ করে অপেক্ষা করুন</string>
+
+    <string name="enter_username">ইউজার নাম এন্টার করুন</string>
+
+    <string name="enter_password">পাসওয়ার্ড এন্টার করুন</string>
+
+    <string name="invalidCredentials">ভুল ইউজার নাম বা পাসওয়ার্ড</string>
+
+    <string name="no_internet">ইন্টারনেট সংযোগ নেই</string>
+
+    <string name="password">পাসওয়ার্ড</string>
+
+    <string name="mobile_number">মোবাইল নম্বর</string>
+
+    <string name="points_redeemed">পয়েন্টস রিডীম করা হয়েছে</string>
+
+    <string name="points_balance">ব্যালেন্স পয়েন্টস </string>
+
+    <string name="profile">প্রোফাইল</string>
+
+    <string name="redemption_history">রিডেম্পশনের ইতিহাস</string>
+
+    <string name="name">নাম</string>
+
+    <string name="enter_code">নীচে ম্যানুয়ালি কুপন কোড এন্টার করুন</string>
+
+    <string name="error_barcode">অনুগ্রহ করে বারকোড স্ক্যান বা এন্টার করুন</string>
+
+    <string name="invalid_barcode">অবৈধ বারকোড</string>
+
+    <string name="no_data">কোনও ডেটা নেই</string>
+
+    <string name="coupon_code">কুপন কোড</string>
+
+    <string name="district">জেলা</string>
+
+    <string name="pincode">পিন কোড</string>
+
+    <string name="update">প্লে স্টোরে একটি নতুন ভার্সন উপলব্ধ রয়েছে, অনুগ্রহ করে আপডেট করুন।</string>
+
+    <string name="lbl_forgot_password">পাসওয়ার্ড ভুলে গেছেন</string>
+
+    <string name="dashboard">ড্যাশবোর্ড</string>
+
+    <string name="forgot_password_question">পাসওয়ার্ড ভুলে গেছেন?</string>
+
+    <string name="login_with_otp">OTP OTP-র সাহায্যে লগইন করুন</string>
+
+    <string name="new_user_registration">নতুন ইউজার রেজিস্ট্রেশন</string>
+
+    <string name="submit">সাবমিট করুন</string>
+
+    <string name="enter_otp">OTP (ওয়ান টাইম পাসওয়ার্ড) এন্টার করুন</string>
+
+    <string name="enter_name">নাম এন্টার করুন</string>
+
+    <string name="enter_mobileNo">মোবাইল নম্বর  এন্টার করুন</string>
+
+    <string name="select_state">রাজ্য নির্বাচন করুন</string>
+
+    <string name="select_city">শহর নির্বাচন করুন</string>
+
+    <string name="select_district">জেলা নির্বাচন করুন</string>
+
+    <string name="select">নির্বাচন করুন</string>
+
+    <string name="enter_valid_pincode">বৈধ পিন কোড এন্টার করুন</string>
+
+    <string name="enter_valid_mobileNo">বৈধ মোবাইল নম্বর এন্টার করুন</string>
+
+    <string name="send_otp">OTP OTP পাঠান</string>
+
+    <string name="description">বিবরণ</string>
+
+    <string name="city">শহর</string>
+
+    <string name="ifsc">IFSC কোড</string>
+
+    <string name="pan_no">প্যান নম্বর </string>
+
+    <string name="home_small_cap">হোম</string>
+
+    <string name="redeem_points">পয়েন্টস রিডীম করুন</string>
+
+    <string name="bank_transfer">তাত্ক্ষণিক ব্যাংক স্থানান্তর</string>
+
+    <string name="bank_name">ব্যাংকের নাম</string>
+
+    <string name="whatsapp_no">হোয়াটসঅ্যাপ নম্বর </string>
+
+    <string name="email">ইমেল</string>
+
+    <string name="next">পরবর্তী</string>
+
+    <string name="enter_valid_mail">বৈধ মেইল এন্টার করুন</string>
+
+    <string name="select_idcard_type">আইডি প্রুফ নির্বাচন করুন</string>
+
+    <string name="select_action">ক্রিয়া নির্বাচন করুন</string>
+
+    <string name="select_from_gallery">গ্যালারী থেকে ফটো নির্বাচন করুন</string>
+
+    <string name="capture_from_camera">ক্যামেরা দিয়ে ফটো ক্যাপচার করুন</string>
+
+    <string name="file">ফাইল</string>
+
+    <string name="select_account_type">অ্যাকাউন্টের টাইপ নির্বাচন করুন</string>
+
+    <string name="select_or_capture_chequebook">চেক বুকের ফটো ক্যাপচার করুন</string>
+
+    <string name="enter_amount">রাশির পরিমান লিখুন </string>
+
+    <string name="age_below_18">বয়স : 18 বছর বয়স প্রয়োজন</string>
+
+    <string name="problem_occurred">অনুরোধ প্রসেস করার সময় সমস্যা দেখা দিয়েছে</string>
+
+    <string name="downloads_small">ডাউনলোডস</string>
+
+    <string name="no_category_found">কোন বিভাগ পাওয়া যায়নি</string>
+
+    <string name="view">দেখুন</string>
+
+    <string name="no_activity_found">এই ফাইলটি খোলার জন্য কোনও কার্যকলাপ হয়নি</string>
+
+    <string name="all">সমস্ত</string>
+
+    <string name="account_type">অ্যাকাউন্টের টাইপ</string>
+
+    <string name="otp_not_received">OTP পাওয়া যায়নি?</string>
+
+    <string name="resend_otp">OTP পুনরায় পাঠান</string>
+
+    <string name="maximum_otp_count">Resend OTP count exceeded.</string>
+
+    -
+    <string name="terms_and_conditions"> <u>শর্তাদি অথবা নিয়মাবলী</u> </string>
+
+    <string name="you_won">আপনি জিতেছেন</string>
+
+    <string name="something_wrong">কিছু ভুল হয়েছে। সাহায্যের জন্য সহায়তা কেন্দ্রের সঙ্গে যোগাযোগ করুন।</string>
+
+    <string name="call_to_get_otp">কলের মাধ্যমে OTP পান </string>
+
+    <!--  <string name="iws">Independent WorkShop Registration</string>-->
+
+    <string name="please_accept_terms">অনুগ্রহ করে নিয়ম ও শর্তাদি স্বীকার করুন</string>
+
+    <string name="lbl_new_user_registration">নতুন ইউজার রেজিস্ট্রেশন</string>
+
+    <string name="app_logo">অ্যাপ লোগো</string>
+
+    <string name="lbl_select_job_profession">1. অনুগ্রহ করে আপনার কাজের ধরন অথবা পেশা নির্বাচন করুন</string>
+
+    <string name="influencer">প্রভাবক</string>
+
+    <string name="lbl_enter_mobile_number">2. OTP পেতে আপনার মোবাইল নম্বর এন্টার করুন</string>
+
+    <string name="get_otp">OTP পান</string>
+
+    <string name="or">অথবা</string>
+
+    <string name="powered_by_v_guard">ভি-গার্ড দ্বারা সঞ্চালিত</string>
+
+    <string name="lbl_otp_through_phone_call">OTP পেতে এখানে ক্লিক করুন\ফোন কলের মাধ্যমে</string>
+
+    <string name="call">কল করুন</string>
+
+    <string name="enter_your_mobile_number">আপনার মোবাইল নম্বর এন্টার করুন</string>
+
+    <string name="lbl_otp_verification">OTP ভেরিফিকেশন</string>
+
+    <string name="enter_otp_description">অনুগ্রহ করে  মোবাইল নম্বরে SMS/IVR মাধ্যমে পাওয়া 4-অঙ্কের OTP এন্টার করুন।</string>
+
+    <string name="new_user">নতুন ইউজার</string>
+
+    <string name="rishta_id">রিশতা আইডি</string>
+
+    <string name="mobile_no">মোবাইল নম্বর</string>
+
+    <string name="user_image">ইউজার ইমেজ</string>
+
+    <string name="arrow_down">Arrow Down</string>
+
+    <string name="lbl_referral_code">রেফারেল কোড (যদি থাকে)</string>
+
+    <string name="lbl_name_of_referee">সুপারিশকারীর নাম</string>
+
+    <string name="lbl_name_mandatory">নাম</string>
+
+    <string name="lbl_gender_mandatory">লিঙ্গ</string>
+
+    <string name="lbl_date_of_birth_mandatory">জন্ম তারিখ দিন/মাস/বছর*</string>
+
+    <string name="calendar_icon">Calendar icon</string>
+
+    <string name="lbl_contact_number_mandatory">যোগাযোগের নম্বর*</string>
+
+    <string name="lbl_whats_app_number">হোয়াটসঅ্যাপ নম্বর</string>
+
+    <string name="lbl_permanent_address_mandatory">"স্থায়ী ঠিকানা বাড়ি/ফ্ল্যাট/ব্লক নং"</string>
+
+    <string name="lbl_delivery_address_mandatory">"বিতরণের ঠিকানা বাড়ি/ফ্ল্যাট/ব্লক নং"</string>
+
+
+    <string name="lbl_current_address_mandatory">"বর্তমান ঠিকানা বাড়ি/ফ্ল্যাট/ব্লক নং"</string>
+
+    <string name="lbl_street_locality">রাস্তা/কলোনী/এলাকার নাম*</string>
+
+    <string name="lbl_landmark">ল্যান্ডমার্ক</string>
+
+    <string name="lbl_city_mandatory">শহর</string>
+
+    <string name="lbl_pin_code_mandatory">পিন কোড</string>
+
+    <string name="lbl_bank_details">ব্যাংকের বিবরণ (শুধুমাত্র অ্যাকাউন্ট ট্রান্সফারের জন্য)</string>
+
+    <string name="lbl_account_number">অ্যাকাউন্ট নম্বর</string>
+
+    <string name="lbl_account_holder_name">অ্যাকাউন্ট হোল্ডারের নাম</string>
+
+    <string name="lbl_account_holder">অ্যাকাউন্ট হোল্ডার</string>
+
+
+    <string name="lbl_bank_name_and_branch">ব্যাংকের নাম &amp; শাখা</string>
+
+    <string name="lbl_ifsc_code">IFSC কোড</string>
+
+    <string name="lbl_upload_cancelled_cheque">পাসবুক/বাতিল চেকের কপি আপলোড করুন</string>
+
+    <string name="lbl_nominee_details">নমিনীর বিবরণ (বীমার উদ্দেশ্যে)</string>
+
+    <string name="lbl_name_of_nominee">নমিনীর নাম</string>
+
+    <string name="lbl_mobile_number">মোবাইল নম্বর</string>
+
+    <string name="lbl_email">ই-মেইল</string>
+
+    <string name="lbl_address">ঠিকানা</string>
+
+    <string name="lbl_relationship_with_you">আপনার সাথে সম্পর্ক</string>
+
+    <string name="lbl_accept_terms">আমি ভি-গার্ড রিশতা লয়্যাল্টি প্রোগ্রামের শর্তাদি পড়েছি এবং সম্পূর্ণরূপে বুঝতে পেরেছি এবং সেগুলি অনুসরণ করতে সম্মত আছি।</string>
+
+    <string name="lbl_terms_and_conditions_ul">আমি নিয়ম ও শর্তাদির সঙ্গে একমত</string>
+
+    <string name="preview">পূর্বরূপ</string>
+
+    <string name="agree">একমত</string>
+
+    <string name="edit">সম্পাদনা</string>
+
+    <string name="lbl_preferred_language">পছন্দের ভাষা</string>
+
+    <string name="lbl_state">রাজ্য</string>
+
+    <string name="lbl_type_of_account">অ্যাকাউন্টের টাইপ</string>
+
+    <string name="start">শুরু করুন</string>
+
+    <string name="lbl_welcome">স্বাগতম!</string>
+
+    <string name="lbl_login_or_register">চালিয়ে যাওয়ার জন্য লগইন বা রেজিস্টার করুন</string>
+
+    <string name="mobile_icon">Mobile Icon</string>
+
+    <string name="lbl_registered_mobile_number_login">রেজিস্টার্ড মোবাইল নং/রিশতা আইডি</string>
+
+    <string name="login_via_otp">OTP-র মাধ্যমে লগইন করুন</string>
+
+    <string name="log_in">লগ ইন</string>
+
+    <string name="enter_registered_mobile_no_rishta_id">অনুগ্রহ করে আপনার রেজিস্টার্ড মোবাইল নম্বর অথবা রিশতা আইডি এন্টার করুন </string>
+
+
+    <string name="number_of_scans">স্ক্যানের সংখ্যা</string>
+
+    <string name="scan_code">স্ক্যান কোড</string>
+
+    <string name="info_desk">তথ্য ডেস্ক</string>
+
+    <string name="welfare">কল্যাণ</string>
+
+    <string name="what_s_new">নতুন কী</string>
+
+    <string name="raise_ticket">প্রসঙ্গ উত্থাপন করুন</string>
+
+    <string name="scheem_offers">স্কিম/অফার্স</string>
+
+    <string name="click_here_to_scan_a_unique_code">একটি ইউনিক কোড স্ক্যান করতে এখানে ক্লিক করুন</string>
+
+    <string name="paytm_transfer">পেটিএম ট্রান্সফার</string>
+
+    <string name="e_gift_cards">ইলেক্ট্রোনিক গিফ্ট ভাউচার</string>
+
+    <string name="update_kyc">কেওয়াইসি আপডেট করুন</string>
+
+    <string name="track_your_redemption">আপনার রিডেম্পশন ট্র্যাক করুন</string>
+
+    <string name="redeem_products">রিডীম করা প্রোডাক্ট</string>
+
+    <string name="redeemed_points">রিডীম করা পয়েন্টস</string>
+
+    <string name="one_point_one_inr">*1 পয়েন্ট</string>
+
+    <string name="others">অন্যান্য</string>
+
+    <string name="home_smallcase">হোম </string>
+
+    <string name="proceed_to_cart">কার্টে যান</string>
+
+    <string name="points_earned">অর্জিত পয়েন্টস</string>
+
+    <string name="product_wise_earning">প্রোডাক্ট হিসাবে উপার্জন</string>
+
+    <string name="scheme_wise_earning">স্কিম হিসাবে উপার্জন</string>
+
+    <string name="product_wise_offers">পণ্য হিসাবে অফার্স</string>
+
+    <string name="v_guard_info">ভি-গার্ড তথ্য</string>
+
+    <string name="v_guard_product_catalog">ভি-গার্ড প্রোডাক্ট ক্যাটালগ</string>
+
+    <string name="read_more">… আরও পড়ুন</string>
+
+    <string name="select_job_profession">কাজের পেশা নির্বাচন করুন</string>
+
+    <string name="click_year_to_change">বছর নির্বাচন করতে বছরে ক্লিক করুন</string>
+
+    <string name="enter_preffered_lang">আপনার পছন্দের ভাষা এন্টার করুন</string>
+
+    <string name="select_gender">লিঙ্গ নির্বাচন করুন</string>
+
+    <string name="choose_dob">অনুগ্রহ করে জন্ম তারিখ পূরণ করুন</string>
+
+    <string name="enter_contact_no">অনুগ্রহ করে যোগাযোগের নম্বর এন্টার করুন</string>
+
+    <string name="please_enter_perm_address">অনুগ্রহ করে আপনার স্থায়ী ঠিকানা এন্টার করুন</string>
+
+    <string name="please_enter_street">অনুগ্রহ করে রাস্তা, কলোনী বা এলাকার নাম এন্টার করুন</string>
+
+    <string name="please_select_state">অনুগ্রহ করে রাজ্য নির্বাচন করুন</string>
+
+    <string name="please_enter_pincode">অনুগ্রহ করে আপনার পিন কোড এন্টার করুন</string>
+
+    <string name="go_to_unique_code_history">ইউনিক কোড ইতিহাসে যান</string>
+
+    <string name="lbl_update_your_selfie">আপনার সেলফি আপডেট করুন*</string>
+
+    <string name="update_aadhar_voter_id_dl_front">আইডি প্রুফ আপডেট করুন (সামনের দিক)*</string>
+
+    <string name="update_aadhar_voter_id_dl_back">আইডি প্রুফ আপডেট করুন (পিছনের দিক) *</string>
+
+    <string name="update_pan_number_manually">ম্যানুয়ালি প্যান নম্বর আপডেট করুন</string>
+
+    <string name="update_pan_card_back">প্যান কার্ড আপডেট করুন (পিছনের দিক)</string>
+
+    <string name="update_pan_card_front">প্যান কার্ড আপডেট করুন (সামনের দিক)</string>
+
+    <string name="update_aadhar_voter_id_dl_manually">ম্যানুয়ালি আইডি নম্বর আপডেট করুন*</string>
+
+    <string name="enter_points_to_be_redeemed">রিডীম করার পয়েন্টস এন্টার করুন</string>
+
+    <string name="choose_wallet">ওয়ালেট নির্বাচন করুন</string>
+
+    <string name="proceed">এগিয়ে যান</string>
+
+    <string name="bank_details">ব্যাংকের বিবরণ</string>
+
+    <string name="for_account_tranfer_only">(শুধুমাত্র অ্যাকাউন্ট ট্রান্সফারের জন্য)</string>
+
+    <string name="please_enter_points_toredeem">অনুগ্রহ করে রিডীম করার জন্য পয়েন্টস এন্টার করুন</string>
+
+    <string name="help">সাহায্য</string>
+
+    <string name="user">ইউজার</string>
+
+    <string name="alerts">সতর্কতা</string>
+
+    <string name="please_agree_toterms">অনুগ্রহ করে নিয়ম ও শর্তাদিতে সম্মত হোন</string>
+
+    <string name="issue_type">ইস্যু টাইপ</string>
+
+    <string name="description_remarks">বিবরণ/মন্তব্য</string>
+
+    <string name="select_ticket_type">ইস্যু টাইপ নির্বাচন করুন</string>
+
+    <string name="upload_picture_optional">ছবি আপলোড করুন (বৈকল্পিক)</string>
+
+    <string name="select_issue">অনুগ্রহ করে ইস্যু টাইপ নির্বাচন করুন</string>
+
+    <string name="if_yes_please_mention_scheme_and_brand_name">যদি হ্যাঁ হয়, তবে অনুগ্রহ করে স্কিম এবং ব্র্যান্ডের নাম উল্লেখ করুন</string>
+
+    <string name="if_yes_what_you_liked_about_the_program">যদি হ্যাঁ হয়, আপনি এই প্রোগ্রামটির সম্পর্কে কী পছন্দ করেছেন</string>
+
+    <string name="annual_business_potential">বার্ষিক ব্যবসায়ের সম্ভাবনা</string>
+
+    <string name="select_kyc_type">আইডি প্রুফ নির্বাচন করুন</string>
+
+    <string name="please_enter_curr_address">আপনার বর্তমান ঠিকানা এন্টার করুন</string>
+
+    <string name="file_upload_issue">ফাইল আপলোড সমস্যা</string>
+
+    <string name="select_profession">আপনার পেশা নির্বাচন করুন*</string>
+
+    <string name="select_marital_status">বৈবাহিক স্ট্যাটাস নির্বাচন করুন</string>
+
+    <string name="please_click_your_selfie">অনুগ্রহ করে আপনার সেলফি আপলোড করুন</string>
+
+    <string name="upload_id_proof_front">অনুগ্রহ করে আইডি প্রুফের সামনের দিকটির ছবি আপলোড করুন</string>
+
+    <string name="upload_id_proof_back">অনুগ্রহ করে আইডি প্রুফের পিছনের দিকটির ছবি আপলোড করুন</string>
+
+    <string name="Gender">লিঙ্গ</string>
+
+    <string name="date_of_birth">জন্ম তারিখ</string>
+
+    <string name="contact_no">যোগাযোগের নম্বর</string>
+
+    <string name="permanent_address">স্থায়ী ঠিকানা</string>
+
+    <string name="enrolled_into_loyalty_scheme">লয়্যাল্টি স্কিমে তালিকাভুক্ত</string>
+
+    <string name="name_of_the_scheme_brand">স্কিম/ব্র্যান্ডের নাম</string>
+
+    <string name="selfie">সেলফি</string>
+
+    <string name="id_document">সরকারি পরিচয় পত্র</string>
+
+    <string name="pan_card">প্যান কার্ড</string>
+
+    <string name="account_no_optional">অ্যাকাউন্ট নম্বর</string>
+
+    <string name="bank">ব্যাংক</string>
+
+    <string name="nominee_details">নমিনীর বিবরণ</string>
+
+    <string name="nominee">নমিনী</string>
+
+    <string name="mobile_no_">মোবাইল নম্বর</string>
+
+    <string name="address">ঠিকানা</string>
+
+    <string name="relation">সম্পর্ক</string>
+
+    <string name="edit_profile">প্রোফাইল সম্পাদনা</string>
+
+    <string name="your_rewards">আপনার পুরষ্কার</string>
+
+    <string name="need_help">সাহায্য দরকার?</string>
+
+    <string name="evolve_help_center">রিশতা প্রোগ্রাম সেন্টার প্রযত্নে ইভোল্‌ভ ব্র্যান্ডস প্রাইভেট লিমিটেড, প্লট নং -249জি,এ আই এইচ পি টাওয়ার, উইং-এ লেভেল-2,উদ্যোগ বিহার, ফেজ 4, গুরুগ্রাম-122015 হরিয়াণা</string>
+
+    <string name="ccare_vguards_com">info@vguardRishta.com</string>
+
+    <string name="help_number">9717500011</string>
+
+    <string name="help_number_whatsapp">9818900011</string>
+
+    <string name="please_select_dist">অনুগ্রহ করে জেলা নির্বাচন করুন</string>
+
+    <string name="please_select_whats_app">অনুগ্রহ করে আপনার হোয়াটসঅ্যাপটি নম্বরটি একই কিনা নির্দিষ্ট করুন</string>
+
+    <string name="current_address">বর্তমান ঠিকানা</string>
+
+    <string name="cancelled_cheque_copy">বাতিল করা চেকের অনুলিপি</string>
+
+    <string name="id_proof_front">আইডি প্রুফ* (সামনের দিক)</string>
+
+    <string name="id_proof_back">আইডি প্রুফ* (পিছনের দিক)</string>
+
+    <string name="id_proof_type">আইডি প্রুফের টাইপ</string>
+
+    <string name="id_proof_no">আইডি প্রুফ নম্বর</string>
+
+    <string name="pan_card_back">প্যান কার্ড পিছনের দিক</string>
+
+    <string name="pan_card_front">প্যান কার্ড সামনের দিক</string>
+
+    <string name="enter_code_here">কোড এন্টার করুন</string>
+
+    <string name="enter_points">পয়েন্টস এন্টার করুন</string>
+
+    <string name="please_enter_del_address">ডেলিভারির ঠিকানা এন্টার করুন</string>
+
+    <string name="enter_un_for_otp_login">OTP লগইনের জন্য একটি ইউজার নাম এন্টার করুন</string>
+
+    <string name="lucky_bonus_points">লাকি বোনাস পয়েন্টস</string>
+
+    <string name="view_e_card">ই-ভিজিটিং কার্ড দেখুন</string>
+
+    <string name="parts_description">উপাদানের বর্ণনা</string>
+
+    <string name="bonus_points">বোনাস পয়েন্টস</string>
+
+    <string name="created_date">তৈরীর তারিখ</string>
+
+    <string name="are_you_sure_logout">আপনি কি লগ আউট করতে চান?</string>
+
+    <string name="please_select_month_and_year">অনুগ্রহ করে মাস এবং বছর নির্বাচন করুন</string>
+
+    <string name="please_enter_valid_sixteen_digit">অনুগ্রহ করে বৈধ 16 অক্ষরের বারকোড এন্টার করুন।</string>
+
+    <string name="select_bank">ব্যাংকের নাম নির্বাচন করুন</string>
+
+    <string name="enter_points_to_be_redeemed_below">নীচে রিডীম করা পয়েন্টস এন্টার করুন</string>
+
+    <string name="please_enter_paytm_mobile_no">অনুগ্রহ করে আপনার পেটিএম মোবাইল নম্বর এন্টার করুন।</string>
+
+    <string name="preferred_language">পছন্দের ভাষা</string>
+
+    <string name="_is_what_s_app_contact_same_as_above">হোয়াটসঅ্যাপের কন্ট্যাক্ট কি উপরের মতো?</string>
+
+    <string name="state">রাজ্য</string>
+
+    <string name="profession">পেশা</string>
+
+    <string name="marital_status">বৈবাহিক স্ট্যাটাস*</string>
+
+    <string name="already_enrolled_into_loyalty_scheme">ইতিমধ্যে লয়্যাল্টি স্কিমে তালিকাভুক্ত?</string>
+
+    <string name="id_proof">আইডি প্রুফ</string>
+
+    <string name="points">পয়েন্টস</string>
+
+    <string name="sl_no">ক্রম সংখ্যা</string>
+
+    <string name="scheme_points">স্কিম পয়েন্টস</string>
+
+    <string name="scheme_name">স্কিম নাম</string>
+
+    <string name="scheme_period">স্কিম সময়সীমা</string>
+
+    <string name="registered_mobile_no">রেজিস্টার্ড মোবাইল নম্বর </string>
+
+    <string name="enter_registered_mobile_no">রেজিস্টার্ড মোবাইল নম্বর এন্টার করুন</string>
+
+    <string name="enter_valid_registered_mobile_no">বৈধ রেজিস্টার্ড মোবাইল নম্বর এন্টার করুন</string>
+
+    <string name="enter_registered_mobile_no_to_continue">চালিয়ে যাওয়ার জন্য রেজিস্টার্ড মোবাইল নম্বর এন্টার করুন</string>
+
+    <string name="points_low_to_high">পয়েন্টস কম থেকে বেশি</string>
+
+    <string name="points_high_to_low">পয়েন্টস বেশি থেকে কম</string>
+
+    <string name="atoz">A - Z</string>
+
+    <string name="ztoa">Z - A</string>
+
+    <string name="base_points">বেস পয়েন্টস</string>
+
+    <string name="provide_description_in_the_box">বাক্সে বিবরণ প্রদান করুন</string>
+
+    <string name="frequently_asked_quetions_faq">সচরাচর জিজ্ঞাসিত প্রশ্নাবলী (FAQ\'গুলি)</string>
+
+    <string name="please_fill_your_bank_details">এডিট প্রোফাইল বিভাগে আপনার ব্যাংকের বিবরণ আপডেট করুন। এগিয়ে যেতে স্বীকৃতি দিন।</string>
+
+
+    <string name="select_sub_profession_category">উপ বিভাগ নির্বাচন করুন</string>
+
+    <string name="sub_profession_category">উপ পেশার বিভাগ</string>
+
+    <string name="is_current_address_different">বর্তমান ঠিকানা এবং স্থায়ী ঠিকানা কি একই?</string>
+
+    <string name="select_is_current_address_different">বর্তমান ঠিকানা এবং স্থায়ী ঠিকানা একই কিনা নির্বাচন করুন</string>
+
+    <string name="please_enter_valid_whatsapp">অনুগ্রহ করে বৈধ হোয়াটসঅ্যাপ-এর যোগাযোগ নম্বর এন্টার করুন</string>
+
+    <string name="coming_soon">শীঘ্রই আসছে</string>
+
+    <string name="active_scheme_offers">সক্রিয় স্কিম/অফার্স</string>
+
+    <string name="special_combo_offers">বিশেষ কম্বো অফার্স</string>
+
+    <string name="please_fill_your_complete_bank_details">অনুগ্রহ করে আপনার সম্পূর্ণ ব্যাংকের বিবরণ পূরণ করুন।</string>
+
+    <string name="fill_if_yes_what_you_liked_about_the_program">প্রোগ্রাম সম্পর্কে আপনার পছন্দগুলি উল্লেখ করুন।</string>
+
+    <string name="fill_if_yes_please_mention_scheme_and_brand_name">অনুগ্রহ করে স্কিম এবং ব্র্যান্ডের নাম উল্লেখ করুন</string>
+
+    <string name="select_already_enrolled_into_loyalty_scheme">ইতিমধ্যে লয়্যাল্টি স্কিমে তালিকাভুক্ত নির্বাচন করুন।</string>
+
+    <string name="other">অন্যান্য</string>
+
+    <string name="please_enter_other_city">অনুগ্রহ করে অন্য শহরের নাম এন্টার করুন</string>
+
+    <string name="view_profile">প্রোফাইল দেখুন</string>
+
+    <string name="extra_bonus_point">অতিরিক্ত বোনাস পয়েন্টস</string>
+
+    <string name="lucky_points">লাকি পয়েন্টস</string>
+
+    <string name="please_enter_pincode_to_get_state_and_dist">রাজ্য এবং জেলার নাম জানতে অনুগ্রহ করে একটি পিন কোড এন্টার করুন এবং পিন কোড নির্বাচন করুন।</string>
+
+    <string name="please_select_shipping_address_home_or_other">অনুগ্রহ করে শিপিং ঠিকানা, হোম বা অন্য নির্বাচন করুন</string>
+
+    <string name="all_category">সমস্ত বিভাগ</string>
+
+    <string name="please_mention_your_annual_business_potential">অনুগ্রহ করে আপনার বার্ষিক ব্যবসায়ের সম্ভাবনা কি সেটা উল্লেখ করুন</string>
+
+    <string name="please_enter_id_no_manually">অনুগ্রহ করে আপনার আইডি নম্বর ম্যানুয়ালি এন্টার করুন</string>
+
+    <string name="enter_paytm_mobile_no_below">নীচে পেটিএম মোবাইল নম্বর এন্টার করুন</string>
+
+    <string name="in_">ভিতরে</string>
+
+    <string name="month">মাস</string>
+
+    <string name="year">বছর</string>
+
+    <string name="ticket_history">টিকিটের ইতিহাস</string>
+
+    <string name="please_check_to_add_new_delivery_address">(নতুন ডেলিভারির ঠিকানা যোগ করতে অনুগ্রহ করে চেক করুন)</string>
+
+    <string name="uniquie_code_history">ইউনিক কোডের ইতিহাস</string>
+
+    <string name="combo_offers">কম্বো অফারস</string>
+
+    <string name="view_cart">কার্ট দেখুন</string>
+
+    <string name="visit_playstore">প্লে স্টোর ভিজিট করুন</string>
+
+    <string name="notifications">বিজ্ঞপ্তি</string>
+
+    <string name="contact_us_">যোগাযোগ করুন</string>
+
+    <string name="seconds">সেকেন্ড</string>
+
+    <string name="please_fill_complete_nominee_details">দয়া করে ভর্তি পুর্ণ নামিনী বিশদ</string>
+
+    <string name="edit_your_details_below">নীচে আপনার বিশদ সম্পাদনা করুন</string>
+
+    <string name="remarks">মন্তব্য</string>
+    <string name="upload_scan_error_">Upload Scanning Error</string>
+    <string name="click_here_to_report_error_scan">Click here to report error scan</string>
+
+    <string-array name="languages">
+
+        <item>ভাষা</item>
+
+        <item>ইংরেজি</item>
+
+        <item>হিন্দি</item>
+
+        <item>মারাঠি</item>
+
+        <item>তেলেগু</item>
+
+        <item>বাংলা</item>
+
+        <item>মলয়ালম</item>
+
+        <item>কান্নাডা</item>
+
+
+                <item>তামিল</item>
+
+
+    </string-array>
+
+
+    <string-array name="select_state">
+
+        <item>রাজ্য নির্বাচন কর</item>
+
+    </string-array>
+
+    <string-array name="select_dist">
+
+        <item>জেলা নির্বাচন করুন</item>
+
+    </string-array>
+
+    <string-array name="select_city">
+
+        <item>শহর নির্বাচন করুন</item>
+
+    </string-array>
+
+
+    <string-array name="select_gender">
+
+        <item>লিঙ্গ নির্বাচন করুন*</item>
+
+        <item>পুরুষ</item>
+
+        <item>মহিলা</item>
+
+        <item>অন্যান্য</item>
+
+
+    </string-array>
+
+
+    <string-array name="account_type">
+
+        <item>অ্যাকাউন্টের টাইপ</item>
+
+        <item>কারেন্ট</item>
+
+        <item>সেভিং</item>
+
+    </string-array>
+
+
+    <string-array name="current_address_yes_no">
+
+        <item>পছন্দ করা</item>
+        <item>না</item>
+
+        <item>হ্যাঁ</item>
+
+
+    </string-array>
+
+
+    <string-array name="whatsapp_yes_no">
+
+        <item>হোয়াটসঅ্যাপ যোগাযোগ উপরের মত কিনা নির্বাচন করুন?</item>
+
+        <item>হ্যাঁ</item>
+
+        <item>না</item>
+
+    </string-array>
+
+
+    <string-array name="profession">
+
+        <item>পেশা নির্বাচন করুন</item>
+
+    </string-array>
+
+
+    <string-array name="sub_profession">
+
+        <item>উপ বিভাগ নির্বাচন করুন</item>
+
+    </string-array>
+
+
+    <string-array name="marital_status">
+
+        <item>বৈবাহিক স্ট্যাটাস নির্বাচন করুন*</item>
+
+        <item>বিবাহিত</item>
+
+        <item>অবিবাহিত</item>
+
+
+    </string-array>
+
+
+    <string-array name="already_enrolled_loyalty_scheme">
+
+        <item>ইতিমধ্যে লয়্যাল্টি স্কিমে তালিকাভুক্ত হিসেবে নির্বাচন করুন?</item>
+
+        <item>হ্যাঁ</item>
+
+        <item>না</item>
+
+
+    </string-array>
+
+</resources>
+
+
+
+
+
+

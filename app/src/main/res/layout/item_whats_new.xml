@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="@dimen/dp_16"
+    android:elevation="8dp"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvHeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_marginEnd="@dimen/dp_12"
+            android:padding="@dimen/dp_2"
+            android:maxLines="3"
+            tools:text="Main Headline"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSubHeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_marginEnd="@dimen/dp_12"
+            android:padding="@dimen/dp_2"
+            android:maxLines="3"
+            tools:text="Sub Headline Headline Headline" />
+
+        <ImageView
+            android:id="@+id/ivNewsBanner"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_margin="12dp"
+            tools:background="@drawable/banner" />
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_marginEnd="@dimen/dp_12"
+            android:maxLines="4"
+            android:padding="@dimen/dp_2"
+            tools:text="Test description" />
+
+        <Button
+            android:id="@+id/btnReadMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/dp_12"
+            android:background="@null"
+            android:padding="@dimen/dp_4"
+            android:text="@string/read_more"
+            android:textAllCaps="false"
+            android:textColor="@color/coupon_page" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,480 @@
+<resources>
+    <string name="app_name">वी-गार्ड रिश्ता</string>
+    <string name="please_wait">कृपया प्रतीक्षा करे</string>
+    <string name="enter_username">यूजरनाम डालें</string>
+    <string name="enter_password">पासवर्ड डालें</string>
+    <string name="invalidCredentials">गलत यूजरनाम या पासवर्ड</string>
+    <string name="no_internet">इंटरनेट कनेक्शन नहीं है</string>
+    <string name="password">"पासवर्ड "</string>
+    <string name="mobile_number">मोबाइल नंबर</string>
+    <string name="points_redeemed">रिडीम किये हुए पॉइंट्स</string>
+    <string name="points_balance">पॉइंट्स बैलेंस</string>
+    <string name="profile">प्रोफ़ाइल</string>
+    <string name="redemption_history">रिडेम्शॅन हिस्ट्री</string>
+    <string name="name">नाम</string>
+    <string name="enter_code">कोड दर्ज करें</string>
+    <string name="error_barcode">कृपया स्कैन  करें या कोड दर्ज करें</string>
+    <string name="invalid_barcode">अमान्य कोड</string>
+    <string name="no_data">कोई डेटा नहीं</string>
+    <string name="coupon_code">कूपन कोड</string>
+    <string name="district">जिला</string>
+    <string name="pincode">पिनकोड*</string>
+    <string name="update">"प्ले स्टोर में एक नया संस्करण उपलब्ध है, कृपया अपडेट करें। "</string>
+
+    <string name="lbl_forgot_password">"पासवर्ड भूल गए? "</string>
+    <string name="dashboard">डैशबोर्ड</string>
+    <string name="forgot_password_question">पासवर्ड भूल गए?</string>
+    <string name="login_with_otp">OTP से लॉगिन करें</string>
+    <string name="new_user_registration">नया यूज़र पंजीकरण</string>
+    <string name="submit">सबमिट</string>
+    <string name="enter_otp">वन टाइम पासवर्ड (OTP) डालें</string>
+    <string name="enter_name">नाम डालें</string>
+    <string name="enter_mobileNo">मोबाइल नंबर डालें</string>
+    <string name="select_state">राज्य चुनें</string>
+    <string name="select_city">शहर चुनें</string>
+    <string name="select_district">जिला</string>
+    <string name="select">चयन करें</string>
+    <string name="enter_valid_pincode">मान्य पिनकोड डालें</string>
+    <string name="enter_valid_mobileNo">मान्य मोबाइल नंबर डालें</string>
+    <string name="send_otp">OTP भेजें</string>
+    <string name="description">विवरण</string>
+    <string name="city">शहर</string>
+    <string name="ifsc">IFSC कोड</string>
+    <string name="pan_no">पैन नंबर</string>
+    <string name="home_small_cap">होम</string>
+    <string name="redeem_points">पॉइंट्स रिडेम्शॅन</string>
+    <string name="bank_transfer">तत्काल बैंक ट्रांसफर</string>
+    <string name="bank_name">बैंक का नाम</string>
+    <string name="whatsapp_no">वाट्सऐप नंबर</string>
+    <string name="email">ई-मेल</string>
+    <string name="next">आगे बढ़ें</string>
+    <string name="enter_valid_mail">मान्य ईमेल दर्ज करें</string>
+    <string name="select_idcard_type">पहचान पत्र चुनें</string>
+    <string name="select_action">विकल्प चुनें</string>
+    <string name="select_from_gallery">गैलरी से फोटो का चयन करें</string>
+    <string name="capture_from_camera">कैमरे से सेल्फी ले</string>
+    <string name="file">फ़ाइल</string>
+    <string name="select_account_type">खाते का प्रकार चुनें</string>
+    <string name="select_or_capture_chequebook">चेक कॉपी अपलोड करें</string>
+    <string name="enter_amount">रकम डालें </string>
+    <string name="age_below_18">आयु सीमा 18 वर्ष</string>
+    <string name="problem_occurred">अनुरोध के समय समस्या उत्पन हुई</string>
+    <string name="downloads_small">डाउनलोड</string>
+    <string name="no_category_found">कोई कैटेगोरी नहीं मिली</string>
+    <string name="view">देखें</string>
+    <string name="no_activity_found">फ़ाइल खोलने के लिए कोई गतिविधि नहीं मिली</string>
+    <string name="all">सारे</string>
+    <string name="account_type">खाते का प्रकार</string>
+    <string name="otp_not_received">OTP नही मिला ?</string>
+    <string name="resend_otp">OTP दोबारा भेजें</string>
+    <string name="maximum_otp_count">Resend OTP count exceeded.</string>
+    <string name="terms_and_conditions"> <u>नियम व् शर्तें</u> </string>
+    <string name="you_won">आप जीत गए</string>
+    <string name="something_wrong">कुछ समस्या , कृपया हेल्पडेस्क से संपर्क करें</string>
+    <string name="call_to_get_otp">कॉल के माध्यम से otp प्राप्त करें</string>
+    <!--  <string name="iws">Independent WorkShop Registration</string>-->
+    <string name="please_accept_terms">कृपया नियम और शर्तें स्वीकार करे</string>
+    <string name="lbl_new_user_registration">नया यूज़र पंजीकरण</string>
+    <string name="app_logo">App Logo</string>
+    <string name="lbl_select_job_profession">1. अपने पेशे का चयन करें</string>
+    <string name="influencer">प्रभावक</string>
+    <string name="lbl_enter_mobile_number">2. OTP के लीये अपना मोबाइल नंबर दर्ज करें</string>
+    <string name="get_otp">OTP प्राप्त करें</string>
+    <string name="or">या</string>
+    <string name="powered_by_v_guard">वी-गार्ड द्वारा संचालित</string>
+    <string name="lbl_otp_through_phone_call">कॉल के माध्यम से OTP प्राप्त करें</string>
+    <string name="call">कॉल</string>
+    <string name="enter_your_mobile_number">अपना मोबाइल नंबर दर्ज करें</string>
+    <string name="lbl_otp_verification">OTP वेरिफिकेशन</string>
+    <string name="enter_otp_description">SMS/IVR के माध्यम से प्राप्त 4 अंकों का कोड दर्ज करें</string>
+    <string name="new_user">नया यूज़र</string>
+    <string name="rishta_id">रिशता ID</string>
+    <string name="mobile_no">मोबाइल नंबर</string>
+    <string name="user_image">"यूज़र फ़ोटो "</string>
+    <string name="arrow_down">Arrow Down</string>
+    <string name="lbl_referral_code">रेफरल कोड (यदि कोई हो)</string>
+    <string name="lbl_name_of_referee">रेफर करने वाला का नाम</string>
+    <string name="lbl_name_mandatory">नाम*</string>
+    <string name="lbl_gender_mandatory">लिंग *</string>
+    <string name="lbl_date_of_birth_mandatory">जन्म की तिथि (दिनांक / महीना / बर्ष*</string>
+    <string name="calendar_icon">Calendar icon</string>
+    <string name="lbl_contact_number_mandatory">कांटेक्ट नंबर</string>
+    <string name="lbl_whats_app_number">वाट्सऐप नंबर</string>
+    <string name="lbl_permanent_address_mandatory"><b>स्थाई पता*</b> घर / फ्लैट / ब्लॉक नंबर</string>
+    <string name="lbl_delivery_address_mandatory"><b>डिलिवरी का पता*</b> घर / फ्लैट / ब्लॉक नंबर</string>
+
+    <string name="lbl_current_address_mandatory"><b>वर्तमान पता**</b> घर / फ्लैट / ब्लॉक नंबर</string>
+    <string name="lbl_street_locality">स्ट्रीट / कॉलोनी / इलाके का नाम *</string>
+    <string name="lbl_landmark">लैंडमार्क</string>
+    <string name="lbl_city_mandatory">शहर *</string>
+    <string name="lbl_pin_code_mandatory">पिनकोड*</string>
+
+    <string name="lbl_bank_details"><b>बैंक विवरण</b>(केवल खाते के ट्रांसफर  के लिए)</string>
+    <string name="lbl_account_number">खाता नंबर</string>
+    <string name="lbl_account_holder_name">खाताधारक का नाम</string>
+    <string name="lbl_account_holder">खाताधारक</string>
+
+    <string name="lbl_bank_name_and_branch">बैंक का नाम &amp; शाखा</string>
+    <string name="lbl_ifsc_code">IFSC कोड</string>
+    <string name="lbl_upload_cancelled_cheque">पासबुक / रद्द किये गये चेक की कॉपी अपलोड करें</string>
+    <string name="lbl_nominee_details"><b>नामांकन का विवरण </b>(बीमा उद्देश्य के लिए) </string>
+    <string name="lbl_name_of_nominee">नामांकित व्यक्ति का नाम</string>
+    <string name="lbl_mobile_number">मोबाइल नंबर</string>
+    <string name="lbl_email">ई-मेल</string>
+    <string name="lbl_address">पता</string>
+    <string name="lbl_relationship_with_you">आपसे रिश्ता</string>
+    <string name="lbl_accept_terms">मैंने वी - गार्ड रिश्ता लॉयल्टी  प्रोग्राम के <u><b> नियमों और शर्तों</b></u> को पूरी तरह से पढ़ा और समझा है</string>
+    <string name="lbl_terms_and_conditions_ul">नियम और शर्तें</string>
+    <string name="preview">प्रीव्यू</string>
+    <string name="agree">सहमत</string>
+    <string name="edit">संपादन/एडिट</string>
+    <string name="lbl_preferred_language">पसंदीदा भाषा</string>
+    <string name="lbl_state">राज्य</string>
+    <string name="lbl_type_of_account">खाते का प्रकार</string>
+    <string name="start">शुरू</string>
+    <string name="lbl_welcome">आपका स्वागत है</string>
+    <string name="lbl_login_or_register">जारी रखने के लिए लॉगिन या रजिस्टर करें</string>
+    <string name="mobile_icon">Mobile Icon</string>
+    <string name="lbl_registered_mobile_number_login">पंजीकृत मोबाइल नं / रिशता आईडी</string>
+    <string name="login_via_otp">OTP के साथ लॉगिन करें</string>
+    <string name="log_in">लॉग इन करें</string>
+    <string name="enter_registered_mobile_no_rishta_id">अपना रजिस्टर्ड मोबाइल नंबर या रिश्ता ऑय डी दर्ज़ करें </string>
+
+    <string name="number_of_scans">स्कैन संख्या</string>
+    <string name="scan_code">स्कैन कोड</string>
+    <string name="info_desk">जानकारी डेस्क</string>
+    <string name="welfare">कल्याण योजना</string>
+    <string name="what_s_new">नया क्या है</string>
+    <string name="raise_ticket">टिकट सबमिट करें</string>
+    <string name="scheem_offers">योजना / प्रस्ताव</string>
+    <string name="click_here_to_scan_a_unique_code">कोड को स्कैन करने के लिए यहां क्लिक करें</string>
+    <string name="paytm_transfer">पेटीएम ट्रांसफर</string>
+    <string name="e_gift_cards">इलेक्ट्रॉनिक गिफ्ट वाउचर</string>
+    <string name="update_kyc">केवाईसी अपडेट करें</string>
+    <string name="track_your_redemption">अपनी रिडेम्शॅन ट्रैक करें</string>
+    <string name="redeem_products">रिडीम प्रोडक्ट</string>
+    <string name="redeemed_points">रिडीम करे हुए पॉइंट्स</string>
+    <string name="one_point_one_inr">* 1 पॉइंट = 1 INR</string>
+    <string name="others">अन्य</string>
+    <string name="home_smallcase">होम </string>
+    <string name="proceed_to_cart">आगे बढ़ें</string>
+    <string name="points_earned">अर्जित पॉइंट्स</string>
+    <string name="product_wise_earning">उत्पाद अनुसार कमाई</string>
+    <string name="scheme_wise_earning">स्कीम अनुसार कमाई</string>
+    <string name="product_wise_offers">प्रोडक्ट अनुसार ऑफर</string>
+    <string name="v_guard_info">वी-गार्ड की जानकारी</string>
+    <string name="v_guard_product_catalog">वी-गार्ड प्रोडक्ट कैटेलॉग</string>
+    <string name="read_more">…और पढ़ें</string>
+    <string name="select_job_profession">अपने पेशे का चयन करें</string>
+    <string name="click_year_to_change">वर्ष का चयन करने के लिए वर्ष पर क्लिक करें</string>
+    <string name="enter_preffered_lang">अपनी पसंदीदा भाषा दर्ज करें</string>
+    <string name="select_gender">लिंग चुनें</string>
+    <string name="choose_dob">जन्म की तिथि (दिनांक / महीना / बर्ष*) दर्ज करें</string>
+    <string name="enter_contact_no">कांटेक्ट नंबर दर्ज करें</string>
+    <string name="please_enter_perm_address">स्थाई पता दर्ज करें</string>
+    <string name="please_enter_street">स्ट्रीट / कॉलोनी / इलाके का नाम दर्ज करें </string>
+    <string name="please_select_state">राज्य चुनें</string>
+    <string name="please_enter_pincode">पिनकोड</string>
+    <string name="go_to_unique_code_history">अद्वितीय कोड इतिहास पर जाएं</string>
+    <string name="lbl_update_your_selfie">अपनी सेल्फी अपडेट करें *</string>
+    <string name="update_aadhar_voter_id_dl_front">पहचान पत्र अपडेट करें (फ्रंट)*</string>
+    <string name="update_aadhar_voter_id_dl_back">पहचान पत्र अपडेट करें (बैक)*</string>
+    <string name="update_pan_number_manually">पैन नंबर को मैन्युअल रूप से अपडेट करें</string>
+    <string name="update_pan_card_back">पैन कार्ड (बैक) अपडेट करें</string>
+    <string name="update_pan_card_front">पैन कार्ड (फ्रंट) अपडेट करें</string>
+    <string name="update_aadhar_voter_id_dl_manually">पहचान प्रमाण को मैन्युअल रूप से अपडेट करें</string>
+    <string name="enter_points_to_be_redeemed">पॉइंट्स रिडीम करने की संख्या नीचे दर्ज करें</string>
+    <string name="choose_wallet">वॉलेट चुनें</string>
+    <string name="proceed">आगे बढ़ें</string>
+    <string name="bank_details">बैंक विवरण</string>
+    <string name="for_account_tranfer_only">(केवल खाते में ट्रांसफर के लिए)</string>
+    <string name="please_enter_points_toredeem">पॉइंट्स रिडीम करने की संख्या नीचे दर्ज करें</string>
+    <string name="help">मदद</string>
+    <string name="user">यूज़र</string>
+    <string name="alerts">अलर्ट</string>
+    <string name="please_agree_toterms">नियम और शर्तों से सहमत</string>
+    <string name="issue_type">समस्या का प्रकार</string>
+    <string name="description_remarks">विवरण / टिप्पणी</string>
+    <string name="select_ticket_type">टिकट का प्रकार चुनें</string>
+    <string name="upload_picture_optional">चित्र अपलोड करे (वैकल्पिक)</string>
+    <string name="select_issue">समस्या का प्रकार चुनें</string>
+    <string name="if_yes_please_mention_scheme_and_brand_name">यदि हाँ, तो कृपया ब्रांड और योजना के नाम का उल्लेख करें</string>
+    <string name="if_yes_what_you_liked_about_the_program">यदि हाँ, तो आपको कार्यक्रम के बारे में क्या पसंद आया</string>
+    <string name="annual_business_potential">वार्षिक व्यापार क्षमता*</string>
+    <string name="select_kyc_type">पहचान पत्र चुनें</string>
+    <string name="please_enter_curr_address">वर्तमान पता* दर्ज करें</string>
+    <string name="file_upload_issue">फ़ाइल अपलोड समस्या</string>
+    <string name="select_profession">अपने पेशे का चयन करें*</string>
+    <string name="select_marital_status">वैवाहिक स्थिति*</string>
+    <string name="please_click_your_selfie">अपनी सेल्फी अपडेट करें*</string>
+    <string name="upload_id_proof_front">पहचान पत्र अपडेट करें (फ्रंट)*</string>
+    <string name="upload_id_proof_back">पहचान पत्र अपडेट करें (बैक)*</string>
+    <string name="Gender">लिंग*</string>
+    <string name="date_of_birth">"जन्म की तिथि "</string>
+    <string name="contact_no">कांटेक्ट नंबर</string>
+    <string name="permanent_address">स्थाई पता</string>
+    <string name="enrolled_into_loyalty_scheme">पहले से किसी लॉयल्टी योजना में पंजीकृत हैं?</string>
+    <string name="name_of_the_scheme_brand">योजना / ब्रांड का नाम</string>
+    <string name="selfie">सेल्फी</string>
+    <string name="id_document">पहचान पत्र दस्तावेज़</string>
+    <string name="pan_card">पैन कार्ड</string>
+    <string name="account_no_optional">खाता नंबर</string>
+    <string name="bank">बैंक</string>
+    <string name="nominee_details">नामांकित व्यक्ति का विवरण</string>
+    <string name="nominee">नामांकित व्यक्ति</string>
+    <string name="mobile_no_">मोबाइल नं</string>
+    <string name="address">पता</string>
+    <string name="relation">" रिश्ता"</string>
+    <string name="edit_profile">प्रोफ़ाइल एडिट करें</string>
+    <string name="your_rewards">आपका पुरस्कार</string>
+    <string name="need_help">मदद की ज़रूरत है?</string>
+    <string name="evolve_help_center">\'Rishta\' Program Centre \n C/o Evolve Brands Pvt Ltd, \n Plot No. -249G \n AIHP Tower Wing-A \n Level-2, Udyog Vihar, \n Phase 4, Gurugram -122015 Harayana</string>
+    <string name="ccare_vguards_com">info@vguardRishta.com</string>
+    <string name="help_number">9717500011</string>
+    <string name="help_number_whatsapp">9818900011</string>
+    <string name="please_select_dist">जिला चुनें</string>
+    <string name="please_select_whats_app">व्हाट्सएप नंबर संपर्क नंबर के समान है?</string>
+    <string name="current_address">वर्तमान पता</string>
+    <string name="cancelled_cheque_copy">" निरसित चेक कॉपी"</string>
+    <string name="id_proof_front">पहचान पत्र अपडेट करें (फ्रंट)*</string>
+    <string name="id_proof_back">पहचान पत्र अपडेट करें (बैक)*</string>
+    <string name="id_proof_type">पहचान पत्र टाइप</string>
+    <string name="id_proof_no">पहचान पत्र नंबर</string>
+    <string name="pan_card_back">पैन कार्ड (बैक) अपडेट करें</string>
+    <string name="pan_card_front">पैन कार्ड (फ्रंट) अपडेट करें</string>
+    <string name="enter_code_here">कोड दर्ज करें</string>
+    <string name="enter_points">पॉइंट्स दर्ज करें</string>
+    <string name="please_enter_del_address">डिलिवरी का पता* दर्ज करें</string>
+    <string name="enter_un_for_otp_login">यूजरनाम डालें, OTP द्वारा लॉगिन के लिए</string>
+    <string name="lucky_bonus_points">लक्की बोनस पॉइंट्स</string>
+    <string name="view_e_card">ई- विज़िटिंग कार्ड देखें</string>
+    <string name="parts_description">भागों  का विवरण</string>
+    <string name="bonus_points">बोनस पॉइंट्स</string>
+    <string name="created_date">स्कैन की तारीख</string>
+    <string name="are_you_sure_logout">क्या आप वाकई लॉगआउट करना चाहते हैं?</string>
+    <string name="please_select_month_and_year">कृपया महीने और वर्ष का चयन करें</string>
+    <string name="please_enter_valid_sixteen_digit">कृपया मान्य 16 अंकों का कोड दर्ज करें</string>
+    <string name="select_bank">बैंक का नाम चुनें</string>
+    <string name="enter_points_to_be_redeemed_below">पॉइंट्स रिडीम करने की संख्या नीचे दर्ज करें</string>
+    <string name="please_enter_paytm_mobile_no">पेटीएम मोबाइल नंबर दर्ज करें</string>
+    <string name="preferred_language">पसंदीदा भाषा</string>
+    <string name="_is_what_s_app_contact_same_as_above">क्या आपका व्हाट्सएप नंबर मोबाइल नंबर के समान है?</string>
+    <string name="state">राज्य </string>
+    <string name="profession">पेशा</string>
+    <string name="marital_status">वैवाहिक स्थिति*</string>
+    <string name="already_enrolled_into_loyalty_scheme">क्या आप पहले से ही किसी लॉयल्टी योजना में पंजीकृत हैं?</string>
+    <string name="id_proof">पहचान पत्र</string>
+    <string name="points">पॉइंट्स</string>
+    <string name="sl_no">सीरीयल नम्बर</string>
+    <string name="scheme_points">स्कीम पॉइंट्स</string>
+    <string name="scheme_name">योजना का नाम</string>
+    <string name="scheme_period">योजना की अवधि</string>
+    <string name="registered_mobile_no">पंजीकृत मोबाइल नं।</string>
+    <string name="enter_registered_mobile_no">पंजीकृत मोबाइल नंबर दर्ज करें</string>
+    <string name="enter_valid_registered_mobile_no">मान्य पंजीकृत मोबाइल नंबर दर्ज करें</string>
+    <string name="enter_registered_mobile_no_to_continue">जारी रखने के लिए पंजीकृत मोबाइल नंबर दर्ज करें</string>
+    <string name="points_low_to_high">पॉइंट्स कम से ज्यादा</string>
+    <string name="points_high_to_low">पॉइंट्स ज्यादा से कम</string>
+    <string name="atoz">ए - जेड</string>
+    <string name="ztoa">जेड - ए</string>
+    <string name="base_points">बेस पॉइंट्स</string>
+    <string name="provide_description_in_the_box">बॉक्स में विवरण प्रदान करें</string>
+    <string name="frequently_asked_quetions_faq"><u> अक्सर पूछे जाने वाले प्रश्न</u> </string>
+    <string name="please_fill_your_bank_details">कृपया अपना बैंक विवरण प्रोफ़ाइल संपादित भाग मे अपडेट करें. आगे बढ़ने के लिए ठीक क्लिक करें</string>
+
+
+    <string name="select_sub_profession_category">उप-श्रेणी चुनें</string>
+    <string name="sub_profession_category">उप पेशा श्रेणी</string>
+    <string name="is_current_address_different">वर्तमान पता स्थायी पते के समान है?</string>
+    <string name="select_is_current_address_different"> कृपया चुनें कि वर्तमान पता स्थायी पते के समान है या नहीं</string>
+    <string name="please_enter_valid_whatsapp">मान्य व्हाट्सएप नंबर दर्ज करें</string>
+    <string name="coming_soon">जल्द आ रहा है</string>
+    <string name="active_scheme_offers">सक्रिय योजना / प्रस्ताव</string>
+    <string name="special_combo_offers">विशेष कॉम्बो प्रस्ताव</string>
+    <string name="please_fill_your_complete_bank_details">कृपया पूर्ण बैंक विवरण दर्ज करें</string>
+    <string name="fill_if_yes_what_you_liked_about_the_program">आपको कार्यक्रम के बारे में क्या पसंद आया</string>
+    <string name="fill_if_yes_please_mention_scheme_and_brand_name">कृपया ब्रांड और योजना के नाम का उल्लेख करें</string>
+    <string name="select_already_enrolled_into_loyalty_scheme">क्या आप पहले से ही किसी लॉयल्टी योजना में पंजीकृत हैं?</string>
+    <string name="other">अन्य</string>
+    <string name="please_enter_other_city">कृपया अन्य शहर का नाम दर्ज करें</string>
+    <string name="view_profile">प्रोफ़ाइल देखें</string>
+    <string name="extra_bonus_point">एक्स्ट्रा बोनस पॉइंट्स</string>
+    <string name="lucky_points">लक्की पॉइंट्स</string>
+    <string name="please_enter_pincode_to_get_state_and_dist">कृपया एक पिनकोड दर्ज करें और राज्य और जिला प्राप्त करने के लिए एक पिनकोड चुनें.</string>
+    <string name="please_select_shipping_address_home_or_other">डिलीवरी का पता चुनें होम या दूसरा</string>
+    <string name="all_category">सभी श्रेणी</string>
+    <string name="please_mention_your_annual_business_potential">वार्षिक व्यापार क्षमता*</string>
+    <string name="please_enter_id_no_manually">पहचान पत्र नंबर अपडेट करें</string>
+    <string name="enter_paytm_mobile_no_below">पेटीएम मोबाइल नंबर नीचे दर्ज करें</string>
+    <string name="in_">इन</string>
+    <string name="month">महीना</string>
+    <string name="year">वर्ष</string>
+    <string name="ticket_history">टिकट हिस्ट्री</string>
+    <string name="please_check_to_add_new_delivery_address">(कृपया नया वितरण पता दर्ज करने का चयन करें)</string>
+    <string name="uniquie_code_history">अद्वितीय कोड इतिहास</string>
+    <string name="combo_offers">कॉम्बो प्रस्ताव</string>
+    <string name="view_cart">कार्ट देखें</string>
+    <string name="visit_playstore">प्लेस्टोर पर जाएं</string>
+    <string name="notifications">नोटिफिकेशन्स</string>
+    <string name="contact_us_">संपर्क करें</string>
+    <string name="seconds">सेकंड</string>
+    <string name="please_fill_complete_nominee_details">कृपया अपना नामांकन विवरण पूरा करें</string>
+    <string name="edit_your_details_below">अपने विवरण संपादित करें</string>
+    <string name="remarks">टिप्पणी</string>
+
+    <string name="upload_scan_error_">स्कैनिंग एरर अपलोड करें</string>
+    <string name="click_here_to_report_error_scan">एरर स्कैन को अपलोड या पिक्चर लेने के लिए यँहा क्लिक करें</string>
+    <string name="enter_remarks">स्कैनिंग की समस्या लिखें</string>
+    <string name="please_capture_or_upload_invalid_coupon_picture">कृपया कूपन स्कैन करें या पिक्चर अपलोड करें</string>
+    <string name="qr_code">QR कोड*</string>
+    <string name="squ_details">एस के यू डिटेल्स*</string>
+    <string name="bill_details">बिल डिटेल्स*</string>
+    <string name="warranty_photo_mandatory">वॉरंटी फ़ोटो*</string>
+    <string name="selling_price">बिक्री मूल्य</string>
+    <string name="purchase_date_mandatory">खरीद दिनाँक*</string>
+    <string name="purchase_date">खरीद दिनाँक</string>
+    <string name="add_customer_details">कस्टमर की डिटेल्स ऐड करें</string>
+    <string name="contact_number">कांटेक्ट नम्बर*</string>
+    <string name="alternate_contact_number">अतिरिक्त कॉन्टेक्ट नम्बर</string>
+    <string name="dealer_name">डीलर का नाम</string>
+    <string name="dealer_address">डीलर का पता</string>
+    <string name="dealer_city">डीलर का शहर</string>
+    <string name="dealer_state">डीलर का प्रदेश</string>
+    <string name="dealer_pincode">डीलर पिन कोड*</string>
+    <string name="dealer_contact_no">डीलर कांटेक्ट नम्बर</string>
+    <string name="v_guard_customer_care_numbers">वी गॉर्ड कस्टमर केयर नम्बर</string>
+    <string name="airtel">एयरटेल</string>
+    <string name="charges_apply">(Cशुल्क लागू)</string>
+    <string name="toll_free">(टोल फ्री)</string>
+    <string name="v_guard_e_mail_id">वी गार्ड ईमेल आईडी</string>
+    <string name="customercare_vguard_in" translatable="false">customercare@vguard.in</string>
+    <string name="customerCareTollFree" translatable="false">1800 103 1300</string>
+    <string name="customerCareNoCharged" translatable="false">1860 180 3000</string>
+    <string name="v_guard_corporate_office">वी गार्ड कॉर्पोरेट ऑफिस</string>
+    <string name="rishta_program_centre_contact_details">रिश्ता प्रोग्राम सेंटर कांटेक्ट डिटेल्स</string>
+    <string name="referral_code">रेफ़रल कोड</string>
+    <string name="code">कोड</string>
+    <string name="referral">रेफ़रल </string>
+    <string name="share_this_code_to_get_instant_rewared_from_your_referrals">अपने रेफ़रल का उपहार पाने के लिए तुरंत कोड को शेयर करें!</string>
+    <string name="team_v_guard">टीम वी गार्ड</string>
+    <string name="share_code">कोड शेयर करें</string>
+    <string name="electrical_amp_plumbing_expert"><![CDATA[इलेक्ट्रिकल एंड प्लंबिंग एक्सपर्ट]]></string>
+    <string name="retailer">रिटेलर</string>
+    <string name="select_electrician_or_plumber">Sइलेक्ट्रीशियन या प्लम्बर का लॉगिन टाइप चुनें</string>
+    <string name="select_retailer_login_type">रिटेलर का लॉगिन टाइप चुनें.</string>
+    <string name="product_registration">प्रोडक्ट पंजीकरण</string>
+    <string name="store_firm_name">स्टोर/फर्म का नाम</string>
+    <string name="upload_front_facade">सामने से फ़ोटो अपलोड करें*</string>
+    <string name="gst_details">GST डिटेल्स*</string>
+    <string name="email_mandatory">ईमेल*</string>
+    <string name="gst_no">GST नम्बर*</string>
+    <string name="retailer_name">रिटेलर का नाम*</string>
+    <string name="what_is_that_one_gift_you_aspire_for">जिस एक उपहार की आप इच्छा रखते हैं*</string>
+    <string name="gst_photo">GST फ़ोटो</string>
+    <string name="do_you_have_gst_number">क्या आपके पास GST है??</string>
+    <string name="tier_club">क्लब</string>
+    <string name="total_club_points">टोटल क्लब पॉइंट्स</string>
+    <string name="excluding_scratch_card_and_points_before_1st_april">(स्क्रैच ओर 1 अप्रैल से पहले के पॉइंट्स छोड़कर)</string>
+    <string name="first_scan_date">पहले स्कैन का दिनाँक:</string>
+    <string name="first_scan_date_starts_from_1st_april_onwards">1 अप्रैल के बाद कि पहली स्कैन की दिनाँक से शुरू</string>
+    <string name="share_subject">यूज़र रेफ़रल कोड</string>
+    <string name="share_using">शेयर यूजिंग</string>
+    <string name="select_category_you_deal_in">"कैटेगिरी सिलेक्ट करें जिसमे आप डील करते हैं "</string>
+    <string name="pincode_optional">पिन कोड</string>
+    <string name="get_details">डिटेल्स प्राप्त करें</string>
+    <string name="dealer_district">डीलर का जिला</string>
+    <string name="cust_detail_not_found">कस्टमर की डिटेल्स उपलब्ध नही हैं मेनुअल भरें</string>
+    <string name="valid_coupon_please_proceed_to_prod_regi">वैध कूपन , प्रोडक्ट रजिस्ट्रेशन के लिए प्रेषित करें</string>
+    <string name="enter_selling_price">बिक्री मूल्य डाले</string>
+    <string name="capture_warranty_details">वारंटी डिटेल्स की पिक्चर ले</string>
+    <string name="capture_bill_details">बिल डिटेल्स की पिक्चर ले</string>
+    <string name="contact_number_optional">कॉन्टेक्ट नंबर</string>
+    <string name="warranty_detail_optional">वारण्टी डिटेल्स</string>
+    <string name="bill_details_optional">बिल डिटेल्स</string>
+    <string name="please_select_correct_category_from_list">"कृपया स्कैन किये गए कूपन की लिस्ट में से सही कैटेगिरी सेलेक्ट करें"</string>
+    <string name="enter_valid_alternate_contact_number">कृपया वैध अतिरिक्त कांटेक्ट नंबर डालें</string>
+    <string name="enter_valid_dealer_contact_number">डीलर का वैध कॉन्टेक्ट नंबर डालें</string>
+    <string name="select_user_type">कृपया यूज़र टाइप सेलेक्ट करें</string>
+    <string name="front_facade">सामने की तस्वीर</string>
+    <string name="enter_valid_dealer_pincode">डीलर का वैध पिन कोड डालें</string>
+    <string name="product_category">प्रोडक्ट कैटेगिरी</string>
+    <string name="your_account_is_not_active">आपका अकॉउंट एक्टिव नही है</string>
+    <string name="date_of_scan">स्कैन की डेट</string>
+    <string name="select_dealer_district">डीलर का डिस्ट्रिक्ट सेलेक्ट करें</string>
+    <string name="select_dealer_state">डीलर का प्रदेश सेलेक्ट करें</string>
+    <string name="enter_customer_address">कस्टमर का पता डालें</string>
+    <string name="enter_customer_city">कस्टमर का शहर डालें</string>
+    <string name="address_mandatory">पता*</string>
+
+    <string-array name="languages">
+        <item>भाषा</item>
+        <item>अंग्रेज़ी</item>
+        <item>हिन्दी</item>
+        <item>मराठी</item>
+        <item>तेलुगु</item>
+        <item>बंगाली</item>
+        <item>मलयालम</item>
+        <item>कन्नड़</item>
+                <item>तमिल</item>
+    </string-array>
+
+    <string-array name="select_state">
+        <item>राज्य चुनें*</item>
+    </string-array>
+    <string-array name="select_dist">
+        <item>जिला चुनें*</item>
+    </string-array>
+    <string-array name="select_city">
+        <item>शहर चुनें</item>
+    </string-array>
+
+    <string-array name="select_gender">
+        <item>लिंग चुनें*</item>
+        <item>पुरुष</item>
+        <item>महिला</item>
+        <item>अन्य</item>
+
+    </string-array>
+
+    <string-array name="account_type">
+        <item>खाते का प्रकार</item>
+        <item>करंट</item>
+        <item>बचत</item>
+    </string-array>
+
+
+    <string-array name="current_address_yes_no">
+        <item>चुनें</item>
+        <item>नहीं</item>
+        <item>हां</item>
+
+    </string-array>
+
+    <string-array name="whatsapp_yes_no">
+        <item>क्या आपका ये नंबर व्हाट्सप्प नंबर भी हैं ?</item>
+        <item>हां</item>
+        <item>नहीं</item>
+    </string-array>
+
+    <string-array name="profession">
+        <item>अपने पेशे का चयन करें</item>
+    </string-array>
+
+    <string-array name="sub_profession">
+        <item>चयन करें</item>
+    </string-array>
+
+    <string-array name="marital_status">
+        <item>वैवाहिक स्थिति*</item>
+        <item>विवाहित</item>
+        <item>अविवाहित</item>
+
+    </string-array>
+
+    <string-array name="already_enrolled_loyalty_scheme">
+        <item>क्या आप पहले से ही किसी लॉयल्टी योजना में पंजीकृत हैं?</item>
+        <item>हां</item>
+        <item>नहीं</item>
+
+    </string-array>
+</resources>

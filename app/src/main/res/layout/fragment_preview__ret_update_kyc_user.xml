@@ -1,0 +1,761 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/dp_24">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:fontFamily="@font/nunito"
+                        android:hint="@string/lbl_name_mandatory"
+                        android:inputType="textPersonName"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textColor="@color/view_state_color_custom"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etContactNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:fontFamily="@font/nunito"
+                        android:hint="@string/lbl_contact_number_mandatory"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textColor="@color/view_state_color_custom"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:layout_marginBottom="@dimen/dp_4"
+                    android:fontFamily="@font/nunito"
+                    android:text="@string/permanent_address"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/sp_16" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etPermanentAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:fontFamily="@font/nunito"
+                        android:hint="@string/lbl_permanent_address_mandatory"
+                        android:inputType="textPostalAddress"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textColor="@color/view_state_color_custom"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etStreetLocality"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:fontFamily="@font/nunito"
+                        android:hint="@string/lbl_street_locality"
+                        android:inputType="textPostalAddress"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textColor="@color/view_state_color_custom"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etLandmark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:fontFamily="@font/nunito"
+                        android:hint="@string/lbl_landmark"
+                        android:inputType="textPostalAddress"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textColor="@color/view_state_color_custom"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:fontFamily="@font/nunito"
+                        android:hint="@string/city"
+                        android:inputType="textPostalAddress"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textColor="@color/view_state_color_custom"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etDistrict"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:fontFamily="@font/nunito"
+                        android:hint="@string/district"
+                        android:inputType="textPostalAddress"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textColor="@color/view_state_color_custom"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:fontFamily="@font/nunito"
+                        android:hint="@string/lbl_state"
+                        android:inputType="number"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textColor="@color/view_state_color_custom"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etPinCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:fontFamily="@font/nunito"
+                        android:hint="@string/lbl_pin_code_mandatory"
+                        android:inputType="number"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textColor="@color/view_state_color_custom"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llCurrentAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    tools:visibility="visible">
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Subhead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_12"
+                        android:layout_marginBottom="@dimen/dp_4"
+                        android:fontFamily="@font/nunito"
+                        android:text="@string/current_address"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/sp_16" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_46"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:background="@drawable/base">
+
+                        <EditText
+                            android:id="@+id/etCurrentAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:enabled="false"
+                            android:fontFamily="@font/nunito"
+                            android:hint="@string/lbl_current_address_mandatory"
+                            android:textColor="@color/view_state_color_custom"
+                            android:inputType="textPostalAddress"
+                            android:padding="@dimen/dp_6"
+                            android:singleLine="true"
+                            android:textSize="@dimen/sp_16"
+                            tools:ignore="Autofill,LabelFor" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_46"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:background="@drawable/base">
+
+                        <EditText
+                            android:id="@+id/etCurrentStreetLocality"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:enabled="false"
+                            android:fontFamily="@font/nunito"
+                            android:hint="@string/lbl_street_locality"
+                            android:textColor="@color/view_state_color_custom"
+                            android:inputType="textPostalAddress"
+                            android:padding="@dimen/dp_6"
+                            android:singleLine="true"
+                            android:textSize="@dimen/sp_16"
+                            tools:ignore="Autofill,LabelFor" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_46"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:background="@drawable/base">
+
+                        <EditText
+                            android:id="@+id/etCurrentLandmark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:enabled="false"
+                            android:fontFamily="@font/nunito"
+                            android:hint="@string/lbl_landmark"
+                            android:inputType="textPostalAddress"
+                            android:textColor="@color/view_state_color_custom"
+                            android:padding="@dimen/dp_6"
+                            android:singleLine="true"
+                            android:textSize="@dimen/sp_16"
+                            tools:ignore="Autofill,LabelFor" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_46"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:background="@drawable/base">
+
+                        <EditText
+                            android:id="@+id/etCurrCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:enabled="false"
+                            android:fontFamily="@font/nunito"
+                            android:hint="@string/city"
+                            android:inputType="textPostalAddress"
+                            android:padding="@dimen/dp_6"
+                            android:singleLine="true"
+                            android:textColor="@color/view_state_color_custom"
+                            android:textSize="@dimen/sp_16"
+                            tools:ignore="Autofill,LabelFor" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_46"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:background="@drawable/base">
+
+                        <EditText
+                            android:id="@+id/etCurrDistrict"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:enabled="false"
+                            android:fontFamily="@font/nunito"
+                            android:hint="@string/district"
+                            android:inputType="textPostalAddress"
+                            android:padding="@dimen/dp_6"
+                            android:singleLine="true"
+                            android:textColor="@color/view_state_color_custom"
+                            android:textSize="@dimen/sp_16"
+                            tools:ignore="Autofill,LabelFor" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_46"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:background="@drawable/base">
+
+                        <EditText
+                            android:id="@+id/etCurrState"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:enabled="false"
+                            android:fontFamily="@font/nunito"
+                            android:hint="@string/lbl_state"
+                            android:inputType="number"
+                            android:padding="@dimen/dp_6"
+                            android:singleLine="true"
+                            android:textColor="@color/view_state_color_custom"
+                            android:textSize="@dimen/sp_16"
+                            tools:ignore="Autofill,LabelFor" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_46"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:background="@drawable/base">
+
+                        <EditText
+                            android:id="@+id/etCurrentPinCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:enabled="false"
+                            android:fontFamily="@font/nunito"
+                            android:textColor="@color/view_state_color_custom"
+                            android:hint="@string/lbl_pin_code_mandatory"
+                            android:inputType="number"
+                            android:padding="@dimen/dp_6"
+                            android:singleLine="true"
+                            android:textSize="@dimen/sp_16"
+                            tools:ignore="Autofill,LabelFor" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llIdFront"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvIdFront"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:fontFamily="@font/nunito"
+                        android:gravity="center|start"
+                        android:hint="@string/aadhar_card_front"
+                        android:paddingStart="@dimen/dp_8"
+                        android:paddingTop="@dimen/dp_4"
+                        android:paddingEnd="@dimen/dp_4"
+                        android:paddingBottom="@dimen/dp_4"
+                        android:singleLine="true"
+                        android:textColor="@color/secondary_text" />
+
+                    <ImageView
+                        android:id="@+id/ivIdFront"
+                        android:layout_width="@dimen/dp_46"
+                        android:layout_height="@dimen/dp_46"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/dp_8"
+                        android:contentDescription="@string/select_or_capture_chequebook"
+                        android:padding="@dimen/dp_6"
+                        android:src="@drawable/photo_camera" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llIdBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvIdBack"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:fontFamily="@font/nunito"
+                        android:gravity="center|start"
+                        android:hint="@string/addhar_card_back"
+                        android:paddingStart="@dimen/dp_8"
+                        android:paddingTop="@dimen/dp_4"
+                        android:paddingEnd="@dimen/dp_4"
+                        android:paddingBottom="@dimen/dp_4"
+                        android:singleLine="true"
+                        android:textColor="@color/secondary_text" />
+
+                    <ImageView
+                        android:id="@+id/ivIdBack"
+                        android:layout_width="@dimen/dp_46"
+                        android:layout_height="@dimen/dp_46"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/dp_8"
+                        android:contentDescription="@string/select_or_capture_chequebook"
+                        android:padding="@dimen/dp_6"
+                        android:src="@drawable/photo_camera" />
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etIdNoManualEntered"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:enabled="false"
+                        android:background="@null"
+                        android:fontFamily="@font/nunito"
+                        android:textColor="@color/view_state_color_custom"
+                        android:hint="@string/aadhar_card_no"
+                        android:inputType="number"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+               <!-- PAN SECTION-->
+                <LinearLayout
+                    android:id="@+id/llPanFront"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvPANFront"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:fontFamily="@font/nunito"
+                        android:gravity="center|start"
+                        android:hint="@string/pan_card_front"
+                        android:paddingStart="@dimen/dp_8"
+                        android:paddingTop="@dimen/dp_4"
+                        android:paddingEnd="@dimen/dp_4"
+                        android:paddingBottom="@dimen/dp_4"
+                        android:singleLine="true"
+                        android:textColor="@color/secondary_text" />
+
+                    <ImageView
+                        android:id="@+id/ivPANFront"
+                        android:layout_width="@dimen/dp_46"
+                        android:layout_height="@dimen/dp_46"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/dp_8"
+                        android:padding="@dimen/dp_6"
+                        android:src="@drawable/photo_camera" />
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etPanManualEntered"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:enabled="false"
+                        android:background="@null"
+                        android:hint="@string/pan_no"
+                        android:fontFamily="@font/nunito"
+                        android:textColor="@color/view_state_color_custom"
+                        android:inputType="number"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etHaveGst"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:enabled="false"
+                        android:fontFamily="@font/nunito"
+                        android:hint="@string/do_you_have_gst_number"
+                        android:inputType="textPostalAddress"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textColor="@color/view_state_color_custom"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/llGSTPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/base"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvGstPic"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:fontFamily="@font/nunito"
+                        android:gravity="center|start"
+                        android:hint="@string/gst_photo"
+                        android:paddingStart="@dimen/dp_8"
+                        android:paddingTop="@dimen/dp_4"
+                        android:paddingEnd="@dimen/dp_4"
+                        android:paddingBottom="@dimen/dp_4"
+                        android:singleLine="true"
+                        android:textColor="@color/secondary_text" />
+
+                    <ImageView
+                        android:id="@+id/ivGstPic"
+                        android:layout_width="@dimen/dp_46"
+                        android:layout_height="@dimen/dp_46"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/dp_8"
+                        android:contentDescription="@string/select_or_capture_chequebook"
+                        android:padding="@dimen/dp_6"
+                        android:src="@drawable/photo_camera" />
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tiGstNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:layout_marginBottom="@dimen/dp_130"
+                    android:background="@drawable/base">
+
+                    <EditText
+                        android:id="@+id/etGSTNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:fontFamily="@font/nunito"
+                        android:hint="@string/gst_no"
+                        android:enabled="false"
+                        android:textColor="@color/view_state_color_custom"
+                        android:inputType="number"
+                        android:padding="@dimen/dp_6"
+                        android:singleLine="true"
+                        android:textSize="@dimen/sp_16"
+                        tools:ignore="Autofill,LabelFor" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:background="@drawable/black_rectangle_1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/dp_32"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:background="@drawable/black_ripple"
+                android:elevation="@dimen/dp_10"
+                android:fontFamily="@font/nunito_extrabold"
+                android:gravity="center"
+                android:padding="@dimen/dp_8"
+                android:text="@string/edit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold"
+                android:translationZ="@dimen/dp_6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_8"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/dp_24"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:background="@drawable/transparent_ripple"
+                android:drawableEnd="@drawable/arrow"
+                android:drawablePadding="-24dp"
+                android:elevation="@dimen/dp_10"
+                android:fontFamily="@font/nunito_extrabold"
+                android:gravity="center"
+                android:padding="@dimen/dp_8"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14"
+                android:textStyle="bold"
+                android:translationZ="@dimen/dp_6" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

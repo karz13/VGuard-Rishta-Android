@@ -1,0 +1,563 @@
+<resources>
+    <string name="app_name">V-Guard Rishta</string>
+    <!--    <string name="ga_tracking_id" translatable="false">UA-40418155-2</string>-->
+    <string name="channel_id" translatable="false">Channel Id</string>
+    <string name="channel_name" translatable="false">Channel name</string>
+    <string name="please_wait">Please wait..</string>
+    <string name="enter_username">Enter UserName</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="invalidCredentials">Incorrect Username or password</string>
+    <string name="no_internet">No Internet Connection</string>
+    <string name="password">Password</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="points_redeemed">Points Redeemed</string>
+    <string name="points_balance">Points Balance</string>
+    <string name="profile">Profile</string>
+    <string name="redemption_history">Redemption History</string>
+    <string name="name">Name</string>
+    <string name="enter_code">Enter coupon code manually below</string>
+    <string name="error_barcode">Please scan or Enter barcode</string>
+    <string name="invalid_barcode">Invalid Barcode</string>
+    <string name="no_data">No Data</string>
+    <string name="coupon_code">Coupon Code</string>
+    <string name="district">District</string>
+    <string name="pincode">Pincode*</string>
+    <string name="update">There is a new version available in the Play store, Please update.</string>
+
+    <string name="lbl_forgot_password">Forgot Password</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="forgot_password_question">Forgot Password?</string>
+    <string name="login_with_otp">Login with OTP</string>
+    <string name="new_user_registration">New User Registration</string>
+    <string name="submit">Submit</string>
+    <string name="enter_otp">Enter One Time Password (OTP)</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_mobileNo">Enter Mobile No.</string>
+    <string name="select_state">Select State</string>
+    <string name="select_city">Select City</string>
+    <string name="select_district">Select District</string>
+    <string name="select">Select</string>
+    <string name="enter_valid_pincode">Enter Valid Pincode</string>
+    <string name="enter_valid_mobileNo">Enter Valid Mobile No.</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="description">Description</string>
+    <string name="city">City</string>
+    <string name="ifsc">IFSC Code</string>
+    <string name="pan_no">PAN No *</string>
+    <string name="pan_no_nonman">PAN No</string>
+
+    <string name="home_small_cap">Home</string>
+
+    <string name="redeem_points">Redeem Points</string>
+    <string name="bank_transfer">Instant Bank Transfer</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="whatsapp_no">WhatsApp No.</string>
+    <string name="email">Email</string>
+    <string name="next">Next</string>
+    <string name="enter_valid_mail">Enter Valid Mail</string>
+    <string name="select_idcard_type">Select ID proof Type</string>
+    <string name="select_action">Select Action</string>
+    <string name="select_from_gallery">Select photo from gallery</string>
+    <string name="capture_from_camera">Capture photo from camera</string>
+    <string name="file">File</string>
+    <string name="select_account_type">Select Account Type</string>
+    <string name="select_or_capture_chequebook">Capture ChequeBook Photo</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="age_below_18">Dob : 18 years age required</string>
+    <string name="problem_occurred">Problem occurred while handling request</string>
+    <string name="downloads_small">Downloads</string>
+    <string name="no_category_found">No Category Found</string>
+    <string name="view">View</string>
+    <string name="no_activity_found">No Activity Found to open this File</string>
+    <string name="all">All</string>
+    <string name="account_type">Account Type</string>
+    <string name="otp_not_received">OTP Not Received ?</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="maximum_otp_count">Resend OTP count exceeded.</string>
+    <string name="terms_and_conditions"> <u>Terms &amp; Conditions </u> </string>
+    <string name="you_won">You Won</string>
+    <string name="something_wrong">Something went wrong. Please contact support.</string>
+    <string name="call_to_get_otp">GET OTP VIA CALL</string>
+    <string name="please_accept_terms">Please accept terms and conditions.</string>
+    <string name="lbl_new_user_registration">New User Registration</string>
+    <string name="app_logo">App Logo</string>
+    <string name="lbl_select_job_profession">1. Please select your \'Job Profession\'</string>
+    <string name="influencer">Influencer</string>
+    <string name="lbl_enter_mobile_number">2. Enter your mobile number to get OTP</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="or">or</string>
+    <string name="powered_by_v_guard">Powered by V-GUARD</string>
+    <string name="lbl_otp_through_phone_call">Click Here to get OTP\nthrough phone call</string>
+    <string name="call">call</string>
+    <string name="enter_your_mobile_number">Enter your mobile number</string>
+    <string name="lbl_otp_verification">OTP Verification</string>
+    <string name="enter_otp_description">Please enter the 4-digit OTP\nreceived through SMS/IVR using\nmobile no. </string>
+    <string name="new_user">New User</string>
+    <string name="rishta_id">Rishta ID</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="user_image">User Image</string>
+    <string name="arrow_down">Arrow Down</string>
+    <string name="lbl_referral_code">Referral Code (if any)</string>
+    <string name="lbl_name_of_referee">Name of Referee</string>
+    <string name="lbl_name_mandatory">Name*</string>
+    <string name="lbl_gender_mandatory">Gender*</string>
+    <string name="lbl_date_of_birth_mandatory">Date of Birth DD/MM/YYYY*</string>
+    <string name="calendar_icon">Calendar icon</string>
+    <string name="lbl_contact_number_mandatory">Contact Number*</string>
+    <string name="lbl_whats_app_number">WhatsApp Number</string>
+    <string name="lbl_permanent_address_mandatory"><b>Permanent Address*</b> House/Flat/Block No.</string>
+    <string name="lbl_delivery_address_mandatory"><b>Delivery Address*</b> House/Flat/Block No.</string>
+    <string name="lbl_current_address_mandatory"><b>Current Address*</b> House/Flat/Block No.</string>
+    <string name="lbl_street_locality">Street/Colony/Locality Name*</string>
+    <string name="lbl_landmark">Landmark</string>
+    <string name="lbl_city_mandatory">City*</string>
+    <string name="lbl_pin_code_mandatory">Pin Code*</string>
+    <string name="lbl_bank_details"><b>Bank Details</b> (for A/C transfer only)</string>
+    <string name="lbl_account_number">Account Number</string>
+    <string name="lbl_account_holder_name">Account Holder Name</string>
+    <string name="lbl_account_holder">Account Holder</string>
+
+    <string name="lbl_bank_name_and_branch">Bank Name &amp; Branch</string>
+    <string name="lbl_ifsc_code">IFSC Code</string>
+    <string name="lbl_upload_cancelled_cheque">Upload Passbook/Cancelled Cheque Copy</string>
+    <string name="lbl_nominee_details"><b>Nominee Details</b> (for Insurance purpose)</string>
+    <string name="lbl_name_of_nominee">Name of Nominee</string>
+    <string name="lbl_mobile_number">Mobile Number</string>
+    <string name="lbl_email">E-mail</string>
+    <string name="lbl_address">Address</string>
+    <string name="lbl_relationship_with_you">Relationship with you</string>
+    <string name="lbl_accept_terms">I have read &amp; fully understood the <u> <b> terms and conditions </b> </u>  of V-Guard Rishta Loyalty Program and abide to follow them.</string>
+    <string name="lbl_terms_and_conditions_ul">I agree to Terms And Conditions</string>
+    <string name="preview">Preview</string>
+    <string name="agree">Agree</string>
+    <string name="edit">Edit</string>
+    <string name="lbl_preferred_language">Preferred Language</string>
+    <string name="lbl_state">State</string>
+    <string name="lbl_type_of_account">Type of Account</string>
+    <string name="start">Start</string>
+    <string name="lbl_welcome">Welcome!</string>
+    <string name="lbl_login_or_register">Login or register to continue</string>
+    <string name="mobile_icon">Mobile Icon</string>
+    <string name="lbl_registered_mobile_number_login">Registered Mobile No./Rishta ID</string>
+    <string name="login_via_otp">Login via OTP</string>
+    <string name="log_in">Log In</string>
+    <string name="enter_registered_mobile_no_rishta_id">Please  enter your registered\nMobile No./Rishta ID</string>
+
+
+    <string name="number_of_scans">Number Of Scans</string>
+    <string name="scan_code">Scan Code</string>
+    <string name="info_desk">Info Desk</string>
+    <string name="welfare">Welfare</string>
+    <string name="what_s_new">What\'s New</string>
+    <string name="raise_ticket">Raise Ticket</string>
+    <string name="scheem_offers">Scheme/Offers</string>
+    <string name="click_here_to_scan_a_unique_code">Click here to scan a unique code</string>
+    <string name="paytm_transfer">Paytm Transfer</string>
+    <string name="e_gift_cards">Electronic Gift Voucher</string>
+    <string name="update_kyc">Update KYC</string>
+    <string name="update_pan">Update PAN</string>
+    <string name="track_your_redemption">Track Your Redemption</string>
+    <string name="redeem_products">Redeem Products</string>
+    <string name="redeemed_points">Redeemed Points</string>
+    <string name="one_point_one_inr">* 1 Point = 1 INR</string>
+    <string name="one_point_one_inr_aircooler">* 1 star = 50 paisa</string>
+    <string name="others">Others</string>
+    <string name="home_smallcase">Home</string>
+    <string name="proceed_to_cart">Proceed to Cart</string>
+    <string name="points_earned">Points Earned</string>
+    <string name="product_wise_earning">Product Wise Earning</string>
+    <string name="scheme_wise_earning">Scheme Wise Earning</string>
+    <string name="product_wise_offers">Product Wise Offers</string>
+    <string name="v_guard_info">V-Guard Info</string>
+    <string name="v_guard_product_catalog">V-Guard Product Catalogue</string>
+    <string name="read_more">…Read More</string>
+    <string name="select_job_profession">Please Select Job Profession</string>
+    <string name="click_year_to_change">Click on year to select year</string>
+    <string name="enter_preffered_lang">Please enter your preferred language.</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="choose_dob">Please fill date of birth</string>
+    <string name="enter_contact_no">Please enter contact number</string>
+    <string name="mobile_validation1">Sorry! Please fill the correct customer details</string>
+    <string name="please_enter_perm_address">Please enter your permanent address</string>
+    <string name="please_enter_street">Please enter street , colony or locality name</string>
+    <string name="please_select_state">Please select state</string>
+    <string name="please_enter_pincode">Please enter your pincode</string>
+    <string name="go_to_unique_code_history">Go to unique code history</string>
+    <string name="lbl_update_your_selfie">Update your selfie*</string>
+    <string name="update_aadhar_voter_id_dl_front">Update Id Proof (Front)*</string>
+    <string name="update_aadhar_voter_id_dl_back">Update Id Proof (Back)*</string>
+    <string name="update_pan_number_manually">Update PAN Number manually*</string>
+    <string name="update_pan_number_manually_non_man">Update PAN Number manually</string>
+    <string name="update_pan_card_back">Update Pan Card(Back)</string>
+    <string name="update_pan_card_front">Update Pan Card(Front)*</string>
+    <string name="update_pan_card_front_non_man">Update Pan Card(Front)</string>
+    <string name="update_aadhar_voter_id_dl_manually">Update Id No manually*</string>
+    <string name="enter_points_to_be_redeemed">Enter Points to be redeemed</string>
+    <string name="choose_wallet">Choose Wallet</string>
+    <string name="proceed">Proceed</string>
+    <string name="bank_details">Bank Details</string>
+    <string name="for_account_tranfer_only">(for account transfer only)</string>
+    <string name="please_enter_points_toredeem">Please enter points to redeem</string>
+    <string name="help">Help</string>
+    <string name="user">User</string>
+    <string name="alerts">Alerts</string>
+    <string name="please_agree_toterms">Please agree to terms and conditions</string>
+    <string name="issue_type">Issue Type</string>
+    <string name="description_remarks">Description/Remarks</string>
+    <string name="select_ticket_type">Select issue type</string>
+    <string name="upload_picture_optional">Upload Picture (optional)</string>
+    <string name="select_issue">Please select issue type</string>
+    <string name="if_yes_please_mention_scheme_and_brand_name">If yes, please mention scheme and brand name</string>
+    <string name="if_yes_what_you_liked_about_the_program">If yes, what you liked about the program</string>
+    <string name="annual_business_potential">Annual business potential*</string>
+    <string name="select_kyc_type">Select Id Proof</string>
+    <string name="please_enter_curr_address">Please enter your current address</string>
+    <string name="file_upload_issue">File upload issue</string>
+    <string name="select_profession">Select your profession*</string>
+    <string name="select_marital_status">Select Marital Status</string>
+    <string name="please_click_your_selfie">Please upload your selfie picture</string>
+    <string name="upload_id_proof_front">Please upload id proof front picture</string>
+    <string name="upload_id_proof_back">Please upload id proof back picture</string>
+    <string name="upload_pan_card_front">Please upload PAN card front picture</string>
+
+    <string name="Gender">Gender*</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="contact_no">Contact No</string>
+    <string name="permanent_address">Permanent Address</string>
+    <string name="enrolled_into_loyalty_scheme">Enrolled into loyalty scheme</string>
+    <string name="name_of_the_scheme_brand">Name of the scheme/brand</string>
+    <string name="selfie">Selfie</string>
+    <string name="id_document">ID Document</string>
+    <string name="pan_card">Pan Card</string>
+    <string name="account_no_optional">Account No</string>
+    <string name="bank">Bank</string>
+    <string name="nominee_details">Nominee Details</string>
+    <string name="nominee">Nominee</string>
+    <string name="mobile_no_">Mobile No</string>
+    <string name="address">Address</string>
+    <string name="relation">Relation</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="your_rewards">Your Rewards</string>
+    <string name="need_help">Need Help?</string>
+    <string name="evolve_help_center">\'Rishta\' Program Centre \n C/o Evolve Brands Pvt Ltd, \n Plot No. -249G \n AIHP Tower Wing-A \n Level-2, Udyog Vihar, \n Phase 4, Gurugram -122015 Harayana</string>
+    <string name="ccare_vguards_com">info@vguardrishta.com</string>
+    <string name="help_number">9717500011</string>
+    <string name="help_number_whatsapp">9818900011</string>
+    <string name="please_select_dist">Please select district</string>
+    <string name="please_select_whats_app">Please specify your WhatsApp no same or not..</string>
+    <string name="current_address">Current Address</string>
+    <string name="cancelled_cheque_copy">Cancelled cheque copy</string>
+    <string name="id_proof_front">Id Proof* (Front)</string>
+    <string name="id_proof_back">Id Proof* (Back)</string>
+    <string name="id_proof_type">ID Proof type</string>
+    <string name="id_proof_no">Id Proof No.</string>
+    <string name="pan_card_back">Pan Card Back</string>
+    <string name="pan_card_front">Pan card front*</string>
+    <string name="enter_code_here">Enter Code</string>
+    <string name="enter_points">Enter Points</string>
+    <string name="enter_stars">Enter Stars</string>
+    <string name="please_enter_del_address">Please enter delivery address</string>
+    <string name="enter_un_for_otp_login">Enter a username , for otp login</string>
+    <string name="lucky_bonus_points">Lucky Bonus Points</string>
+    <string name="view_e_card">View E-Visiting Card</string>
+    <string name="parts_description">Material Description</string>
+    <string name="bonus_points">Bonus Points</string>
+    <string name="created_date">Created Date</string>
+    <string name="are_you_sure_logout">Are you sure you want to logout ?</string>
+    <string name="please_select_month_and_year">Please select month and year</string>
+    <string name="please_enter_valid_sixteen_digit">Please enter valid 16 character barcode.</string>
+    <string name="select_bank">Select Bank Name</string>
+    <string name="please_enter_pin">Please Enter 4 Digits PIN</string>
+    <string name="enter_points_to_be_redeemed_below">Enter Points to be redeemed below</string>
+    <string name="enter_stars_to_be_redeemed_below">Enter Stars to be redeemed below</string>
+    <string name="please_enter_paytm_mobile_no">Please enter your paytm mobile number.</string>
+    <string name="preferred_language">Preferred Language</string>
+    <string name="_is_what_s_app_contact_same_as_above">Is What\'s app contact same as above?</string>
+    <string name="state">State</string>
+    <string name="profession">Profession</string>
+    <string name="marital_status">Marital Status*</string>
+    <string name="already_enrolled_into_loyalty_scheme">Already enrolled into loyalty scheme?</string>
+    <string name="id_proof">Id Proof</string>
+    <string name="points">Points</string>
+    <string name="sl_no">SL. No.</string>
+    <string name="scheme_points">Scheme Points</string>
+    <string name="scheme_name">Scheme Name</string>
+    <string name="scheme_period">Scheme Period</string>
+    <string name="registered_mobile_no">Registered Mobile No.</string>
+    <string name="enter_registered_mobile_no">Enter registered mobile no.</string>
+    <string name="enter_valid_registered_mobile_no">Enter valid registered mobile no.</string>
+    <string name="enter_registered_mobile_no_to_continue">Enter registered mobile number to continue</string>
+    <string name="points_low_to_high">Points low to high</string>
+    <string name="points_high_to_low">Points high to low</string>
+    <string name="atoz">A - Z</string>
+    <string name="ztoa">Z - A</string>
+    <string name="base_points">Base Points</string>
+    <string name="provide_description_in_the_box">Provide description in the box</string>
+    <string name="frequently_asked_quetions_faq"><u> Frequently Asked Questions (FAQ\'s) </u> </string>
+    <string name="please_fill_your_bank_details">Please update your bank details in update bank section. Accept to proceed.</string>
+    <string name="select_sub_profession_category">Select Sub Category</string>
+    <string name="sub_profession_category">Sub Profession Category</string>
+    <string name="is_current_address_different">Current address  same as permanent address?</string>
+    <string name="select_is_current_address_different">Select current address same as permanent address or not</string>
+    <string name="please_enter_valid_whatsapp">Please enter valid WhatsApp contact no.</string>
+    <string name="coming_soon">Coming soon</string>
+    <string name="active_scheme_offers">Active Scheme / Offers</string>
+    <string name="special_combo_offers">Special Combo Offers</string>
+    <string name="please_fill_your_complete_bank_details">Please fill your complete bank details.</string>
+    <string name="fill_if_yes_what_you_liked_about_the_program">Mention what you liked about the program.</string>
+    <string name="fill_if_yes_please_mention_scheme_and_brand_name">Please mention scheme and brand name</string>
+    <string name="select_already_enrolled_into_loyalty_scheme">Select already enrolled into loyalty scheme.</string>
+    <string name="other">Other</string>
+    <string name="please_enter_other_city">Please enter other city name</string>
+    <string name="extra_bonus_point">Extra Bonus Points</string>
+    <string name="lucky_points">Lucky Points</string>
+    <string name="please_enter_pincode_to_get_state_and_dist">Please enter a pincode and select a pincode to get state and district.</string>
+    <string name="please_select_shipping_address_home_or_other">Please select shipping address, Home or other</string>
+    <string name="alpha" translatable="false">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="all_category">All Category</string>
+    <string name="please_mention_your_annual_business_potential">Please mention your annual business potential</string>
+    <string name="please_enter_id_no_manually">Please enter your ID No manually</string>
+    <string name="enter_paytm_mobile_no_below">Enter paytm mobile No. below</string>
+    <string name="in_">in</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="ticket_history">Ticket History</string>
+    <string name="please_check_to_add_new_delivery_address">(Please Check to add new delivery address)</string>
+    <string name="uniquie_code_history">Unique Code History</string>
+    <string name="combo_offers">Combo Offers</string>
+    <string name="view_cart">View Cart</string>
+    <string name="visit_playstore">Visit PlayStore</string>
+    <string name="notifications">Notifications</string>
+    <string name="contact_us_">Contact Us</string>
+    <string name="view_profile">View Profile</string>
+    <string name="seconds">seconds.</string>
+    <string name="please_fill_complete_nominee_details">Please fill complete nominee details.</string>
+    <string name="edit_your_details_below">Edit your details below</string>
+    <string name="remarks">Remarks</string>
+
+    <string name="upload_scan_error_">Upload Scanning Error</string>
+    <string name="click_here_to_report_error_scan">Click here to capture or upload coupon picture</string>
+    <string name="enter_remarks">Please enter remarks</string>
+    <string name="please_capture_or_upload_invalid_coupon_picture">Please capture or upload coupon picture.</string>
+    <string name="qr_code">QR Code*</string>
+    <string name="squ_details">SKU Details*</string>
+    <string name="bill_details">Bill Details*</string>
+    <string name="warranty_photo_mandatory">Warranty Photo*</string>
+    <string name="warranty_photo">Warranty Photo</string>
+    <string name="selling_price">Selling Price</string>
+    <string name="purchase_date_mandatory">Purchase Date*</string>
+    <string name="purchase_date">Purchase Date</string>
+    <string name="add_customer_details">Add Customer Details</string>
+    <string name="contact_number">Contact Number*</string>
+    <string name="alternate_contact_number">Alternate contact number</string>
+    <string name="dealer_name">Dealer name</string>
+    <string name="dealer_address">Dealer address</string>
+    <string name="dealer_city">Dealer city*</string>
+    <string name="dealer_state">Dealer state</string>
+    <string name="dealer_pincode">Dealer pincode*</string>
+    <string name="dealer_contact_no">Dealer contact number</string>
+    <string name="v_guard_customer_care_numbers">V-Guard customer care numbers</string>
+    <string name="airtel">Airtel</string>
+    <string name="charges_apply">(Charges Apply)</string>
+    <string name="toll_free">(Toll Free)</string>
+    <string name="v_guard_e_mail_id">V-Guard E Mail ID</string>
+    <string name="customercare_vguard_in" translatable="false">customercare@vguard.in</string>
+    <string name="customerCareTollFree" translatable="false">1800 103 1300</string>
+    <string name="customerCareNoCharged" translatable="false">1860 180 3000</string>
+    <string name="v_guard_corporate_office">V-Guard corporate office</string>
+    <string name="rishta_program_centre_contact_details">Rishta Program Centre Contact Details</string>
+    <string name="referral_code">Referral code</string>
+    <string name="code">CODE</string>
+    <string name="referral">Referral</string>
+    <string name="share_this_code_to_get_instant_rewared_from_your_referrals">Share this code to get instant reward from your referrals!</string>
+    <string name="team_v_guard">Team V-GUARD</string>
+    <string name="share_code">Share code</string>
+    <string name="electrical_amp_plumbing_expert"><![CDATA[Electrical & Plumbing Expert]]></string>
+    <string name="retailer">Retailer</string>
+    <string name="select_electrician_or_plumber">Select Electrician or Plumber login type</string>
+    <string name="select_retailer_login_type">Select Retailer login type.</string>
+    <string name="product_registration">Product Registration</string>
+    <string name="store_firm_name">Store/Firm name</string>
+    <string name="upload_front_facade">Upload front facade*</string>
+    <string name="invalidshowScratchCard_barcode">Invalid Bar Code</string>
+
+    <string name="gst_details">GST Details*</string>
+    <string name="email_mandatory">Email*</string>
+    <string name="gst_no">GST No*</string>
+    <string name="retailer_name">Retailer Name*</string>
+    <string name="what_is_that_one_gift_you_aspire_for">What is that one gift you aspire for*</string>
+    <string name="gst_photo">GST Photo</string>
+    <string name="do_you_have_gst_number">Do you have GST number?</string>
+    <string name="tier_club">Club</string>
+    <string name="total_club_points">Total Club Points</string>
+    <string name="excluding_scratch_card_and_points_before_1st_april">(Excluding scratch card and points before 1st April)</string>
+    <string name="first_scan_date">Fist scan date:</string>
+    <string name="first_scan_date_starts_from_1st_april_onwards">First scan date starts from 1st April onwards</string>
+    <string name="share_subject">User referral code</string>
+    <string name="share_using">Share using</string>
+    <string name="select_category_you_deal_in">"Select category you deal in "</string>
+    <string name="update_profile">Update profile</string>
+    <string name="club_benefits">Club benefits</string>
+    <string name="club_points">Club Points</string>
+    <string name="pincode_optional">Pincode</string>
+    <string name="get_details">Get Details</string>
+    <string name="dealer_district">Dealer District</string>
+    <string name="cust_detail_not_found">Customer details not available, Please fill manually</string>
+    <string name="valid_coupon_please_proceed_to_prod_regi">Valid coupon , Proceed to product registration.</string>
+    <string name="enter_selling_price">Enter selling price</string>
+    <string name="capture_warranty_details">Capture warranty details picture</string>
+    <string name="capture_bill_details">Capture bill details picture</string>
+    <string name="contact_number_optional">Contact Number</string>
+    <string name="warranty_detail_optional">Warranty Details</string>
+    <string name="bill_details_optional">Bill details</string>
+    <string name="please_select_correct_category_from_list">"Please select correct category from list. Scanned/Entered coupon code is for "</string>
+    <string name="enter_valid_alternate_contact_number">Enter valid alternate contact number</string>
+    <string name="enter_valid_dealer_contact_number">Enter valid dealer contact number</string>
+
+    <string name="select_user_type">Please select user type</string>
+    <string name="front_facade">Front Facade</string>
+    <string name="enter_valid_dealer_pincode">Enter valid dealer pincode</string>
+    <string name="product_category">Product Category</string>
+    <string name="your_account_is_not_active">Your account is not active</string>
+    <string name="date_of_scan">Date of scan</string>
+    <string name="select_dealer_district">Select Dealer District</string>
+    <string name="select_dealer_state">Select Dealer State</string>
+    <string name="enter_customer_address">Enter customer address</string>
+    <string name="enter_customer_city">Enter customer city</string>
+    <string name="address_mandatory">Address*</string>
+    <string name="address_non_mandatory">Address</string>
+    <string name="daily_winner"><u>Daily Winner</u></string>
+    <string name="date">Date</string>
+    <string name="enter_dealer_city">Enter Dealer City</string>
+    <string name="air_cooler">Air Cooler</string>
+    <string name="scheme_details">Scheme Details</string>
+    <string name="star_redeemed">Star Redeemed</string>
+    <string name="star_balance">Star Balance</string>
+    <string name="redeem_stars">Redeem Stars</string>
+    <string name="stars">Stars</string>
+    <string name="product_serial_number">Enter product serial number manually</string>
+    <string name="earned_scheme_points">Congratulations! You have won extra %1$s points. Now enjoy %2$s points after every 24th scan in the march month scheme</string>
+    <string name="scan_more">Scan more, earn more. Now scan 24 units to get extra benefit on your every scan</string>
+    <string name="click_here_to_check_video">Click here to check video</string>
+    <string name="electrician_plumber_technician"><![CDATA[Electrician, Plumber & Service Engineer]]></string>
+    <string name="click_here_to_sacn_more">Click here to scan more</string>
+    <string name="lbl_outlet_name_mandatory">Outlet Name*</string>
+    <string name="please_enter_valid_aadhar_no">Please enter valid aadhar no</string>
+    <string name="please_enter_valid_pan_no">Please enter valid pan no</string>
+
+    <string name="please_enter_pannumber">Please enter PAN number </string>
+
+    <string name="enter_mandatory_fields">Please enter the mandatory fields</string>
+    <string name="do_you_have_gst_no">Do you have GST No?</string>
+    <string name="aadhar_card_front">Aadhar card* (Front)</string>
+    <string name="addhar_card_back">Addhar Card* (Back)</string>
+    <string name="aadhar_card_no">Aadhar card no</string>
+    <string name="please_enter_gst_no">Please enter GST no</string>
+    <string name="valid_gst_no">Please enter valid GST No</string>
+    <string name="upload_gst_photo">Please upload GST photo</string>
+    <string name="ac_service_engineer">AC Service Engineer</string>
+    <string name="electrician_and_plumber"><![CDATA[Electricians & Plumbers]]></string>
+    <string name="update_bank">Update Bank</string>
+    <string name="please_upload_cheque">Please upload  cheque image</string>
+    <string name="please_enter_valid_ifcsc">Please enter IFCSC code</string>
+    <string name="please_enter_valid_ifcsc2">IFCSC code should be 11 digits</string>
+    <string name="please_enter_bank_name">Please enter bank name</string>
+    <string name="please_enter_bank_aacounttype">Please  enter bank account type</string>
+    <string name="please_enter_account_holder_name">Please enter bank account holder name</string>
+    <string name="please_enter_bank_account_number">Please enter bank  account number</string>
+    <string name="select_usertype_ac">Please select the Ac service engineer type login</string>
+    <string name="select_usertype_plumber">Please select the Electrician/Plumber type login</string>
+    <string name="select_usertype_retailer">Please select the Retailer type login</string>
+    <string name="email_mandatory2">Please enter the customer email id to process the digital warranty.</string>
+    <string name="tds_deducted">TDS Deducted</string>
+    <string name="tds_certificate">TDS Certificate</string>
+    <string name="select_ay">Select Accessment Year</string>
+    <string name="tds_statement">TDS Statement</string>
+    <string name="select_month">Select Month</string>
+    <string name="red_date">Red Date</string>
+    <string name="red_amt">Red Amt</string>
+    <string name="tds_amt">TDS Amt</string>
+    <string name="tds_perc">TDS %</string>
+    <string name="select_fiscal_year">Select Fiscal Year</string>
+    <string name="material_code">Mat Code</string>
+    <string name="location_is_disabled">Location is Disabled, Please enable the Location</string>
+    <string name="enable">Enable</string>
+    <string name="lbl_current_address_mandatory_ret"><b>Shop address*</b> House/Flat/Block No.</string>
+    <string name="is_shop_address_different">Shop address same as permanent address?</string>
+    <string name="select_dealer_category">Please select dealer category</string>
+    <string name="engagement">Engagement</string>
+    <string name="points_earnedn">Points Earned</string>
+    <string name="usp_scheme_points">DUPS Scheme Points</string>
+
+    <string-array name="languages">
+        <item>Language</item>
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Marathi</item>
+        <item>Telugu</item>
+        <item>Bengali</item>
+        <item>Malayalam</item>
+        <item>Kannada</item>
+
+        <item>Tamil</item>
+
+    </string-array>
+
+    <string-array name="select_state">
+        <item>Select State</item>
+    </string-array>
+    <string-array name="select_dist">
+        <item>Select District</item>
+    </string-array>
+    <string-array name="select_city">
+        <item>Select City</item>
+    </string-array>
+
+    <string-array name="select_gender">
+        <item>Select Gender*</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+
+    </string-array>
+
+    <string-array name="account_type">
+        <item>Type of Account</item>
+        <item>Current</item>
+        <item>Saving</item>
+    </string-array>
+
+
+    <string-array name="current_address_yes_no">
+        <item>Select </item>
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+
+    <string-array name="whatsapp_yes_no">
+        <item>Select WhatsApp contact same as above?</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="profession">
+        <item>Select Profession</item>
+    </string-array>
+
+    <string-array name="sub_profession">
+        <item>Select Sub Category</item>
+    </string-array>
+
+    <string-array name="marital_status">
+        <item>Select Marital Status*</item>
+        <item>Married</item>
+        <item>Unmarried</item>
+
+    </string-array>
+
+    <string-array name="already_enrolled_loyalty_scheme">
+        <item>Select already enrolled into loyalty scheme?</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+</resources>

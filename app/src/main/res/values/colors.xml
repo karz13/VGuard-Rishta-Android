@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F0C300</color>
+    <color name="colorPrimaryDark">#F0C300</color>
+    <color name="primary_light">#f9e799</color>
+    <color name="colorAccent">#2cb0e1</color>
+    <color name="primary_text">#212121</color>
+    <color name="text">#5C5B5B</color>
+    <color name="secondary_text">#757575</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000104</color>
+    <color name="red">#FF0000</color>
+
+    <color name="coupon_page">#7798e9</color>
+    <color name="grey_light">#BDBDBD</color>
+    <color name="activity_bg_color">#FFFFFF</color>
+    <color name="yellow">#F0C300</color>
+    <color name="transparent_white">#00FFFFFF</color>
+    <color name="custom_black">#000104</color>
+    <!--grey-->
+    <color name="grey">#9E9E9E</color>
+    <color name="grey_400">#BDBDBD</color>
+
+    <color name="login_box_divider">#B7BDBDBD</color>
+    <color name="blue">#3F51B5</color>
+
+    <color name="white_translucent">#70ffffff</color>
+
+
+</resources>

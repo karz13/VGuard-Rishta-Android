@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:nestedScrollingEnabled="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.tfl.vguardrishta.ui.components.vguard.common.CustomToolbar
+                android:id="@+id/customToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentInsetStart="0dp"
+                android:contentInsetLeft="0dp"
+                android:contentInsetEnd="0dp"
+                android:contentInsetRight="0dp"
+                app:contentInsetEnd="0dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetRight="0dp"
+                app:contentInsetStart="0dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="@dimen/dp_10"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <!--        UpdateBank-->
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Subhead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_12"
+                        android:layout_marginBottom="@dimen/dp_4"
+                        android:fontFamily="@font/nunito"
+                        android:text="@string/lbl_bank_details"
+                        android:textColor="@color/text"
+                        android:textSize="@dimen/sp_16" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_46"
+                        android:background="@drawable/base">
+
+                        <EditText
+                            android:id="@+id/etAccountNumber2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:fontFamily="@font/nunito"
+                            android:hint="@string/lbl_account_number"
+                            android:inputType="number"
+                            android:padding="@dimen/dp_6"
+                            android:singleLine="true"
+                            android:textColor="@color/view_state_color_custom"
+                            android:textSize="@dimen/sp_16"
+                            tools:ignore="Autofill,LabelFor,TextFields" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_46"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:background="@drawable/base">
+
+                        <EditText
+                            android:id="@+id/etAccountHolderName2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:digits="@string/alpha"
+                            android:fontFamily="@font/nunito"
+                            android:hint="@string/lbl_account_holder_name"
+                            android:inputType="textPersonName"
+                            android:padding="@dimen/dp_6"
+                            android:singleLine="true"
+                            android:textColor="@color/view_state_color_custom"
+                            android:textSize="@dimen/sp_16"
+                            tools:ignore="Autofill,LabelFor" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/textAccountType"
+                        style="@style/Base.TextAppearance.AppCompat.Subhead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:fontFamily="@font/nunito"
+                        android:gravity="center"
+                        android:text="@string/select_account_type"
+                        android:textSize="@dimen/sp_14" />
+
+                    <FrameLayout
+                        android:id="@+id/flspAccountType2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_46">
+
+                        <Spinner
+                            android:id="@+id/spAccountType2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/base"
+                            android:entries="@array/account_type"
+                            android:paddingStart="@dimen/dp_8"
+                            android:paddingEnd="@dimen/dp_8" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|end"
+                            android:layout_marginEnd="@dimen/dp_12"
+                            android:contentDescription="@string/arrow_down"
+                            app:srcCompat="@drawable/arrow_1" />
+
+                    </FrameLayout>
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Subhead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:fontFamily="@font/nunito"
+                        android:gravity="center"
+                        android:text="@string/bank_name"
+                        android:textSize="@dimen/sp_14" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_46">
+
+                        <Spinner
+                            android:id="@+id/spBanks2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/base"
+                            android:clickable="false"
+                            android:paddingStart="@dimen/dp_8"
+                            android:paddingEnd="@dimen/dp_8" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|end"
+                            android:layout_marginEnd="@dimen/dp_12"
+                            android:contentDescription="@string/arrow_down"
+                            app:srcCompat="@drawable/arrow_1" />
+
+                    </FrameLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_46"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:background="@drawable/base">
+
+                        <EditText
+                            android:id="@+id/etIfscCode2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:fontFamily="@font/nunito"
+                            android:hint="@string/lbl_ifsc_code"
+                            android:inputType="text"
+                            android:padding="@dimen/dp_6"
+                            android:maxLength= "11"
+                            android:singleLine="true"
+                            android:textColor="@color/view_state_color_custom"
+                            android:textSize="@dimen/sp_16"
+                            tools:ignore="Autofill,LabelFor" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llCheckPhoto2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_46"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:background="@drawable/base"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvChequePhoto2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:fontFamily="@font/nunito"
+                            android:gravity="center|start"
+                            android:hint="@string/cancelled_cheque_copy"
+                            android:paddingStart="@dimen/dp_8"
+                            android:paddingTop="@dimen/dp_4"
+                            android:paddingEnd="@dimen/dp_4"
+                            android:paddingBottom="@dimen/dp_4"
+                            android:singleLine="true"
+                            android:textColor="@color/secondary_text" />
+
+                        <ImageView
+                            android:id="@+id/ivChequePhoto2"
+                            android:layout_width="@dimen/dp_46"
+                            android:layout_height="@dimen/dp_46"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="@dimen/dp_8"
+                            android:contentDescription="@string/select_or_capture_chequebook"
+                            android:padding="@dimen/dp_6"
+                            android:src="@drawable/photo_camera" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvSubmit2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginStart="@dimen/dp_32"
+                    android:layout_marginTop="@dimen/dp_32"
+                    android:layout_marginEnd="@dimen/dp_56"
+                    android:layout_marginBottom="@dimen/dp_8"
+                    android:elevation="3dp"
+                    card_view:cardCornerRadius="6dp"
+                    card_view:cardElevation="3dp">
+
+                    <Button
+                        android:id="@+id/btnSubmit2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_gravity="center"
+                        android:background="@drawable/transparent_ripple"
+                        android:drawableEnd="@drawable/arrow"
+                        android:drawablePadding="-24dp"
+                        android:elevation="@dimen/dp_10"
+                        android:fontFamily="@font/nunito_extrabold"
+                        android:gravity="center"
+                        android:padding="@dimen/dp_8"
+                        android:text="@string/submit"
+
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_14"
+                        android:textStyle="bold"
+                        android:translationZ="@dimen/dp_6" />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Created by Yash Joshi
+ Define custom colors here to use with different states of any view
+-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/custom_black" android:state_enabled="true" />
+    <item android:color="@color/text" android:state_enabled="false" />
+</selector>
