@@ -12,6 +12,7 @@ import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.Window
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
@@ -173,7 +174,7 @@ class RishtaHomeFragment : BaseFragment<RishtaHomeContract.View, RishtaHomeContr
 
     private fun showRedirectPlayStore() {
         val dbAppVersion = CacheUtils.getDbAppVersion()
-        if (dbAppVersion != null && dbAppVersion != BuildConfig.VERSION_CODE) {
+        if (dbAppVersion != null && dbAppVersion > BuildConfig.VERSION_CODE) {
             AppUtils.redirectToPlayStore(context!!, getString(R.string.update))
         }
     }
@@ -242,7 +243,7 @@ class RishtaHomeFragment : BaseFragment<RishtaHomeContract.View, RishtaHomeContr
         val ivClose = dialogView.findViewById(R.id.ivClose) as ImageView
         val tvErrorMsg = dialogView.findViewById(R.id.tvErrorMsg) as TextView
         val ivImage = dialogView.findViewById(R.id.ivFirstImage) as ImageView
-        val tvVid = dialogView.findViewById(R.id.email_ok) as TextView
+        val tvVid = dialogView.findViewById(R.id.email_ok) as Button
         if (!welcomeBanner.imgPath.isNullOrEmpty()) {
             ivImage.visibility = View.VISIBLE
             tvErrorMsg.visibility = View.GONE
@@ -268,7 +269,7 @@ class RishtaHomeFragment : BaseFragment<RishtaHomeContract.View, RishtaHomeContr
             {
                 showUpdateKycDialog(this.layoutInflater, context, welcomeBanner)
             }
-              AppUtils.openPDFWithUrl(context, welcomeBanner.videoPath)
+              //AppUtils.openPDFWithUrl(context, welcomeBanner.videoPath)
         }
 
         dialog.setCancelable(true)
