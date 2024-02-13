@@ -8,8 +8,8 @@ interface ApiService {
 
     companion object {
 
-        //val prodUrl: String get() = "http://202.66.175.34:18091/vguard/api/" // live new prod server
-         val prodUrl: String get() = "http://34.100.133.239:18092/vguard/api/" // stage new prod server
+        val prodUrl: String get() = "http://202.66.175.34:18091/vguard/api/" // live new prod server
+//         val prodUrl: String get() = "http://34.100.133.239:18092/vguard/api/" // stage new prod server
 
         //val prodUrl: String get() = "http://103.48.50.249:18092/vguard/api/" // demo server
      // val prodUrl: String get() = "http://202.66.175.34:18093/vguard/api/" //  new stage server
