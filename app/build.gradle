@@ -29,7 +29,7 @@ android {
             keyAlias 'vguard'
         }
     }
-    compileSdkVersion 31
+    compileSdkVersion 33
 
     bundle {
         language {
@@ -42,7 +42,7 @@ android {
     defaultConfig {
         applicationId "com.tfl.vguardrishta"
         minSdkVersion 23
-        targetSdkVersion 31
+        targetSdkVersion 33
         versionCode project.ext.versionCode
         versionName project.ext.versionName
         testInstrumentationRunner "android.support.ImageSendUtil.runner.AndroidJUnitRunner"
@@ -145,7 +145,7 @@ dependencies {
 
     // Import the BoM for the Firebase platform
     implementation platform('com.google.firebase:firebase-bom:26.8.0')
-
+    implementation('com.google.firebase:firebase-messaging-ktx:23.1.0')
     // Declare the dependencies for the Crashlytics and Analytics libraries
     // When using the BoM, you don't specify versions in Firebase library dependencies
     implementation 'com.google.firebase:firebase-crashlytics'

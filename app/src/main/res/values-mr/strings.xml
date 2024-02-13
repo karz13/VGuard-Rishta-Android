@@ -480,7 +480,7 @@
     <string name="pan_card">पैन कार्ड</string>
 
     <string name="account_no_optional">खाते क्रमांक </string>
-
+    <string name="customerOTP">ग्राहकाचा OTP</string>
     <string name="bank">बैंक</string>
 
     <string name="nominee_details">नामित व्यक्तीचा तपशील </string>

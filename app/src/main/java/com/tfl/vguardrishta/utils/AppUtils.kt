@@ -166,30 +166,30 @@ object AppUtils {
     }
 
     fun redirectToPlayStore(context: Context) {
-//        val builder = AlertDialog.Builder(context)
-//        builder.setMessage(context.getString(R.string.update))
-//        builder.setPositiveButton("OK") { _, _ ->
-//            val appPackageName = context.packageName
-//            try {
-//                context.startActivity(
-//                    Intent(
-//                        Intent.ACTION_VIEW,
-//                        Uri.parse("market://details?id=$appPackageName")
-//                    )
-//                )
-//            } catch (_: ActivityNotFoundException) {
-//                context.startActivity(
-//                    Intent(
-//                        Intent.ACTION_VIEW,
-//                        Uri.parse("https://play.google.com/store/apps/details?id=$appPackageName")
-//                    )
-//                )
-//            }
-//        }
-//        val dialog: AlertDialog = builder.create()
-//        dialog.show()
-//        dialog.setCancelable(false)
-//        dialog.setCanceledOnTouchOutside(false)
+        val builder = AlertDialog.Builder(context)
+        builder.setMessage(context.getString(R.string.update))
+        builder.setPositiveButton("OK") { _, _ ->
+            val appPackageName = context.packageName
+            try {
+                context.startActivity(
+                    Intent(
+                        Intent.ACTION_VIEW,
+                        Uri.parse("market://details?id=$appPackageName")
+                    )
+                )
+            } catch (_: ActivityNotFoundException) {
+                context.startActivity(
+                    Intent(
+                        Intent.ACTION_VIEW,
+                        Uri.parse("https://play.google.com/store/apps/details?id=$appPackageName")
+                    )
+                )
+            }
+        }
+        val dialog: AlertDialog = builder.create()
+        dialog.show()
+        dialog.setCancelable(false)
+        dialog.setCanceledOnTouchOutside(false)
     }
 
     fun launchWhatsApp(context: Context, phoneNumber: String) {

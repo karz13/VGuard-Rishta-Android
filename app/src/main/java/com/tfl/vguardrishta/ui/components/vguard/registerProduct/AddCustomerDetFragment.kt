@@ -16,6 +16,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import com.tfl.vguardrishta.R
 import com.tfl.vguardrishta.custom.CustomSpinner
+import com.tfl.vguardrishta.domain.RegisterProductUseCase
 import com.tfl.vguardrishta.extensions.onTextChanged
 import com.tfl.vguardrishta.extensions.toast
 import com.tfl.vguardrishta.models.*
@@ -237,9 +238,9 @@ class AddCustomerDetFragment :
     }
 
     private fun setBtnName() {
-//        if (activity is ProductRegistrationActivity) {
+       // if (activity is ProductRegistrationActivity) {
             btnSubmit.setText("Next")
-       // }
+        //}
     }
 
     override fun setCustDetails(cd: CustomerDetailsRegistration) {
@@ -507,11 +508,19 @@ class AddCustomerDetFragment :
             showToast(getString(R.string.enter_valid_dealer_contact_number))
             return
         }
-//        if (CacheUtils.getRishtaUser().roleId == "2") {
+        //if (CacheUtils.getRishtaUser().roleId == "2") {
             CacheUtils.setCustomerDetReg(cdr)
-            //validateMobileText()
+        val otp = OTP();
+        otp.mobile=etContactNumber.text.toString().trim()
+        otp.eventType="Warranty"
+        registerProductPresenter.productOTP(otp)
 //        } else
 //            registerProductPresenter.sendCustomerData(cdr, false)
+    }
+
+
+
+    override fun proceedToNextPage(){
 
         (activity as RegisterProductActivity).showRegisterProductFragment()
     }

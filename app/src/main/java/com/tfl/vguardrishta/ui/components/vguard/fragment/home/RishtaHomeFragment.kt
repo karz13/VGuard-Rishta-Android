@@ -241,8 +241,8 @@ class RishtaHomeFragment : BaseFragment<RishtaHomeContract.View, RishtaHomeContr
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         val ivClose = dialogView.findViewById(R.id.ivClose) as ImageView
         val tvErrorMsg = dialogView.findViewById(R.id.tvErrorMsg) as TextView
-        val ivImage = dialogView.findViewById(R.id.ivWelcome) as ImageView
-        val tvVid = dialogView.findViewById(R.id.tvVideo) as TextView
+        val ivImage = dialogView.findViewById(R.id.ivFirstImage) as ImageView
+        val tvVid = dialogView.findViewById(R.id.email_ok) as TextView
         if (!welcomeBanner.imgPath.isNullOrEmpty()) {
             ivImage.visibility = View.VISIBLE
             tvErrorMsg.visibility = View.GONE
@@ -253,7 +253,7 @@ class RishtaHomeFragment : BaseFragment<RishtaHomeContract.View, RishtaHomeContr
             tvErrorMsg.text = welcomeBanner.textMessage
         }
         if(!welcomeBanner.vdoText.isNullOrEmpty()) {
-            tvVid.text = welcomeBanner.vdoText
+            //tvVid.text = welcomeBanner.vdoText
         }
 
         if (!welcomeBanner.videoPath.isNullOrEmpty()) {
@@ -268,7 +268,7 @@ class RishtaHomeFragment : BaseFragment<RishtaHomeContract.View, RishtaHomeContr
             {
                 showUpdateKycDialog(this.layoutInflater, context, welcomeBanner)
             }
-            //   AppUtils.openPDFWithUrl(context, welcomeBanner.videoPath)
+              AppUtils.openPDFWithUrl(context, welcomeBanner.videoPath)
         }
 
         dialog.setCancelable(true)
@@ -299,8 +299,8 @@ class RishtaHomeFragment : BaseFragment<RishtaHomeContract.View, RishtaHomeContr
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         val ivClose = dialogView.findViewById(R.id.ivClose) as ImageView
         val tvErrorMsg = dialogView.findViewById(R.id.tvErrorMsg) as TextView
-        val ivImage = dialogView.findViewById(R.id.ivWelcome) as ImageView
-        val tvVid = dialogView.findViewById(R.id.tvVideo) as TextView
+        val ivImage = dialogView.findViewById(R.id.ivFirstImage) as ImageView
+        val tvVid = dialogView.findViewById(R.id.email_ok) as TextView
         if (!welcomeBanner.imgPath.isNullOrEmpty()) {
             ivImage.visibility = View.VISIBLE
             tvErrorMsg.visibility = View.GONE

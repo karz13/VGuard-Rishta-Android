@@ -8,7 +8,9 @@ interface ApiService {
 
     companion object {
 
-        val prodUrl: String get() = "http://202.66.175.34:18091/vguard/api/" // live new prod server
+        //val prodUrl: String get() = "http://202.66.175.34:18091/vguard/api/" // live new prod server
+         val prodUrl: String get() = "http://34.100.133.239:18092/vguard/api/" // stage new prod server
+
         //val prodUrl: String get() = "http://103.48.50.249:18092/vguard/api/" // demo server
      // val prodUrl: String get() = "http://202.66.175.34:18093/vguard/api/" //  new stage server
      //  val prodUrl: String get() = "http://192.168.1.2:18091/vguard/api/" //  new stage dev server
@@ -100,7 +102,15 @@ interface ApiService {
 
     @GET("city/{districtId}")
     fun getCities(@Path("districtId") districtId: Long): Single<List<CityMaster>>
+    @POST("product/generateOTP")
+    fun productgenerateOtp(@Body otp: OTP): Single<Status>
 
+
+    @POST("product/registerWarranty")
+    fun registerWarranty(@Body cdr: CustomerDetailsRegistration): Single<CouponResponse>
+
+    @GET("schemes/getSpecialSchemeOffers")
+    fun getSpecialOffers():Single<List<SpecialSchemes>>
 
     @POST("user/checkMobileNo")
     fun checkMobileNumber(@Body user: User): Single<Status>

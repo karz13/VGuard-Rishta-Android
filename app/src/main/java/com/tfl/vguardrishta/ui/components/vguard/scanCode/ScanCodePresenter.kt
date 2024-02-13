@@ -86,6 +86,11 @@ class ScanCodePresenter @Inject constructor(
                        // getView()?.showToast("Enter PIN")
                         getView()?.showPINPopup(it)
                     }
+                    else if (it.errorCode==3){
+
+                        getView()?.clearCoupon()
+                        getView()?.verifyCategorySelected(it)
+                    }
                     else {
                         getView()?.showErrorDialog(
                             it.errorMsg

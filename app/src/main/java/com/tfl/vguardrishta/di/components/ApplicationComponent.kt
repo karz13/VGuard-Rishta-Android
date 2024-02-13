@@ -50,6 +50,8 @@ import com.tfl.vguardrishta.ui.components.vguard.scanCode.ScanCodeActivity
 import com.tfl.vguardrishta.ui.components.vguard.scanHistory.ScanCodeHistoryActivity
 import com.tfl.vguardrishta.ui.components.vguard.schemeWiseEarning.SchemeWiseEarningActivity
 import com.tfl.vguardrishta.ui.components.vguard.schemes.SchemesAndOffersActivity
+import com.tfl.vguardrishta.ui.components.vguard.specialComboOffers.SchemeProgressActivity
+import com.tfl.vguardrishta.ui.components.vguard.specialComboOffers.SpecialComboOffersActivity
 import com.tfl.vguardrishta.ui.components.vguard.tds.TDSCertificateActivity
 import com.tfl.vguardrishta.ui.components.vguard.tdsStatement.TDSstatementActivity
 import com.tfl.vguardrishta.ui.components.vguard.ticketHistory.TicketHistoryActivity
@@ -146,5 +148,8 @@ interface ApplicationComponent {
     fun inject(tDSCertificateActivity: TDSCertificateActivity)
     fun inject(tdSstatementActivity: TDSstatementActivity)
     fun inject(engagementActivity: EngagementActivity)
+    fun inject(specialComboOffersActivity: SpecialComboOffersActivity)
+
+    fun inject (schemeProgressActivity: SchemeProgressActivity)
 
 }

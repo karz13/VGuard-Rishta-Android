@@ -231,6 +231,7 @@
     <string name="selfie">ಸೆಲ್ಫಿ </string>
     <string name="id_document">ID ಡಾಕ್ಯುಮೆಂಟ್ </string>
     <string name="pan_card">ಪ್ಯಾನ್ (PAN) ಕಾರ್ಡ್ </string>
+    <string name="customerOTP">ಗ್ರಾಹಕ OTP</string>
     <string name="account_no_optional">ಖಾತೆ ಸಂ. </string>
     <string name="bank">ಬ್ಯಾಂಕ್ </string>
     <string name="nominee_details">ನಾಮಿನಿ ವಿವರಗಳು </string>

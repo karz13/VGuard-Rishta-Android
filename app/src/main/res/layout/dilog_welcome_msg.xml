@@ -3,67 +3,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/transparent_white"
     android:gravity="center">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:background="@drawable/bg_error_dialo"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tvErrorMsg"
+    android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/ivFirstImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+             />
+
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="240dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_bottom"
+            android:gravity="center"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tvErrorMsg"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="@dimen/dp_48"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:textColor="@color/black"
-                android:textSize="@dimen/sp_16"
-                android:textStyle="bold"
-                tools:text="Error msg" />
-
-            <ImageView
-                android:id="@+id/ivWelcome"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="@dimen/dp_48"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:visibility="gone" />
-
-            <TextView
-                android:id="@+id/tvVideo"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="@dimen/dp_48"
-                android:layout_weight=".2"
-                android:gravity="center"
-                android:background="@drawable/rect_box_black_border"
-                android:text="@string/click_here_to_check_video"
-                android:layout_marginTop="@dimen/dp_6"
-                android:textColor="@color/black"
-                android:textSize="@dimen/sp_16"
-                android:textStyle="bold"
-                android:visibility="gone" />
-
+            <Button
+                android:id="@+id/email_ok"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:background="#F0C300"
+                android:layout_gravity="center_horizontal"
+                android:text="View" />
             <ImageView
                 android:id="@+id/ivClose"
                 android:layout_width="@dimen/dp_48"
                 android:layout_height="@dimen/dp_48"
+                android:src="@drawable/ic_close"
                 android:layout_gravity="end"
-                android:layout_marginHorizontal="@dimen/dp_48"
-                android:src="@drawable/ic_close" />
+                android:layout_marginTop="-35dp" />
+
+
+
         </LinearLayout>
+
+
     </LinearLayout>
 
 </RelativeLayout>

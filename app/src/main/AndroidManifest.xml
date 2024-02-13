@@ -6,7 +6,6 @@
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
-
     <uses-feature
         android:name="android.hardware.camera.front"
         android:required="true" />
@@ -22,6 +21,7 @@
     <queries>
         <package android:name="com.whatsapp" />
     </queries>
+
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -32,11 +32,9 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.CAMERA" />
-
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-
 
     <application
         android:name=".App"
@@ -52,20 +50,21 @@
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning"
         tools:replace="android:theme">
-
-
+        <activity
+            android:name="com.tfl.vguardrishta.ui.components.vguard.specialComboOffers.SchemeProgressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".ui.components.splash.SplashActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:resizeableActivity="false"
-            android:exported="true">
+            android:exported="true"
+            android:resizeableActivity="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
 
         <meta-data
             android:name="preloaded_fonts"
@@ -76,12 +75,10 @@
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
-
         <activity
             android:name=".ui.components.vguard.home.RishtaHomeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-
         <activity
             android:name=".ui.components.vguard.scanCode.ScanCodeActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
@@ -94,26 +91,22 @@
             android:label="@string/dashboard"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
-
         <activity
-            android:name="com.tfl.vguardrishta.ui.components.vguard.loginWithOtp.LoginWithOtpActivity"
+            android:name=".ui.components.vguard.loginWithOtp.LoginWithOtpActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/login_with_otp"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
         <activity
-            android:name="com.tfl.vguardrishta.ui.components.vguard.forgotPassword.ForgotPasswordActivity"
+            android:name=".ui.components.vguard.forgotPassword.ForgotPasswordActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/lbl_forgot_password"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
-
-
         <activity
             android:name="com.desmond.squarecamera.CameraActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ui.components.vguard.redeempoints.RedeemPointActivity"
             android:screenOrientation="portrait"
@@ -130,7 +123,6 @@
             android:name=".ui.components.vguard.dashboard.DashboardActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-
         <activity
             android:name=".ui.components.vguard.schemes.SchemesAndOffersActivity"
             android:screenOrientation="portrait"
@@ -151,29 +143,23 @@
             android:name=".ui.components.vguard.updateKyc.UpdateKycActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-
             android:windowSoftInputMode="stateHidden|adjustResize" />
         <activity
             android:name=".ui.components.vguard.engagement.EngagementActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-
             android:windowSoftInputMode="stateHidden|adjustResize" />
-
         <activity
             android:name=".ui.components.vguard.updateBank.UpdateBankActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
-
         <activity
             android:name=".ui.components.vguard.tdsStatement.TDSstatementActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
-
-
         <activity
             android:name=".ui.components.vguard.updateKycRetailer.UpdateKycReatilerActivity"
             android:screenOrientation="portrait"
@@ -237,7 +223,6 @@
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-
         <activity
             android:name=".ui.components.vguard.welfare.WelfareActivity"
             android:configChanges="keyboardHidden|orientation"
@@ -278,9 +263,8 @@
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-
         <activity
-            android:name="com.tfl.vguardrishta.ui.components.vguard.downloads.DownloadsActivity"
+            android:name=".ui.components.vguard.downloads.DownloadsActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
@@ -338,7 +322,6 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
-
         <activity
             android:name=".ui.components.vguard.airCooler.AirCoolerActivity"
             android:configChanges="keyboardHidden|orientation"
@@ -357,14 +340,12 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
-
         <activity
             android:name=".ui.components.vguard.tds.TDSCertificateActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
-        <!--        services-->
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" /> <!-- services -->
         <service
             android:name=".pushNotification.MyFirebaseMessagingService"
             android:exported="false">
@@ -372,8 +353,6 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-
     </application>
-
 
 </manifest>

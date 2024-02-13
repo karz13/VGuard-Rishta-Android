@@ -136,7 +136,7 @@ class LoginFragment : BaseFragment<LogInFragmentContract.View, LogInFragmentCont
         val dbAppVersion = CacheUtils.getDbAppVersion()
         if (dbAppVersion != null && dbAppVersion > BuildConfig.VERSION_CODE
         ) {
-           // AppUtils.redirectToPlayStore(context!!, getString(R.string.update))
+            AppUtils.redirectToPlayStore(context!!, getString(R.string.update))
         }
     }
 

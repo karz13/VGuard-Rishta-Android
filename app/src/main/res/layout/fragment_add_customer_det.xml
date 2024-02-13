@@ -137,8 +137,6 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
 
-
-
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dp_46"
@@ -522,14 +520,14 @@
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:completionThreshold="1"
-                            android:gravity="center|start"
                             android:enabled="false"
+                            android:gravity="center|start"
                             android:hint="@string/dealer_pincode"
-                            android:textColor="@color/view_state_color_custom"
                             android:inputType="number"
                             android:maxLength="6"
                             android:padding="@dimen/dp_6"
                             android:singleLine="true"
+                            android:textColor="@color/view_state_color_custom"
                             android:textCursorDrawable="@null"
                             android:textSize="@dimen/sp_14"
                             android:theme="@style/Autocomplete" />
@@ -562,11 +560,11 @@
                         android:enabled="false"
                         android:fontFamily="@font/nunito"
                         android:hint="@string/dealer_state"
-                        android:textColor="@color/view_state_color_custom"
                         android:inputType="textPersonName"
                         android:padding="@dimen/dp_6"
                         android:singleLine="true"
                         android:textAllCaps="true"
+                        android:textColor="@color/view_state_color_custom"
                         android:textSize="@dimen/sp_16"
                         tools:ignore="Autofill,LabelFor" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -584,13 +582,13 @@
                         android:layout_gravity="center"
                         android:background="@null"
                         android:enabled="false"
-                        android:textColor="@color/view_state_color_custom"
                         android:fontFamily="@font/nunito"
                         android:hint="@string/dealer_district"
                         android:inputType="textPersonName"
                         android:padding="@dimen/dp_6"
                         android:singleLine="true"
                         android:textAllCaps="true"
+                        android:textColor="@color/view_state_color_custom"
                         android:textSize="@dimen/sp_16"
                         tools:ignore="Autofill,LabelFor" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -607,14 +605,14 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:background="@null"
+                        android:enabled="false"
                         android:fontFamily="@font/nunito"
                         android:hint="@string/dealer_city"
-                        android:textColor="@color/view_state_color_custom"
-                        android:enabled="false"
                         android:inputType="textPersonName"
                         android:padding="@dimen/dp_6"
                         android:singleLine="true"
                         android:textAllCaps="true"
+                        android:textColor="@color/view_state_color_custom"
                         android:textSize="@dimen/sp_16"
                         tools:ignore="Autofill,LabelFor" />
                 </com.google.android.material.textfield.TextInputLayout>
@@ -632,15 +630,15 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:background="@null"
-                        android:fontFamily="@font/nunito"
-                        android:textColor="@color/view_state_color_custom"
                         android:enabled="false"
+                        android:fontFamily="@font/nunito"
                         android:hint="@string/dealer_contact_no"
                         android:inputType="numberDecimal"
                         android:maxLength="10"
                         android:padding="@dimen/dp_6"
                         android:singleLine="true"
                         android:textAllCaps="true"
+                        android:textColor="@color/view_state_color_custom"
                         android:textSize="@dimen/sp_16"
                         tools:ignore="Autofill,LabelFor" />
                 </com.google.android.material.textfield.TextInputLayout>

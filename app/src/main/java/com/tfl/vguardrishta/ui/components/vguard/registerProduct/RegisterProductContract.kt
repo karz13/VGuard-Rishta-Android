@@ -25,10 +25,13 @@ interface RegisterProductContract {
         fun setStateDistrictAndCity(it: Triple<String, String,String>, isDealer: Boolean){}
         fun setPinCodeList(it: List<PincodeDetails>, isDealer: Boolean){}
         fun processValidateMobile(validation: MobileValidation){}
+        fun proceedToNextPage()
+
     }
 
     interface Presenter : BaseContract.Presenter<View> {
         fun getRetProductCategories()
+        fun productOTP(otp:OTP)
         fun getCustDetByMobile(mobileNo: String)
         fun validateMobile(mobileNo: String, dealerCategory: String)
         fun sendCustomerData(cdr: CustomerDetailsRegistration, isSingleScan:Boolean)

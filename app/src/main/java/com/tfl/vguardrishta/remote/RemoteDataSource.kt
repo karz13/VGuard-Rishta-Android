@@ -458,5 +458,9 @@ open class RemoteDataSource @Inject constructor() {
     fun getFiscalYear()=service().getFiscalYear()
     fun getMonth()=service().getMonth()
     fun getTdsStatementList(month: MonthData)=service().getTdsStatementList(month)
-
+        fun getSpecialOffers()=service().getSpecialOffers()
+    fun productgenerateOtp(otp:OTP):  Single<Status> = service().productgenerateOtp(otp)
+    fun registerWarranty(cdr: CustomerDetailsRegistration): Single<CouponResponse> {
+        return service().registerWarranty(cdr)
+    }
 }

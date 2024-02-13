@@ -5,6 +5,7 @@ import com.tfl.vguardrishta.remote.RemoteDataSource
 import io.reactivex.Single
 import javax.inject.Inject
 
+
 class DataRepository @Inject constructor(private val remoteDataSource: RemoteDataSource) {
 
     fun reLogin() = remoteDataSource.reLogin()
@@ -22,6 +23,7 @@ class DataRepository @Inject constructor(private val remoteDataSource: RemoteDat
         remoteDataSource.sendCouponPin(couponDataList)
 
     fun getProductCategoryList() = remoteDataSource.getProductCategoryList()
+    fun productgenerateOtp(otp:OTP):  Single<Status> = remoteDataSource.productgenerateOtp(otp)
 
     fun getProductListing(pr: ProductRequest) = remoteDataSource.getProductListing(pr)
 
@@ -94,7 +96,9 @@ class DataRepository @Inject constructor(private val remoteDataSource: RemoteDat
 
     fun getSelectedProductList(segments: String, category: Long): Single<List<PackProduct>> =
         remoteDataSource.getSelectedSegmentProducts(segments, category)
-
+    fun getSpecialOffers(): Single<List<SpecialSchemes>> {
+        return remoteDataSource.getSpecialOffers()
+    }
     fun getVehicleSegment(): Single<List<String>> = remoteDataSource.getVehicleSegment()
 
     fun sendAccessoryCoupon(couponData: CouponData) =
@@ -401,4 +405,7 @@ class DataRepository @Inject constructor(private val remoteDataSource: RemoteDat
     fun getMonth()=remoteDataSource.getMonth()
     fun getTdsStatementList(month: MonthData)=remoteDataSource.getTdsStatementList(month)
 
+    fun registerWarranty(cdr: CustomerDetailsRegistration): Single<CouponResponse> {
+        return remoteDataSource.registerWarranty(cdr)
+    }
 }

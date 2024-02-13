@@ -218,6 +218,7 @@
     <string name="selfie">सेल्फी</string>
     <string name="id_document">पहचान पत्र दस्तावेज़</string>
     <string name="pan_card">पैन कार्ड</string>
+    <string name="customerOTP">ग्राहक ओ.टी.पी</string>
     <string name="account_no_optional">खाता नंबर</string>
     <string name="bank">बैंक</string>
     <string name="nominee_details">नामांकित व्यक्ति का विवरण</string>

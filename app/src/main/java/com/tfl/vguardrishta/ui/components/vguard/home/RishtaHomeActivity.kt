@@ -1,15 +1,9 @@
 package com.tfl.vguardrishta.ui.components.vguard.home
 
-import android.Manifest
 import android.content.Context
-import android.content.DialogInterface
-import android.content.Intent
-import android.content.pm.PackageManager
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.graphics.drawable.InsetDrawable
-import android.net.Uri
-import android.provider.Settings
 import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.MenuItem
@@ -19,13 +13,9 @@ import android.widget.AdapterView
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
 import com.google.android.material.badge.BadgeDrawable
 import com.google.android.material.bottomnavigation.BottomNavigationView
-
 import com.google.firebase.messaging.FirebaseMessaging
-import com.tfl.vguardrishta.App.Companion.context
 import com.tfl.vguardrishta.R
 import com.tfl.vguardrishta.extensions.launchActivity
 import com.tfl.vguardrishta.extensions.replaceFragment
@@ -39,8 +29,6 @@ import com.tfl.vguardrishta.ui.components.vguard.fragment.contactUs.ContactUsFra
 import com.tfl.vguardrishta.ui.components.vguard.fragment.home.RishtaHomeFragment
 import com.tfl.vguardrishta.ui.components.vguard.fragment.profile.RishtaUserProfileFragment
 import com.tfl.vguardrishta.ui.components.vguard.fragment.retailerProfile.RetailerUserProfileFragment
-import com.tfl.vguardrishta.ui.components.vguard.registerProduct.RegisterProductListActivity
-import com.tfl.vguardrishta.ui.components.vguard.scanCode.ScanCodeActivity
 import com.tfl.vguardrishta.utils.*
 import kotlinx.android.synthetic.main.v_activity_home.*
 import kotlinx.android.synthetic.main.vguard_toolbar.*
@@ -138,19 +126,22 @@ class RishtaHomeActivity : BaseActivity<HomeContract.View, HomeContract.Presente
     }
 
     private fun getNotificationKey() {
-        FirebaseMessaging.getInstance().token.addOnCompleteListener(this@RishtaHomeActivity) { task ->
-            if (task.isSuccessful) {
-                if (task.result != null && !TextUtils.isEmpty(task.result)) {
-                    val token: String = task.result!!
-            if (token.isNotEmpty()) {
-                val vguardRishtaUser = VguardRishtaUser()
-                vguardRishtaUser.fcmToken = token
-                homePresenter.updateFcmToken(vguardRishtaUser)
-            }
-        }
-    }
 
-        }
+        FirebaseMessaging.getInstance().token
+            .addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    if (task.result != null && !TextUtils.isEmpty(task.result)) {
+                        val token: String = task.result!!
+                        if (token.isNotEmpty()) {
+                            val vguardRishtaUser = VguardRishtaUser()
+                            vguardRishtaUser.fcmToken = token
+                            homePresenter.updateFcmToken(vguardRishtaUser)
+                        }
+                    }
+                }
+            }
+
+
     }
 
     private fun showNotificationCountBadge() {

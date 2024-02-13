@@ -9,6 +9,7 @@ import com.tfl.vguardrishta.domain.StateMasterUseCase
 import com.tfl.vguardrishta.extensions.applySchedulers
 import com.tfl.vguardrishta.models.CustomerDetailsRegistration
 import com.tfl.vguardrishta.models.DistrictMaster
+import com.tfl.vguardrishta.models.OTP
 import com.tfl.vguardrishta.models.StateMaster
 import com.tfl.vguardrishta.models.Status
 import com.tfl.vguardrishta.ui.base.BasePresenter
@@ -41,6 +42,23 @@ class RegisterProductPresenter @Inject constructor(
                 getView()?.showError()
             })
         )
+    }
+
+    override fun productOTP(otp: OTP){
+        disposables?.add(registerProductUseCase.productgenerateOTP(otp).applySchedulers()
+            .doOnSubscribe{getView()?.showProgress()}
+            .doFinally{getView()?.stopProgress()}
+            .subscribe({
+
+                if(it?.code==0){
+                    getView()?.proceedToNextPage()
+                }else{
+                    getView()?.showErrorDialog(it.message)
+                }
+            }, {
+
+                getView()?.showError()
+            }))
     }
 
     override fun sendCustomerData(cdr: CustomerDetailsRegistration, isSingleScan: Boolean) {
@@ -168,19 +186,16 @@ class RegisterProductPresenter @Inject constructor(
     }
 
     private fun sendCustomerDataAfterUpload(cdr: CustomerDetailsRegistration, isSingleScan: Boolean) {
-        disposables?.add(registerProductUseCase.sendCustomerData(cdr).applySchedulers()
+        disposables?.add(registerProductUseCase.registerWarranty(cdr).applySchedulers()
             .doOnSubscribe { getView()?.showProgress() }
             .doFinally { getView()?.stopProgress() }
             .subscribe({
-                if (isSingleScan)
+                if (it?.errorCode == 1) {
                     getView()?.showCouponPoints(it)
-                else {
-                    if (it?.errorCode == 1) {
-                        getView()?.showCouponPoints(it)
-                    } else {
-                        getView()?.showErrorDialog(it.errorMsg)
-                    }
+                } else {
+                    getView()?.showErrorDialog(it.errorMsg)
                 }
+
             }, {
                 getView()?.showError()
             })

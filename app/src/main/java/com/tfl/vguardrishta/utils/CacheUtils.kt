@@ -5,6 +5,8 @@ import android.net.Uri
 import com.tfl.vguardrishta.R
 import com.tfl.vguardrishta.models.*
 import io.paperdb.Paper
+import kotlin.jvm.internal.Intrinsics
+
 
 /**
  * Created by Shanmuka on 4/23/2019.
@@ -46,6 +48,15 @@ object CacheUtils {
     fun refreshView(b: Boolean) {
         refreshPointView = b
     }
+    fun setSchemeProgress(data: SchemeProgressData) {
+
+        Paper.book().write("SCHEMEPROGRESS", data)
+    }
+
+    fun getSchemeProgress(): SchemeProgressData =
+        Paper.book().read<SchemeProgressData>("SCHEMEPROGRESS")?:SchemeProgressData()
+
+
 
     fun getRefreshView(): Boolean {
         return refreshPointView

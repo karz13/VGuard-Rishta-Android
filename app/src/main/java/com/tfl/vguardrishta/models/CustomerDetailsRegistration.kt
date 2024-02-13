@@ -3,6 +3,7 @@ package com.tfl.vguardrishta.models
 class CustomerDetailsRegistration {
 
     var contactNo: String? = null
+    var otp:String? = null
     var name: String? = null
     var email: String? = null
     var currAdd: String? = null

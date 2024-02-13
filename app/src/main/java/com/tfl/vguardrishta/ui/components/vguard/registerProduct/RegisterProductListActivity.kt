@@ -37,6 +37,7 @@ class RegisterProductListActivity :
         return registerProductPresenter
     }
 
+
     override fun injectDependencies() {
         getApplicationComponent().inject(this)
     }
@@ -85,7 +86,9 @@ class RegisterProductListActivity :
     override fun showNoData() {
         tvNoData.visibility = View.VISIBLE
     }
-
+    override fun proceedToNextPage() {
+        TODO("Not yet implemented")
+    }
     override fun setProductsCatalog(list: List<ProductDetail>) {
         registerProductAdapter.mList = list
         registerProductAdapter.tempList = list

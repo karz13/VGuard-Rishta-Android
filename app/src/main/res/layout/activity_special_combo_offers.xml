@@ -19,6 +19,14 @@
         app:contentInsetLeft="0dp"
         app:contentInsetRight="0dp"
         app:contentInsetStart="0dp" />
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/recycler_schemes">
+
+   </androidx.recyclerview.widget.RecyclerView>
+
+
 
     <TextView
         android:id="@+id/tvNoData"
@@ -27,4 +35,5 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:text="@string/no_data" />
+
 </LinearLayout>

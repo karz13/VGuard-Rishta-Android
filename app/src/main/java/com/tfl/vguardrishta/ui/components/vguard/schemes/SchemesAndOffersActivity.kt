@@ -9,6 +9,7 @@ import com.tfl.vguardrishta.ui.base.BaseActivity
 import com.tfl.vguardrishta.ui.components.vguard.activeSchemeOffers.ActiveSchemeOffersActivity
 import com.tfl.vguardrishta.models.SchemeImages
 import com.tfl.vguardrishta.ui.components.vguard.productWiseOffers.ProductWiseOffersActivity
+import com.tfl.vguardrishta.ui.components.vguard.specialComboOffers.SpecialComboOffersActivity
 import com.tfl.vguardrishta.utils.AppUtils
 import com.tfl.vguardrishta.utils.Progress
 import kotlinx.android.synthetic.main.activity_scheem_and_offers.*
@@ -145,9 +146,9 @@ class SchemesAndOffersActivity :
                 launchActivity<ActiveSchemeOffersActivity> { }
             }
             R.id.llComboOffers -> {
-                AppUtils.showErrorDialog(layoutInflater, this!!, getString(R.string.coming_soon))
+              //  AppUtils.showErrorDialog(layoutInflater, this!!, getString(R.string.coming_soon))
 
-//                launchActivity<SpecialComboOffersActivity> { }
+                launchActivity<SpecialComboOffersActivity> { }
             }
         }
     }

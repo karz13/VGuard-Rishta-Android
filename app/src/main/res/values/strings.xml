@@ -219,7 +219,7 @@
     <string name="upload_id_proof_front">Please upload id proof front picture</string>
     <string name="upload_id_proof_back">Please upload id proof back picture</string>
     <string name="upload_pan_card_front">Please upload PAN card front picture</string>
-
+    <string name="customerOTP">Customer OTP</string>
     <string name="Gender">Gender*</string>
     <string name="date_of_birth">Date of birth</string>
     <string name="contact_no">Contact No</string>

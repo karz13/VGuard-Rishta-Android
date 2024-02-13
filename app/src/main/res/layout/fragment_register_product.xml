@@ -12,6 +12,26 @@
         android:layout_marginHorizontal="@dimen/dp_32"
         android:layout_marginVertical="@dimen/dp_8"
         android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_46"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@drawable/base">
+
+            <EditText
+                android:id="@+id/CustomerOTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:enabled="true"
+                android:hint="@string/customerOTP"
+                android:padding="@dimen/dp_6"
+                android:singleLine="true"
+                android:textSize="@dimen/sp_16"
+                tools:ignore="Autofill,LabelFor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"

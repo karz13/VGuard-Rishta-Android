@@ -6,7 +6,6 @@ import com.tfl.vguardrishta.extensions.addFragment
 import com.tfl.vguardrishta.extensions.replaceFragment
 import com.tfl.vguardrishta.extensions.toast
 import com.tfl.vguardrishta.ui.base.BaseActivity
-import com.tfl.vguardrishta.utils.CacheUtils
 import com.tfl.vguardrishta.utils.Progress
 import kotlinx.android.synthetic.main.v_activity_redeem_points.*
 import kotlinx.android.synthetic.main.vguard_toolbar.*
@@ -41,9 +40,7 @@ class RegisterProductActivity :
     override fun initUI() {
         setCustomActionBar()
         progress = Progress(this, R.string.please_wait)
-       navigateToCustomer();
-
-
+        navigateToCustomer();
     }
 
     override fun showProgress() {
@@ -60,6 +57,10 @@ class RegisterProductActivity :
 
     override fun showError() {
         toast(resources.getString(R.string.something_wrong))
+    }
+
+    override fun proceedToNextPage() {
+        TODO("Not yet implemented")
     }
 
     override fun onClick(v: View?) {

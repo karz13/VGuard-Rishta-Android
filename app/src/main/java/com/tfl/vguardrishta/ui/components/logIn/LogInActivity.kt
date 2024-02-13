@@ -84,7 +84,7 @@ class LogInActivity : BaseActivity<LogInContract.View, LogInContract.Presenter>(
     }
 
     override fun redirectToPlayStore() {
-       // AppUtils.redirectToPlayStore(this)
+        AppUtils.redirectToPlayStore(this)
     }
 
     override fun navigateToChangePassword() {

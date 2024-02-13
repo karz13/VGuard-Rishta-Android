@@ -74,8 +74,6 @@ class ScanCodeActivity : BaseActivity<ScanCodeContract.View, ScanCodeContract.Pr
            // showErrorDialog("Testing "+rishtaUser.userCode, true)
             scanCodePresenter.getScanPopUp(rishtaUser.userCode)
         }
-//testSimulation();
-
     }
 
     private fun locationPermissionEnabled(): Boolean {
@@ -106,7 +104,11 @@ class ScanCodeActivity : BaseActivity<ScanCodeContract.View, ScanCodeContract.Pr
         val c =CouponResponse();
         c.couponPoints = "50";
         c.couponCode = "XXXXYYYYWWWWDDDD";
-        c.skuDetail = "324556234"
+        c.skuDetail = "324556234";
+        c.bitEligibleScratchCard=true;
+        c.transactId="767463";
+        c.promotionPoints="80";
+        c.errorMsg="Nahi milega";
 
         val cdr = CustomerDetailsRegistration();
         cdr.cresp = c;
@@ -116,6 +118,7 @@ class ScanCodeActivity : BaseActivity<ScanCodeContract.View, ScanCodeContract.Pr
 
 
     }
+
     override fun initPresenter() = scanCodePresenter
 
     override fun injectDependencies() = getApplicationComponent().inject(this)
@@ -538,7 +541,6 @@ class ScanCodeActivity : BaseActivity<ScanCodeContract.View, ScanCodeContract.Pr
     private fun showNormalScratchCard(cresp: CouponResponse) {
         val builder = AlertDialog.Builder(this)
         val inflater = layoutInflater
-
         val dialogView = inflater.inflate(R.layout.dilog_scratch_card, null)
         builder.setView(dialogView)
         val dialog = builder.create()
@@ -551,17 +553,13 @@ class ScanCodeActivity : BaseActivity<ScanCodeContract.View, ScanCodeContract.Pr
         val tvPointsMsg = dialogView.findViewById<TextView>(R.id.tvPointsMsg)
         val tvPointsMsg2 = dialogView.findViewById<TextView>(R.id.tvPointsMsg2)
         val tvClubPoints = dialogView.findViewById<TextView>(R.id.tvClubPoints);
-        val registerProduct = dialogView.findViewById<TextView>(R.id.registerProduct)
-        val ivClose = dialogView.findViewById<ImageView>(R.id.ivClose);
-            tvPointsOwnMsg.text = getString(R.string.you_won)
+
+        tvPointsOwnMsg.text = getString(R.string.you_won)
         tvPointsMsg.text = getString(R.string.points)
         val tvCouponPoints = dialogView.findViewById(R.id.tvCouponPoints) as TextView
         val couponPoints = cresp.couponPoints
 
         tvCouponPoints.text = couponPoints
-        ivClose.setOnClickListener{
-            dialog.dismiss();
-        }
 
         if (cresp.clubPoints != null && cresp.clubPoints!!.toDouble() > 0) {
             tvClubPoints.visibility = View.VISIBLE
@@ -579,9 +577,7 @@ class ScanCodeActivity : BaseActivity<ScanCodeContract.View, ScanCodeContract.Pr
         dialog.setCancelable(true)
         dialog.setCanceledOnTouchOutside(true)
         dialog.show()
-        registerProduct.setOnClickListener{
-            launchActivity<RegisterProductActivity> {  }
-        }
+
         dialog.setOnCancelListener {
             if (cresp!!.transactId != null && cresp.bitEligibleScratchCard) {
                 scanCodePresenter.getBonusPoints(cresp.transactId!!)
@@ -647,7 +643,7 @@ class ScanCodeActivity : BaseActivity<ScanCodeContract.View, ScanCodeContract.Pr
     override fun processScanCodePopup( it: MobileValidation?) {
         val builder = AlertDialog.Builder(this)
         val inflater = layoutInflater
-        val dialogView = inflater.inflate(R.layout.dilog_welcome_msg, null)
+        val dialogView = inflater.inflate(R.layout.dilog_scanpopup, null)
         builder.setView(dialogView)
         val dialog = builder.create()
         val back = ColorDrawable(Color.TRANSPARENT)
@@ -656,9 +652,9 @@ class ScanCodeActivity : BaseActivity<ScanCodeContract.View, ScanCodeContract.Pr
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         val ivClose = dialogView.findViewById(R.id.ivClose) as ImageView
         val tvErrorMsg = dialogView.findViewById(R.id.tvErrorMsg) as TextView
-        val ivImage = dialogView.findViewById(R.id.ivWelcome) as ImageView
-        val tvVid = dialogView.findViewById(R.id.tvVideo) as TextView
-            ivImage.visibility = View.GONE
+        //val ivImage = dialogView.findViewById(R.id.ivFirstImage) as ImageView
+        //val tvVid = dialogView.findViewById(R.id.email_ok) as TextView
+            //ivImage.visibility = View.GONE
             tvErrorMsg.visibility = View.VISIBLE
             tvErrorMsg.text = it!!.message
 

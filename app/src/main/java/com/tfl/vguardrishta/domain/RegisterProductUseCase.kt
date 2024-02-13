@@ -22,11 +22,17 @@ class RegisterProductUseCase @Inject constructor(val remoteDataSource: RemoteDat
     fun validateMobile(mobileNo: String, dealerCategory: String): Single<MobileValidation> {
         return remoteDataSource.validateMobile(mobileNo,dealerCategory)
     }
+    fun productgenerateOTP(otp: OTP): Single<Status> {
 
+        return remoteDataSource.productgenerateOtp(otp)
+    }
     fun sendCustomerData(cdr: CustomerDetailsRegistration): Single<CouponResponse> {
         return remoteDataSource.sendCustomerData(cdr)
     }
 
+    fun registerWarranty(cdr: CustomerDetailsRegistration): Single<CouponResponse> {
+        return remoteDataSource.registerWarranty(cdr)
+    }
     fun senAirCoolerData(cdr: CustomerDetailsRegistration)= remoteDataSource.senAirCoolerData(cdr)
 
 

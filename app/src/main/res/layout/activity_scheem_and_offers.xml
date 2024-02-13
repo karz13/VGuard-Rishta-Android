@@ -137,7 +137,7 @@
 
                     <ImageView
                         android:layout_width="@dimen/dp_48"
-                        android:tint="@color/grey"
+
                         android:layout_height="@dimen/dp_48"
                         android:layout_marginTop="@dimen/dp_80"
                         android:src="@drawable/ic_special_combo_offers" />
@@ -147,7 +147,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/dp_8"
                         android:gravity="center"
-                        android:tint="@color/grey"
+                        android:textColor="@color/black"
                         android:text="@string/special_combo_offers"
                         android:textStyle="bold" />
 

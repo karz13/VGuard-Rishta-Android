@@ -55,10 +55,10 @@ class RegisterProductFragment : BaseFragment<RegisterProductContract.View, Regis
     override fun initUI() {
         progress = Progress(context!!, R.string.please_wait)
         CacheUtils.setFileUploader(FileUploader())
-        //if (CacheUtils.getRishtaUser().roleId == "2")
+//        if (CacheUtils.getRishtaUser().roleId == "2")
             btnNext.setText("Submit")
         val cdr=CacheUtils.getCustomerDetReg()
-        //showCouponPoints(cdr.cresp);
+
         llBillDetails.setOnClickListener {
             selectOrCaptureImage(FileUtils.billDetails)
         }
@@ -119,14 +119,15 @@ class RegisterProductFragment : BaseFragment<RegisterProductContract.View, Regis
             cdr.geolocation=joinAddress
         }
 
-//        cdr.cresp.couponCode = etQrCode.text.toString().trim()
-//        cdr.cresp.skuDetail = etSku.text.toString().trim()
+        cdr.otp = CustomerOTP.text.toString().trim()
+        cdr.cresp.couponCode = etQrCode.text.toString().trim()
+        cdr.cresp.skuDetail = etSku.text.toString().trim()
         cdr.sellingPrice = etSellingPrice.text.toString().trim()
-//        cdr.cresp.purchaseDate = tvPurchaseDate.text.toString()
+        cdr.cresp.purchaseDate = tvPurchaseDate.text.toString()
         val rsp = CacheUtils.getRetSelectedProdForScan()
         val fileUploader = CacheUtils.getFileUploader()
 
-        /*if (fileUploader.getBillDetailsFile() == null && isBillMadatory()) {
+        if (fileUploader.getBillDetailsFile() == null && isBillMadatory()) {
             showToast(getString(R.string.capture_bill_details))
             return
         }
@@ -135,18 +136,18 @@ class RegisterProductFragment : BaseFragment<RegisterProductContract.View, Regis
             showToast(getString(R.string.capture_warranty_details))
             return
         }
-*/
 
-//        if (cdr.sellingPrice.isNullOrEmpty()) {
-//            showToast(getString(R.string.enter_selling_price))
-//            return
-//        }
 
+        if (cdr.sellingPrice.isNullOrEmpty()) {
+            showToast(getString(R.string.enter_selling_price))
+            return
+        }
+        cdr.selectedProd = rsp;
         CacheUtils.setCustomerDetReg(cdr)
-        //if (CacheUtils.getRishtaUser().roleId == "2")
+       // if (CacheUtils.getRishtaUser().roleId == "2")
             registerProductPresenter.sendCustomerData(cdr, true)
-       // else
-           // (activity as RegisterProductActivity).navigateToCustomer()
+//        else
+//            (activity as RegisterProductActivity).navigateToCustomer()
 
     }
 
@@ -319,8 +320,7 @@ class RegisterProductFragment : BaseFragment<RegisterProductContract.View, Regis
         val registerProduct = dialogView.findViewById<TextView>(R.id.registerProduct)
         registerProduct.visibility = View.GONE;
         tvPointsOwnMsg.visibility = View.GONE;
-        tvPointsMsg.text = "Congratulations, your customer have received an additional warranty of 365 days.\n"
-
+        tvPointsMsg.text = ""
         val tvCouponPoints = dialogView.findViewById(R.id.tvCouponPoints) as TextView
         val ivGiftImage = dialogView.findViewById(R.id.ivGiftWrap) as ImageView
         val ivClose = dialogView.findViewById(R.id.ivClose) as ImageView
@@ -379,24 +379,24 @@ class RegisterProductFragment : BaseFragment<RegisterProductContract.View, Regis
                 startActivity(intent1)
             }
         } else {
+            ivClose.visibility = View.VISIBLE
+
             if (couponPoints != null && couponPoints.toInt() == 0 && schemePoints != null && schemePoints == 0) {
                 tvPointsOwnMsg.visibility = View.GONE
                 ivGiftImage.visibility = View.GONE
                 //tvCouponPoints.text = getString(R.string.scan_more)
                 tvCouponPoints.text = cresp.errorMsg
-                //tvPointsMsg.visibility = View.GONE
+                tvPointsMsg.visibility = View.GONE
             } else if (couponPoints != null && couponPoints.toInt() == 0) {
                 tvPointsOwnMsg.visibility = View.GONE
                 tvCouponPoints.visibility = View.GONE
-                //tvPointsMsg.visibility = View.GONE
+                tvPointsMsg.visibility = View.GONE
             } else {
                 tvPointsOwnMsg.visibility = View.GONE
                 ivGiftImage.visibility = View.VISIBLE
                 tvCouponPoints.visibility = View.GONE;
             }
-            ivClose.setOnClickListener{
-                dialog.dismiss()
-            }
+            ivClose.visibility = View.GONE
             tvScanAgain.visibility = View.GONE
             dialog.setOnDismissListener {
                 Log.d("Kam", "on Dismis")
@@ -406,5 +406,9 @@ class RegisterProductFragment : BaseFragment<RegisterProductContract.View, Regis
                 startActivity(intent1)
             }
         }
+    }
+
+    override fun proceedToNextPage() {
+        TODO("Not yet implemented")
     }
 }

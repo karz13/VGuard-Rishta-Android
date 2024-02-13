@@ -225,6 +225,7 @@
     <string name="id_document">ID డాక్యుమెంట్</string>
     <string name="pan_card">ప్యాన్ (PAN) కార్డ్</string>
     <string name="account_no_optional">ఖాతా నం.</string>
+    <string name="customerOTP">కస్టమర్ OTP</string>
     <string name="bank">బ్యాంక్</string>
     <string name="nominee_details">నామినీ వివరాలు</string>
     <string name="nominee">నామినీ</string>
