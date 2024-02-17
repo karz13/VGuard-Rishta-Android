@@ -135,7 +135,7 @@
     </LinearLayout>
 
 
-    <androidx.databinding.vguardrishta.scratchCard.ScratchCard
+    <com.tfl.vguardrishta.scratchCard.ScratchCard
         android:id="@+id/ivScratchCard"
         android:layout_width="@dimen/dp_250"
         android:layout_height="@dimen/dp_250"

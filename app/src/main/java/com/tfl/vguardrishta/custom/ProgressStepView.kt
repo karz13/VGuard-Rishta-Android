@@ -24,6 +24,8 @@ class ProgressStepView(context: Context?, attrs: AttributeSet?, defStyleAttr: In
 
         private var bottom:Float = 0.0f;
      var currentPoints:Float = 1000f
+    var bonusPoints:Float =0f
+    var percentValue:Int=0
      var data = LinkedHashMap<String,String>()
     private  var displayMetrics=DisplayMetrics()
     private var graphcurrentPos:Float = 0.0f;
@@ -51,7 +53,7 @@ class ProgressStepView(context: Context?, attrs: AttributeSet?, defStyleAttr: In
         style = Paint.Style.FILL
         textAlign=Paint.Align.CENTER
         textSize=64f
-        typeface= Typeface.DEFAULT_BOLD
+        //typeface= Typeface.DEFAULT_BOLD
 
     }
 
@@ -61,7 +63,15 @@ class ProgressStepView(context: Context?, attrs: AttributeSet?, defStyleAttr: In
         style = Paint.Style.FILL
         textAlign=Paint.Align.CENTER
         textSize=34f
-        typeface= Typeface.DEFAULT_BOLD
+        //typeface= Typeface.DEFAULT_BOLD
+    }
+    private val textPaint3 = Paint().apply {
+        color =Color.rgb(240, Opcodes.MONITOREXIT,0)
+        isAntiAlias=true
+        style = Paint.Style.FILL
+        textAlign=Paint.Align.CENTER
+        textSize=34f
+        //typeface= Typeface.DEFAULT_BOLD
     }
     private val foregroundPaint = Paint().apply {
         color = Color.rgb(240, Opcodes.MONITOREXIT,0)
@@ -107,17 +117,18 @@ class ProgressStepView(context: Context?, attrs: AttributeSet?, defStyleAttr: In
             left, 200.0f,
             right, maxY as Float * 0.9f, 50.0f, 50.0f, backgroundPaint
         )
-
+        DrawText(canvas,textPaint,"Base Points",300f,100f)
+        DrawText(canvas,textPaint,"Bonus Points",midpointX+350f,100f)
         if(currentPoints>2000f){
             graphcurrentPos=3000f
 
             graphcurrentPos += ((currentPoints - 2000f) * 0.75).toFloat()
-                Log.d("VALUE",graphcurrentPos.toString())
+
             canvas.drawRoundRect(
                 left,
                 200.0f,
                 right,
-                graphcurrentPos,
+                (((maxY*0.9)/data.entries.last().key.toFloat())*graphcurrentPos).toFloat(),
                 50.0f,
                 50.0f,
                 foregroundPaint
@@ -131,7 +142,7 @@ class ProgressStepView(context: Context?, attrs: AttributeSet?, defStyleAttr: In
                 left,
                 200.0f,
                 right,
-                graphcurrentPos,
+                (((maxY*0.9)/data.entries.last().key.toFloat())*graphcurrentPos).toFloat(),
                 50.0f,
                 50.0f,
                 foregroundPaint
@@ -140,17 +151,29 @@ class ProgressStepView(context: Context?, attrs: AttributeSet?, defStyleAttr: In
         }
         var ypos = 200f
         for (i in data){
+                if(i.key.toFloat()>0){
+                    percentValue= ((i.value.toFloat()/i.key.toFloat())*100).toInt()
 
+                    val rect = RectF(
+                        midpointX +200f, ypos - 200.0f,
+                        ((midpointX+100)+(rectLength*0.75)).toFloat(),  ypos -80
+
+                    )
+                    canvas.drawRoundRect(rect, 60.0f, 60.0f, backgroundPaint)
+                    DrawText(canvas, textPaint, "$percentValue%", rect.centerX(), rect.centerY())
+
+                }
             if(currentPoints<i.key.toFloat()){
                 fillcolor = backgroundPaint
             }else{
+                    bonusPoints = (currentPoints*(percentValue.toFloat()/100))
                 fillcolor = foregroundPaint
             }
            var rect =  RectF(100.0f, ypos - 50.0f, rectLength, ypos + 100.0f);
             canvas.drawRoundRect(rect, 60.0f, 60.0f, fillcolor)
-            DrawText(canvas, this.textPaint, i.key, rect.centerX(), rect.centerY());
+            DrawText(canvas, textPaint, i.key, rect.centerX(), rect.centerY());
             val rect2 = RectF(
-                midpointX + 100.0f, ypos - 50.0f,
+                midpointX + 150.0f, ypos - 50.0f,
                 midpointX+rectLength, 100.0f + ypos
             )
             canvas.drawRoundRect(rect2, 60.0f, 60.0f, fillcolor)
@@ -163,14 +186,23 @@ class ProgressStepView(context: Context?, attrs: AttributeSet?, defStyleAttr: In
             ypos = (ypos +stepInterval).toFloat()
         }
        if(currentPoints==0.0f||currentPoints==1000f||currentPoints==2000f||currentPoints==4000f||currentPoints==6000f){
-
+            Log.d("TRUYE",currentPoints.toString())
        }else{
+
+
            DrawText(
                canvas,
                textPaint2,
                currentPoints.toString(),
+               midpointX-80f,
+               (((maxY*0.9)/data.entries.last().key.toFloat())*graphcurrentPos).toFloat()
+           )
+           DrawText(
+               canvas,
+               textPaint3,
+               bonusPoints.toString(),
                midpointX+80f,
-               graphcurrentPos
+               (((maxY*0.9)/data.entries.last().key.toFloat())*graphcurrentPos).toFloat()
            )
 
        }
