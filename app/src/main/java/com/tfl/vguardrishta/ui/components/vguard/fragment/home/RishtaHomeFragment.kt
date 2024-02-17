@@ -268,7 +268,7 @@ class RishtaHomeFragment : BaseFragment<RishtaHomeContract.View, RishtaHomeContr
             {
                 showUpdateKycDialog(this.layoutInflater, context, welcomeBanner)
             }
-              AppUtils.openPDFWithUrl(context, welcomeBanner.videoPath)
+              //AppUtils.openPDFWithUrl(context, welcomeBanner.videoPath)
         }
 
         dialog.setCancelable(true)

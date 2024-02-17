@@ -20,6 +20,7 @@ import com.tfl.vguardrishta.ui.components.vguard.specialComboOffers.SpecialCombo
 import com.tfl.vguardrishta.utils.CacheUtils
 import kotlinx.android.synthetic.main.scheme_progress.main_container
 import kotlinx.android.synthetic.main.scheme_progress.tite_Heading
+import kotlinx.android.synthetic.main.vguard_toolbar.ivBack
 import kotlinx.android.synthetic.main.vguard_toolbar.toolbar_main
 import javax.inject.Inject
 import kotlin.jvm.internal.Intrinsics
@@ -54,11 +55,11 @@ class SchemeProgressActivity :
        setSupportActionBar(toolbar_main)
         val s = CacheUtils.getSchemeProgress()
         schemeProgress = ProgressStepView(this,null,1)
-        //schemeProgress.currentPoints = s.currentPoints;
+        schemeProgress.currentPoints = s.currentPoints;
         schemeProgress.data = s.mileStoneData;
         tite_Heading.text = s.title;
         main_container.addView(schemeProgress)
-
+        ivBack.setOnClickListener(this)
     }
 
     override fun loadCards(list: List<SpecialSchemes>) {
@@ -82,7 +83,13 @@ class SchemeProgressActivity :
     }
 
     override fun onClick(p0: View?) {
-       return
+       when(p0?.id){
+           R.id.ivBack->{
+               onBackPressed()
+           }
+       }
+
+
     }
 
 

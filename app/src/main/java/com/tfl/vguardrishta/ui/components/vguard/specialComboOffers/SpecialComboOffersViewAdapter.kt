@@ -60,7 +60,7 @@ class SpecialComboOffersViewAdapter(private val mList2: List<SpecialSchemes>) :
                    schemeData.currentPoints = data.tableData[1][1].toFloat()
                    schemeData.mileStoneData=milestone
                    CacheUtils.setSchemeProgress(schemeData)
-                   //itemView.context.launchActivity<SchemeProgressActivity> {  }
+                   itemView.context.launchActivity<SchemeProgressActivity> {  }
 
                }
            })
